@@ -1,0 +1,466 @@
+# ArtikCloudApi.UsersApi
+
+All URIs are relative to *https://api.artik.cloud/v1.1*
+
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**createUserProperties**](UsersApi.md#createUserProperties) | **POST** /users/{userId}/properties | Create User Application Properties
+[**deleteUserProperties**](UsersApi.md#deleteUserProperties) | **DELETE** /users/{userId}/properties | Delete User Application Properties
+[**getSelf**](UsersApi.md#getSelf) | **GET** /users/self | Get Current User Profile
+[**getUserDeviceTypes**](UsersApi.md#getUserDeviceTypes) | **GET** /users/{userId}/devicetypes | Get User Device Types
+[**getUserDevices**](UsersApi.md#getUserDevices) | **GET** /users/{userId}/devices | Get User Devices
+[**getUserProperties**](UsersApi.md#getUserProperties) | **GET** /users/{userId}/properties | Get User application properties
+[**getUserRules**](UsersApi.md#getUserRules) | **GET** /users/{userId}/rules | Get User Rules
+[**updateUserProperties**](UsersApi.md#updateUserProperties) | **PUT** /users/{userId}/properties | Update User Application Properties
+
+
+<a name="createUserProperties"></a>
+# **createUserProperties**
+> PropertiesEnvelope createUserProperties(userId, properties, opts)
+
+Create User Application Properties
+
+Create application properties for a user
+
+### Example
+```javascript
+var ArtikCloudApi = require('artik-cloud-api');
+var defaultClient = ArtikCloudApi.ApiClient.default;
+
+// Configure OAuth2 access token for authorization: artikcloud_oauth
+var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
+artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
+
+var apiInstance = new ArtikCloudApi.UsersApi()
+
+var userId = "userId_example"; // {String} User Id
+
+var properties = new ArtikCloudApi.AppProperties(); // {AppProperties} Properties to be updated
+
+var opts = { 
+  'aid': "aid_example" // {String} Application ID
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+api.createUserProperties(userId, properties, opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **String**| User Id | 
+ **properties** | [**AppProperties**](AppProperties.md)| Properties to be updated | 
+ **aid** | **String**| Application ID | [optional] 
+
+### Return type
+
+[**PropertiesEnvelope**](PropertiesEnvelope.md)
+
+### Authorization
+
+[artikcloud_oauth](../README.md#artikcloud_oauth)
+
+### HTTP reuqest headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="deleteUserProperties"></a>
+# **deleteUserProperties**
+> PropertiesEnvelope deleteUserProperties(userId, opts)
+
+Delete User Application Properties
+
+Deletes a user&#39;s application properties
+
+### Example
+```javascript
+var ArtikCloudApi = require('artik-cloud-api');
+var defaultClient = ArtikCloudApi.ApiClient.default;
+
+// Configure OAuth2 access token for authorization: artikcloud_oauth
+var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
+artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
+
+var apiInstance = new ArtikCloudApi.UsersApi()
+
+var userId = "userId_example"; // {String} User Id
+
+var opts = { 
+  'aid': "aid_example" // {String} Application ID
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+api.deleteUserProperties(userId, opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **String**| User Id | 
+ **aid** | **String**| Application ID | [optional] 
+
+### Return type
+
+[**PropertiesEnvelope**](PropertiesEnvelope.md)
+
+### Authorization
+
+[artikcloud_oauth](../README.md#artikcloud_oauth)
+
+### HTTP reuqest headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="getSelf"></a>
+# **getSelf**
+> UserEnvelope getSelf
+
+Get Current User Profile
+
+Get&#39;s the current user&#39;s profile
+
+### Example
+```javascript
+var ArtikCloudApi = require('artik-cloud-api');
+var defaultClient = ArtikCloudApi.ApiClient.default;
+
+// Configure OAuth2 access token for authorization: artikcloud_oauth
+var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
+artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
+
+var apiInstance = new ArtikCloudApi.UsersApi()
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+api.getSelf(callback);
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**UserEnvelope**](UserEnvelope.md)
+
+### Authorization
+
+[artikcloud_oauth](../README.md#artikcloud_oauth)
+
+### HTTP reuqest headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="getUserDeviceTypes"></a>
+# **getUserDeviceTypes**
+> DeviceTypesEnvelope getUserDeviceTypes(userId, opts)
+
+Get User Device Types
+
+Retrieve User&#39;s Device Types
+
+### Example
+```javascript
+var ArtikCloudApi = require('artik-cloud-api');
+var defaultClient = ArtikCloudApi.ApiClient.default;
+
+// Configure OAuth2 access token for authorization: artikcloud_oauth
+var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
+artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
+
+var apiInstance = new ArtikCloudApi.UsersApi()
+
+var userId = "userId_example"; // {String} User ID.
+
+var opts = { 
+  'offset': 56, // {Integer} Offset for pagination.
+  'count': 56, // {Integer} Desired count of items in the result set
+  'includeShared': true // {Boolean} Optional. Boolean (true/false) - If false, only return the user's device types. If true, also return device types shared by other users.
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+api.getUserDeviceTypes(userId, opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **String**| User ID. | 
+ **offset** | **Integer**| Offset for pagination. | [optional] 
+ **count** | **Integer**| Desired count of items in the result set | [optional] 
+ **includeShared** | **Boolean**| Optional. Boolean (true/false) - If false, only return the user&#39;s device types. If true, also return device types shared by other users. | [optional] 
+
+### Return type
+
+[**DeviceTypesEnvelope**](DeviceTypesEnvelope.md)
+
+### Authorization
+
+[artikcloud_oauth](../README.md#artikcloud_oauth)
+
+### HTTP reuqest headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="getUserDevices"></a>
+# **getUserDevices**
+> DevicesEnvelope getUserDevices(userId, opts)
+
+Get User Devices
+
+Retrieve User&#39;s Devices
+
+### Example
+```javascript
+var ArtikCloudApi = require('artik-cloud-api');
+var defaultClient = ArtikCloudApi.ApiClient.default;
+
+// Configure OAuth2 access token for authorization: artikcloud_oauth
+var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
+artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
+
+var apiInstance = new ArtikCloudApi.UsersApi()
+
+var userId = "userId_example"; // {String} User ID
+
+var opts = { 
+  'offset': 56, // {Integer} Offset for pagination.
+  'count': 56, // {Integer} Desired count of items in the result set
+  'includeProperties': true // {Boolean} Optional. Boolean (true/false) - If false, only return the user's device types. If true, also return device types shared by other users.
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+api.getUserDevices(userId, opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **String**| User ID | 
+ **offset** | **Integer**| Offset for pagination. | [optional] 
+ **count** | **Integer**| Desired count of items in the result set | [optional] 
+ **includeProperties** | **Boolean**| Optional. Boolean (true/false) - If false, only return the user&#39;s device types. If true, also return device types shared by other users. | [optional] 
+
+### Return type
+
+[**DevicesEnvelope**](DevicesEnvelope.md)
+
+### Authorization
+
+[artikcloud_oauth](../README.md#artikcloud_oauth)
+
+### HTTP reuqest headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="getUserProperties"></a>
+# **getUserProperties**
+> PropertiesEnvelope getUserProperties(userId, opts)
+
+Get User application properties
+
+Get application properties of a user
+
+### Example
+```javascript
+var ArtikCloudApi = require('artik-cloud-api');
+var defaultClient = ArtikCloudApi.ApiClient.default;
+
+// Configure OAuth2 access token for authorization: artikcloud_oauth
+var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
+artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
+
+var apiInstance = new ArtikCloudApi.UsersApi()
+
+var userId = "userId_example"; // {String} User Id
+
+var opts = { 
+  'aid': "aid_example" // {String} Application ID
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+api.getUserProperties(userId, opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **String**| User Id | 
+ **aid** | **String**| Application ID | [optional] 
+
+### Return type
+
+[**PropertiesEnvelope**](PropertiesEnvelope.md)
+
+### Authorization
+
+[artikcloud_oauth](../README.md#artikcloud_oauth)
+
+### HTTP reuqest headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="getUserRules"></a>
+# **getUserRules**
+> RulesEnvelope getUserRules(userId, opts)
+
+Get User Rules
+
+Retrieve User&#39;s Rules
+
+### Example
+```javascript
+var ArtikCloudApi = require('artik-cloud-api');
+var defaultClient = ArtikCloudApi.ApiClient.default;
+
+// Configure OAuth2 access token for authorization: artikcloud_oauth
+var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
+artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
+
+var apiInstance = new ArtikCloudApi.UsersApi()
+
+var userId = "userId_example"; // {String} User ID.
+
+var opts = { 
+  'excludeDisabled': true, // {Boolean} Exclude disabled rules in the result.
+  'otherApplications': true, // {Boolean} List rules of other applications if current application id has full read access
+  'count': 56, // {Integer} Desired count of items in the result set.
+  'offset': 56 // {Integer} Offset for pagination.
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+api.getUserRules(userId, opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **String**| User ID. | 
+ **excludeDisabled** | **Boolean**| Exclude disabled rules in the result. | [optional] 
+ **otherApplications** | **Boolean**| List rules of other applications if current application id has full read access | [optional] 
+ **count** | [**Integer**](.md)| Desired count of items in the result set. | [optional] 
+ **offset** | [**Integer**](.md)| Offset for pagination. | [optional] 
+
+### Return type
+
+[**RulesEnvelope**](RulesEnvelope.md)
+
+### Authorization
+
+[artikcloud_oauth](../README.md#artikcloud_oauth)
+
+### HTTP reuqest headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="updateUserProperties"></a>
+# **updateUserProperties**
+> PropertiesEnvelope updateUserProperties(userId, properties, opts)
+
+Update User Application Properties
+
+Updates application properties of a user
+
+### Example
+```javascript
+var ArtikCloudApi = require('artik-cloud-api');
+var defaultClient = ArtikCloudApi.ApiClient.default;
+
+// Configure OAuth2 access token for authorization: artikcloud_oauth
+var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
+artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
+
+var apiInstance = new ArtikCloudApi.UsersApi()
+
+var userId = "userId_example"; // {String} User Id
+
+var properties = new ArtikCloudApi.AppProperties(); // {AppProperties} Properties to be updated
+
+var opts = { 
+  'aid': "aid_example" // {String} Application ID
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+api.updateUserProperties(userId, properties, opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **String**| User Id | 
+ **properties** | [**AppProperties**](AppProperties.md)| Properties to be updated | 
+ **aid** | **String**| Application ID | [optional] 
+
+### Return type
+
+[**PropertiesEnvelope**](PropertiesEnvelope.md)
+
+### Authorization
+
+[artikcloud_oauth](../README.md#artikcloud_oauth)
+
+### HTTP reuqest headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+

@@ -1,0 +1,8 @@
+# ArtikCloudApi.FieldPresence
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**startDate** | **Integer** |  | 
+
+
