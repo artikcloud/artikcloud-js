@@ -22,7 +22,7 @@ please follow the procedure in ["Publishing npm packages"](https://docs.npmjs.co
 Then install it via:
 
 ```shell
-npm install artik-cloud-api --save
+npm install artikcloud-js --save
 ```
 
 #### git
@@ -52,7 +52,7 @@ Then include *bundle.js* in the HTML pages.
 Please follow the [installation](#installation) instruction and execute the following JS code:
 
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
+var ArtikCloudApi = require('artikcloud-js');
 
 var defaultClient = ArtikCloudApi.ApiClient.default;
 
