@@ -18,8 +18,8 @@ Check Token
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -69,8 +69,8 @@ Refresh Token
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];

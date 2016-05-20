@@ -22,8 +22,8 @@ Get Histogram on normalized messages.
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -84,8 +84,8 @@ Get normalized message presence.
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -147,8 +147,8 @@ Get last messages normalized.
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -203,8 +203,8 @@ Get Aggregates on normalized messages.
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -263,8 +263,8 @@ Get the messages normalized
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -333,8 +333,8 @@ Send a message or an Action:&lt;br/&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Combinat
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
