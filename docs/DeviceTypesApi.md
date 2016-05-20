@@ -21,8 +21,8 @@ Get a Device Type&#39;s available manifest versions
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -72,8 +72,8 @@ Retrieves a Device Type
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -123,8 +123,8 @@ Retrieves Device Types
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -182,8 +182,8 @@ Get a Device Type&#39;s manifest properties for the latest version.
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -233,8 +233,8 @@ Get a Device Type&#39;s manifest properties for a specific version.
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];

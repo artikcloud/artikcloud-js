@@ -20,8 +20,8 @@ Export normalized messages. The following input combinations are supported:&lt;b
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -71,8 +71,8 @@ Get the history of export requests.
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -127,8 +127,8 @@ Retrieve result of the export query in tgz format. The tar file may contain one 
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -178,8 +178,8 @@ Check status of the export query.
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];

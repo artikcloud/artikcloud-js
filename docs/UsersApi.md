@@ -24,8 +24,8 @@ Create application properties for a user
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -82,8 +82,8 @@ Deletes a user&#39;s application properties
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -137,8 +137,8 @@ Get&#39;s the current user&#39;s profile
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -182,8 +182,8 @@ Retrieve User&#39;s Device Types
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -241,8 +241,8 @@ Retrieve User&#39;s Devices
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -300,8 +300,8 @@ Get application properties of a user
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -355,8 +355,8 @@ Retrieve User&#39;s Rules
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -416,8 +416,8 @@ Updates application properties of a user
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artik-cloud-api');
-var defaultClient = ArtikCloudApi.ApiClient.default;
+var ArtikCloudApi = require('artikcloud-js');
+var defaultClient = ArtikCloudApi.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
