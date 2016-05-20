@@ -1,4 +1,4 @@
-# ArtikCloudApi.ErrorEnvelope
+# ArtikCloud.ErrorEnvelope
 
 ## Properties
 Name | Type | Description | Notes

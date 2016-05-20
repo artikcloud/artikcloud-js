@@ -1,4 +1,4 @@
-# ArtikCloudApi.DeviceType
+# ArtikCloud.DeviceType
 
 ## Properties
 Name | Type | Description | Notes

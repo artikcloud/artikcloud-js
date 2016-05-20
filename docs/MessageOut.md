@@ -1,4 +1,4 @@
-# ArtikCloudApi.MessageOut
+# ArtikCloud.MessageOut
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# ArtikCloudApi.UserEnvelope
+# ArtikCloud.UserEnvelope
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# ArtikCloudApi.ActionOut
+# ArtikCloud.ActionOut
 
 ## Properties
 Name | Type | Description | Notes

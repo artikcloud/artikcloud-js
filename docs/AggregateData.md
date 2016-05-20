@@ -1,4 +1,4 @@
-# ArtikCloudApi.AggregateData
+# ArtikCloud.AggregateData
 
 ## Properties
 Name | Type | Description | Notes

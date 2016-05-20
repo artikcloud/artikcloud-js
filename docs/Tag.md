@@ -1,4 +1,4 @@
-# ArtikCloudApi.Tag
+# ArtikCloud.Tag
 
 ## Properties
 Name | Type | Description | Notes

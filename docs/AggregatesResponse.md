@@ -1,4 +1,4 @@
-# ArtikCloudApi.AggregatesResponse
+# ArtikCloud.AggregatesResponse
 
 ## Properties
 Name | Type | Description | Notes

@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/AggregatesHistogramResponse'), require('../model/FieldPresenceEnvelope'), require('../model/NormalizedMessagesEnvelope'), require('../model/AggregatesResponse'), require('../model/MessageAction'), require('../model/MessageIDEnvelope'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.MessagesApi = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.AggregatesHistogramResponse, root.ArtikCloudApi.FieldPresenceEnvelope, root.ArtikCloudApi.NormalizedMessagesEnvelope, root.ArtikCloudApi.AggregatesResponse, root.ArtikCloudApi.MessageAction, root.ArtikCloudApi.MessageIDEnvelope);
+    root.ArtikCloud.MessagesApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.AggregatesHistogramResponse, root.ArtikCloud.FieldPresenceEnvelope, root.ArtikCloud.NormalizedMessagesEnvelope, root.ArtikCloud.AggregatesResponse, root.ArtikCloud.MessageAction, root.ArtikCloud.MessageIDEnvelope);
   }
 }(this, function(ApiClient, AggregatesHistogramResponse, FieldPresenceEnvelope, NormalizedMessagesEnvelope, AggregatesResponse, MessageAction, MessageIDEnvelope) {
   'use strict';

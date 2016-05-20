@@ -20,12 +20,12 @@ npm install artikcloud-js --save
 
 #### git
 #
-If the library is hosted at a git repository, e.g.
-https://github.com/YOUR_USERNAME/YOUR_GIT_REPO_ID
+The library is hosted at this git repository
+https://github.com/artikcloud/artikcloud-js
 then install it via:
 
 ```shell
-npm install YOUR_USERNAME/YOUR_GIT_REPO_ID --save
+npm install artikcloud/artikcloud-js --save
 ```
 
 ### For browser
@@ -209,7 +209,7 @@ Class | Method | HTTP request | Description
 - **Type**: OAuth
 - **Flow**: implicit
 - **Authorizatoin URL**: https://accounts.artik.cloud/authorize
-- **Scopes**: 
+- **Scopes**:
   - read:artikcloud: Read from Artik Cloud
   - write:artikcloud: Write from Artik Cloud
 

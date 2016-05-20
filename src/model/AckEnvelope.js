@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('./Acknowledgement'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.AckEnvelope = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.Acknowledgement);
+    root.ArtikCloud.AckEnvelope = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.Acknowledgement);
   }
 }(this, function(ApiClient, Acknowledgement) {
   'use strict';

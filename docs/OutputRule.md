@@ -1,4 +1,4 @@
-# ArtikCloudApi.OutputRule
+# ArtikCloud.OutputRule
 
 ## Properties
 Name | Type | Description | Notes

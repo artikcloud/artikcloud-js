@@ -1,4 +1,4 @@
-# ArtikCloudApi.Token
+# ArtikCloud.Token
 
 ## Properties
 Name | Type | Description | Notes

@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('./AggregateData'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.AggregatesResponse = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.AggregateData);
+    root.ArtikCloud.AggregatesResponse = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.AggregateData);
   }
 }(this, function(ApiClient, AggregateData) {
   'use strict';

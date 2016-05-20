@@ -1,4 +1,4 @@
-# ArtikCloudApi.RuleError
+# ArtikCloud.RuleError
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# ArtikCloudApi.DeviceRegConfirmUserResponseEnvelope
+# ArtikCloud.DeviceRegConfirmUserResponseEnvelope
 
 ## Properties
 Name | Type | Description | Notes

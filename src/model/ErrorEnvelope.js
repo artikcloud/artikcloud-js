@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('./WebSocketError'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.ErrorEnvelope = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.WebSocketError);
+    root.ArtikCloud.ErrorEnvelope = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.WebSocketError);
   }
 }(this, function(ApiClient, WebSocketError) {
   'use strict';

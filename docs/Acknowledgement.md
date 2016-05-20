@@ -1,4 +1,4 @@
-# ArtikCloudApi.Acknowledgement
+# ArtikCloud.Acknowledgement
 
 ## Properties
 Name | Type | Description | Notes

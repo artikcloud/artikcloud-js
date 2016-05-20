@@ -1,4 +1,4 @@
-# ArtikCloudApi.FieldPath
+# ArtikCloud.FieldPath
 
 ## Properties
 Name | Type | Description | Notes

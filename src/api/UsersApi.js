@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/PropertiesEnvelope'), require('../model/AppProperties'), require('../model/UserEnvelope'), require('../model/DeviceTypesEnvelope'), require('../model/DevicesEnvelope'), require('../model/RulesEnvelope'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.UsersApi = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.PropertiesEnvelope, root.ArtikCloudApi.AppProperties, root.ArtikCloudApi.UserEnvelope, root.ArtikCloudApi.DeviceTypesEnvelope, root.ArtikCloudApi.DevicesEnvelope, root.ArtikCloudApi.RulesEnvelope);
+    root.ArtikCloud.UsersApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.PropertiesEnvelope, root.ArtikCloud.AppProperties, root.ArtikCloud.UserEnvelope, root.ArtikCloud.DeviceTypesEnvelope, root.ArtikCloud.DevicesEnvelope, root.ArtikCloud.RulesEnvelope);
   }
 }(this, function(ApiClient, PropertiesEnvelope, AppProperties, UserEnvelope, DeviceTypesEnvelope, DevicesEnvelope, RulesEnvelope) {
   'use strict';
@@ -349,7 +349,6 @@
      * @param {String} userId User ID.
      * @param {Object} opts Optional parameters
      * @param {Boolean} opts.excludeDisabled Exclude disabled rules in the result.
-     * @param {Boolean} opts.otherApplications List rules of other applications if current application id has full read access
      * @param {Integer} opts.count Desired count of items in the result set.
      * @param {Integer} opts.offset Offset for pagination.
      * @param {module:api/UsersApi~getUserRulesCallback} callback The callback function, accepting three arguments: error, data, response
@@ -370,7 +369,6 @@
       };
       var queryParams = {
         'excludeDisabled': opts['excludeDisabled'],
-        'otherApplications': opts['otherApplications'],
         'count': opts['count'],
         'offset': opts['offset']
       };

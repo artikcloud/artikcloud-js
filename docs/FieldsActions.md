@@ -1,4 +1,4 @@
-# ArtikCloudApi.FieldsActions
+# ArtikCloud.FieldsActions
 
 ## Properties
 Name | Type | Description | Notes

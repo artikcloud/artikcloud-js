@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('./UnregisterDeviceResponse'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.UnregisterDeviceResponseEnvelope = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.UnregisterDeviceResponse);
+    root.ArtikCloud.UnregisterDeviceResponseEnvelope = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.UnregisterDeviceResponse);
   }
 }(this, function(ApiClient, UnregisterDeviceResponse) {
   'use strict';

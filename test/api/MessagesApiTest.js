@@ -19,7 +19,7 @@
 
     // Configure OAuth2 access token for authorization: artikcloud_oauth
     var artikcloud_oauth = newClient.authentications['artikcloud_oauth'];
-    artikcloud_oauth.accessToken = "2fd493b9877e48bd9fe699deb1e07003"
+    artikcloud_oauth.accessToken = "f9f75bd0b0fc46a9a604703909f4331d"
 
     api = new ArtikCloud.MessagesApi(newClient);
     api.getApiClient
@@ -45,10 +45,10 @@
 
     it('sendMessageAction', function(done) {
       var message = new ArtikCloud.MessageAction();
-      message.sdid = '993925c3cd994bf7a51c620884be65e9';
+      message.sdid = '16f54be9b9ce4c69be14a6c8ff33ea8d';
       message.type = 'message';
       message.ts = Date.now();
-      message.data = { 'volume': 5};
+      message.data = {"distance":850.745,"steps":935};
 
       api.sendMessageAction(message, function(error, response) {
         if (error) throw error;
@@ -64,8 +64,11 @@
           var normalized = response2.data[0];
           expect(normalized.mid).to.be(messageId);
 
-          var volume = normalized.data['volume'];
-          expect(volume).to.be(5.0);
+          var distance = normalized.data['distance'];
+          expect(distance).to.be(850.745);
+
+          var steps = normalized.data['steps'];
+          expect(steps).to.be(935);
 
           done();
         });

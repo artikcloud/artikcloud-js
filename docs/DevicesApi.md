@@ -1,4 +1,4 @@
-# ArtikCloudApi.DevicesApi
+# ArtikCloud.DevicesApi
 
 All URIs are relative to *https://api.artik.cloud/v1.1*
 
@@ -23,16 +23,16 @@ Create a device
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.DevicesApi()
+var apiInstance = new ArtikCloud.DevicesApi()
 
-var device = new ArtikCloudApi.Device(); // {Device} Device to be added to the user
+var device = new ArtikCloud.Device(); // {Device} Device to be added to the user
 
 
 var callback = function(error, data, response) {
@@ -74,14 +74,14 @@ Deletes a device
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.DevicesApi()
+var apiInstance = new ArtikCloud.DevicesApi()
 
 var deviceId = "deviceId_example"; // {String} deviceId
 
@@ -125,14 +125,14 @@ Deletes a device&#39;s token
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.DevicesApi()
+var apiInstance = new ArtikCloud.DevicesApi()
 
 var deviceId = "deviceId_example"; // {String} deviceId
 
@@ -176,14 +176,14 @@ Retrieves a device
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.DevicesApi()
+var apiInstance = new ArtikCloud.DevicesApi()
 
 var deviceId = "deviceId_example"; // {String} deviceId
 
@@ -227,14 +227,14 @@ Retrieves a device&#39;s token
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.DevicesApi()
+var apiInstance = new ArtikCloud.DevicesApi()
 
 var deviceId = "deviceId_example"; // {String} deviceId
 
@@ -278,18 +278,18 @@ Updates a device
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.DevicesApi()
+var apiInstance = new ArtikCloud.DevicesApi()
 
 var deviceId = "deviceId_example"; // {String} deviceId
 
-var device = new ArtikCloudApi.Device(); // {Device} Device to be updated
+var device = new ArtikCloud.Device(); // {Device} Device to be updated
 
 
 var callback = function(error, data, response) {
@@ -332,14 +332,14 @@ Updates a device&#39;s token
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.DevicesApi()
+var apiInstance = new ArtikCloud.DevicesApi()
 
 var deviceId = "deviceId_example"; // {String} deviceId
 

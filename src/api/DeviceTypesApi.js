@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/ManifestVersionsEnvelope'), require('../model/DeviceTypeEnvelope'), require('../model/DeviceTypesEnvelope'), require('../model/ManifestPropertiesEnvelope'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.DeviceTypesApi = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.ManifestVersionsEnvelope, root.ArtikCloudApi.DeviceTypeEnvelope, root.ArtikCloudApi.DeviceTypesEnvelope, root.ArtikCloudApi.ManifestPropertiesEnvelope);
+    root.ArtikCloud.DeviceTypesApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.ManifestVersionsEnvelope, root.ArtikCloud.DeviceTypeEnvelope, root.ArtikCloud.DeviceTypesEnvelope, root.ArtikCloud.ManifestPropertiesEnvelope);
   }
 }(this, function(ApiClient, ManifestVersionsEnvelope, DeviceTypeEnvelope, DeviceTypesEnvelope, ManifestPropertiesEnvelope) {
   'use strict';

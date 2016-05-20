@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('./DeviceToken'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.DeviceTokenEnvelope = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.DeviceToken);
+    root.ArtikCloud.DeviceTokenEnvelope = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.DeviceToken);
   }
 }(this, function(ApiClient, DeviceToken) {
   'use strict';

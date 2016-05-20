@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('./Tag'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.DeviceType = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.Tag);
+    root.ArtikCloud.DeviceType = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.Tag);
   }
 }(this, function(ApiClient, Tag) {
   'use strict';

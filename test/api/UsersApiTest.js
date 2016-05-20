@@ -19,7 +19,7 @@
 
     // Configure OAuth2 access token for authorization: artikcloud_oauth
     var artikcloud_oauth = newClient.authentications['artikcloud_oauth'];
-    artikcloud_oauth.accessToken = "2fd493b9877e48bd9fe699deb1e07003"
+    artikcloud_oauth.accessToken = "6ffc6e5e1dbf4168816ab7e4cc7da667"
 
     api = new ArtikCloud.UsersApi(newClient);
     api.getApiClient

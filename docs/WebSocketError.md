@@ -1,4 +1,4 @@
-# ArtikCloudApi.WebSocketError
+# ArtikCloud.WebSocketError
 
 ## Properties
 Name | Type | Description | Notes

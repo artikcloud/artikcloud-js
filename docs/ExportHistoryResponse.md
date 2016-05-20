@@ -1,4 +1,4 @@
-# ArtikCloudApi.ExportHistoryResponse
+# ArtikCloud.ExportHistoryResponse
 
 ## Properties
 Name | Type | Description | Notes

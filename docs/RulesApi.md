@@ -1,4 +1,4 @@
-# ArtikCloudApi.RulesApi
+# ArtikCloud.RulesApi
 
 All URIs are relative to *https://api.artik.cloud/v1.1*
 
@@ -20,16 +20,16 @@ Create a new Rule
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.RulesApi()
+var apiInstance = new ArtikCloud.RulesApi()
 
-var ruleInfo = new ArtikCloudApi.RuleCreationInfo(); // {RuleCreationInfo} Rule object that needs to be added
+var ruleInfo = new ArtikCloud.RuleCreationInfo(); // {RuleCreationInfo} Rule object that needs to be added
 
 var userId = "userId_example"; // {String} User ID
 
@@ -74,14 +74,14 @@ Delete a Rule
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.RulesApi()
+var apiInstance = new ArtikCloud.RulesApi()
 
 var ruleId = "ruleId_example"; // {String} Rule ID.
 
@@ -125,14 +125,14 @@ Get a rule using the Rule ID
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.RulesApi()
+var apiInstance = new ArtikCloud.RulesApi()
 
 var ruleId = "ruleId_example"; // {String} Rule ID.
 
@@ -176,18 +176,18 @@ Update an existing Rule
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.RulesApi()
+var apiInstance = new ArtikCloud.RulesApi()
 
 var ruleId = "ruleId_example"; // {String} Rule ID.
 
-var ruleInfo = new ArtikCloudApi.RuleUpdateInfo(); // {RuleUpdateInfo} Rule object that needs to be updated
+var ruleInfo = new ArtikCloud.RuleUpdateInfo(); // {RuleUpdateInfo} Rule object that needs to be updated
 
 
 var callback = function(error, data, response) {

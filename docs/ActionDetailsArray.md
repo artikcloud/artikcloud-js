@@ -1,8 +1,8 @@
-# ArtikCloudApi.ActionDetailsArray
+# ArtikCloud.ActionDetailsArray
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**tags** | [**[ActionDetails]**](ActionDetails.md) |  | [optional] 
+**actions** | [**[ActionDetails]**](ActionDetails.md) |  | [optional] 
 
 

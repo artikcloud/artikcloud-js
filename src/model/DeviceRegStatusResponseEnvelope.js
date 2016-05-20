@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('./DeviceRegStatusResponse'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.DeviceRegStatusResponseEnvelope = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.DeviceRegStatusResponse);
+    root.ArtikCloud.DeviceRegStatusResponseEnvelope = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.DeviceRegStatusResponse);
   }
 }(this, function(ApiClient, DeviceRegStatusResponse) {
   'use strict';

@@ -1,4 +1,4 @@
-# ArtikCloudApi.NonEmptyString
+# ArtikCloud.NonEmptyString
 
 ## Properties
 Name | Type | Description | Notes

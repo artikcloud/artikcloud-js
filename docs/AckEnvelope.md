@@ -1,4 +1,4 @@
-# ArtikCloudApi.AckEnvelope
+# ArtikCloud.AckEnvelope
 
 ## Properties
 Name | Type | Description | Notes

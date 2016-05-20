@@ -1,4 +1,4 @@
-# ArtikCloudApi.RuleArray
+# ArtikCloud.RuleArray
 
 ## Properties
 Name | Type | Description | Notes

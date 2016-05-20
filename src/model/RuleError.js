@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('./FieldPath'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.RuleError = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.FieldPath);
+    root.ArtikCloud.RuleError = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.FieldPath);
   }
 }(this, function(ApiClient, FieldPath) {
   'use strict';

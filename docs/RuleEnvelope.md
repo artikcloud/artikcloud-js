@@ -1,4 +1,4 @@
-# ArtikCloudApi.RuleEnvelope
+# ArtikCloud.RuleEnvelope
 
 ## Properties
 Name | Type | Description | Notes

@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('./User'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.UserEnvelope = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.User);
+    root.ArtikCloud.UserEnvelope = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.User);
   }
 }(this, function(ApiClient, User) {
   'use strict';

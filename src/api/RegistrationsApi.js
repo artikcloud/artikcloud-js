@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/DeviceRegConfirmUserRequest'), require('../model/DeviceRegConfirmUserResponseEnvelope'), require('../model/DeviceRegStatusResponseEnvelope'), require('../model/UnregisterDeviceResponseEnvelope'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.RegistrationsApi = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.DeviceRegConfirmUserRequest, root.ArtikCloudApi.DeviceRegConfirmUserResponseEnvelope, root.ArtikCloudApi.DeviceRegStatusResponseEnvelope, root.ArtikCloudApi.UnregisterDeviceResponseEnvelope);
+    root.ArtikCloud.RegistrationsApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.DeviceRegConfirmUserRequest, root.ArtikCloud.DeviceRegConfirmUserResponseEnvelope, root.ArtikCloud.DeviceRegStatusResponseEnvelope, root.ArtikCloud.UnregisterDeviceResponseEnvelope);
   }
 }(this, function(ApiClient, DeviceRegConfirmUserRequest, DeviceRegConfirmUserResponseEnvelope, DeviceRegStatusResponseEnvelope, UnregisterDeviceResponseEnvelope) {
   'use strict';

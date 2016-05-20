@@ -1,4 +1,4 @@
-# ArtikCloudApi.TagsApi
+# ArtikCloud.TagsApi
 
 All URIs are relative to *https://api.artik.cloud/v1.1*
 
@@ -19,14 +19,14 @@ Get all tags marked as categories
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.TagsApi()
+var apiInstance = new ArtikCloud.TagsApi()
 
 var callback = function(error, data, response) {
   if (error) {
@@ -64,14 +64,14 @@ Get tag suggestions for applications, device types that have been most used with
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.TagsApi()
+var apiInstance = new ArtikCloud.TagsApi()
 
 var opts = { 
   'entityType': "entityType_example", // {String} Entity type name.
@@ -122,14 +122,14 @@ Get all tags related to the list of categories
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.TagsApi()
+var apiInstance = new ArtikCloud.TagsApi()
 
 var opts = { 
   'categories': "categories_example" // {String} Comma separated list of categories.

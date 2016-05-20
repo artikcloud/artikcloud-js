@@ -1,4 +1,4 @@
-# ArtikCloudApi.TokenResponse
+# ArtikCloud.TokenResponse
 
 ## Properties
 Name | Type | Description | Notes

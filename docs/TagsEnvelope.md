@@ -1,4 +1,4 @@
-# ArtikCloudApi.TagsEnvelope
+# ArtikCloud.TagsEnvelope
 
 ## Properties
 Name | Type | Description | Notes

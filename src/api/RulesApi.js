@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/RuleEnvelope'), require('../model/RuleCreationInfo'), require('../model/RuleUpdateInfo'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.RulesApi = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.RuleEnvelope, root.ArtikCloudApi.RuleCreationInfo, root.ArtikCloudApi.RuleUpdateInfo);
+    root.ArtikCloud.RulesApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.RuleEnvelope, root.ArtikCloud.RuleCreationInfo, root.ArtikCloud.RuleUpdateInfo);
   }
 }(this, function(ApiClient, RuleEnvelope, RuleCreationInfo, RuleUpdateInfo) {
   'use strict';

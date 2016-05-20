@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('./FieldPresence'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.FieldPresenceEnvelope = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.FieldPresence);
+    root.ArtikCloud.FieldPresenceEnvelope = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.FieldPresence);
   }
 }(this, function(ApiClient, FieldPresence) {
   'use strict';

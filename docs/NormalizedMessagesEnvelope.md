@@ -1,4 +1,4 @@
-# ArtikCloudApi.NormalizedMessagesEnvelope
+# ArtikCloud.NormalizedMessagesEnvelope
 
 ## Properties
 Name | Type | Description | Notes

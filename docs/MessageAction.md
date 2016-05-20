@@ -1,4 +1,4 @@
-# ArtikCloudApi.MessageAction
+# ArtikCloud.MessageAction
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# ArtikCloudApi.RuleWarningOutput
+# ArtikCloud.RuleWarningOutput
 
 ## Properties
 Name | Type | Description | Notes

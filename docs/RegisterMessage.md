@@ -1,4 +1,4 @@
-# ArtikCloudApi.RegisterMessage
+# ArtikCloud.RegisterMessage
 
 ## Properties
 Name | Type | Description | Notes

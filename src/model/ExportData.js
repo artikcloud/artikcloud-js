@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('./ExportRequest'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.ExportData = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.ExportRequest);
+    root.ArtikCloud.ExportData = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.ExportRequest);
   }
 }(this, function(ApiClient, ExportRequest) {
   'use strict';

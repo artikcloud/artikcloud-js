@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('./AggregatesHistogramData'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.AggregatesHistogramResponse = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.AggregatesHistogramData);
+    root.ArtikCloud.AggregatesHistogramResponse = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.AggregatesHistogramData);
   }
 }(this, function(ApiClient, AggregatesHistogramData) {
   'use strict';

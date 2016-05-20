@@ -1,4 +1,4 @@
-# ArtikCloudApi.DeviceTypesApi
+# ArtikCloud.DeviceTypesApi
 
 All URIs are relative to *https://api.artik.cloud/v1.1*
 
@@ -21,14 +21,14 @@ Get a Device Type&#39;s available manifest versions
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.DeviceTypesApi()
+var apiInstance = new ArtikCloud.DeviceTypesApi()
 
 var deviceTypeId = "deviceTypeId_example"; // {String} deviceTypeId
 
@@ -72,14 +72,14 @@ Retrieves a Device Type
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.DeviceTypesApi()
+var apiInstance = new ArtikCloud.DeviceTypesApi()
 
 var deviceTypeId = "deviceTypeId_example"; // {String} deviceTypeId
 
@@ -123,14 +123,14 @@ Retrieves Device Types
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.DeviceTypesApi()
+var apiInstance = new ArtikCloud.DeviceTypesApi()
 
 var name = "name_example"; // {String} Device Type name
 
@@ -182,14 +182,14 @@ Get a Device Type&#39;s manifest properties for the latest version.
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.DeviceTypesApi()
+var apiInstance = new ArtikCloud.DeviceTypesApi()
 
 var deviceTypeId = "deviceTypeId_example"; // {String} Device Type ID.
 
@@ -233,14 +233,14 @@ Get a Device Type&#39;s manifest properties for a specific version.
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.DeviceTypesApi()
+var apiInstance = new ArtikCloud.DeviceTypesApi()
 
 var deviceTypeId = "deviceTypeId_example"; // {String} Device Type ID.
 

@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('./ActionDetailsArray'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.ActionIn = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.ActionDetailsArray);
+    root.ArtikCloud.ActionIn = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.ActionDetailsArray);
   }
 }(this, function(ApiClient, ActionDetailsArray) {
   'use strict';

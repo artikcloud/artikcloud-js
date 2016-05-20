@@ -1,4 +1,4 @@
-# ArtikCloudApi.NormalizedMessage
+# ArtikCloud.NormalizedMessage
 
 ## Properties
 Name | Type | Description | Notes

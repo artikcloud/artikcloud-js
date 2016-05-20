@@ -1,4 +1,4 @@
-# ArtikCloudApi.AggregatesHistogramResponse
+# ArtikCloud.AggregatesHistogramResponse
 
 ## Properties
 Name | Type | Description | Notes

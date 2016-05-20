@@ -10,14 +10,14 @@
   'use strict';
 
   /**
-   * Client library of artikcloud-js.<br>
+   * JS, Node.js client for ARTIK Cloud.<br>
    * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
    * <p>
    * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
    * <pre>
-   * var ArtikCloudApi = require('./index'); // See note below*.
-   * var xxxSvc = new ArtikCloudApi.XxxApi(); // Allocate the API class we're going to use.
-   * var yyyModel = new ArtikCloudApi.Yyy(); // Construct a model instance.
+   * var ArtikCloud = require('./index'); // See note below*.
+   * var xxxSvc = new ArtikCloud.XxxApi(); // Allocate the API class we're going to use.
+   * var yyyModel = new ArtikCloud.Yyy(); // Construct a model instance.
    * yyyModel.someProperty = 'someValue';
    * ...
    * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -29,8 +29,8 @@
    * <p>
    * A non-AMD browser application (discouraged) might do something like this:
    * <pre>
-   * var xxxSvc = new ArtikCloudApi.XxxApi(); // Allocate the API class we're going to use.
-   * var yyy = new ArtikCloudApi.Yyy(); // Construct a model instance.
+   * var xxxSvc = new ArtikCloud.XxxApi(); // Allocate the API class we're going to use.
+   * var yyy = new ArtikCloud.Yyy(); // Construct a model instance.
    * yyyModel.someProperty = 'someValue';
    * ...
    * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.

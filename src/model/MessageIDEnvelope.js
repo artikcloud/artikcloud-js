@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('./MessageID'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.MessageIDEnvelope = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.MessageID);
+    root.ArtikCloud.MessageIDEnvelope = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.MessageID);
   }
 }(this, function(ApiClient, MessageID) {
   'use strict';

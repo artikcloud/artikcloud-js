@@ -1,4 +1,4 @@
-# ArtikCloudApi.AppProperties
+# ArtikCloud.AppProperties
 
 ## Properties
 Name | Type | Description | Notes

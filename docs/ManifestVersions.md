@@ -1,4 +1,4 @@
-# ArtikCloudApi.ManifestVersions
+# ArtikCloud.ManifestVersions
 
 ## Properties
 Name | Type | Description | Notes

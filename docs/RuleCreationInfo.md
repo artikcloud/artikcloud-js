@@ -1,4 +1,4 @@
-# ArtikCloudApi.RuleCreationInfo
+# ArtikCloud.RuleCreationInfo
 
 ## Properties
 Name | Type | Description | Notes

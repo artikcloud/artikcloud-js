@@ -1,4 +1,4 @@
-# ArtikCloudApi.DeviceRegCompleteRequest
+# ArtikCloud.DeviceRegCompleteRequest
 
 ## Properties
 Name | Type | Description | Notes

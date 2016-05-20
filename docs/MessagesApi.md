@@ -1,4 +1,4 @@
-# ArtikCloudApi.MessagesApi
+# ArtikCloud.MessagesApi
 
 All URIs are relative to *https://api.artik.cloud/v1.1*
 
@@ -22,14 +22,14 @@ Get Histogram on normalized messages.
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.MessagesApi()
+var apiInstance = new ArtikCloud.MessagesApi()
 
 var startDate = 789; // {Integer} Timestamp of earliest message (in milliseconds since epoch).
 
@@ -84,14 +84,14 @@ Get normalized message presence.
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.MessagesApi()
+var apiInstance = new ArtikCloud.MessagesApi()
 
 var startDate = 789; // {Integer} startDate
 
@@ -147,14 +147,14 @@ Get last messages normalized.
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.MessagesApi()
+var apiInstance = new ArtikCloud.MessagesApi()
 
 var opts = { 
   'count': 56, // {Integer} Number of items to return per query.
@@ -203,14 +203,14 @@ Get Aggregates on normalized messages.
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.MessagesApi()
+var apiInstance = new ArtikCloud.MessagesApi()
 
 var sdid = "sdid_example"; // {String} Source device ID of the messages being searched.
 
@@ -263,14 +263,14 @@ Get the messages normalized
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.MessagesApi()
+var apiInstance = new ArtikCloud.MessagesApi()
 
 var opts = { 
   'uid': "uid_example", // {String} User ID. If not specified, assume that of the current authenticated user. If specified, it must be that of a user for which the current authenticated user has read access to.
@@ -333,16 +333,16 @@ Send a message or an Action:&lt;br/&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Combinat
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.MessagesApi()
+var apiInstance = new ArtikCloud.MessagesApi()
 
-var data = new ArtikCloudApi.MessageAction(); // {MessageAction} Message or Action object that is passed in the body
+var data = new ArtikCloud.MessageAction(); // {MessageAction} Message or Action object that is passed in the body
 
 
 var callback = function(error, data, response) {

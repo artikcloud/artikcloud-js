@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('./AppProperties'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.PropertiesEnvelope = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.AppProperties);
+    root.ArtikCloud.PropertiesEnvelope = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.AppProperties);
   }
 }(this, function(ApiClient, AppProperties) {
   'use strict';

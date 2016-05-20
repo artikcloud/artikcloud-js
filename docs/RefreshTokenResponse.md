@@ -1,4 +1,4 @@
-# ArtikCloudApi.RefreshTokenResponse
+# ArtikCloud.RefreshTokenResponse
 
 ## Properties
 Name | Type | Description | Notes

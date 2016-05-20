@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('./Tag'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.TagArray = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.Tag);
+    root.ArtikCloud.TagArray = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.Tag);
   }
 }(this, function(ApiClient, Tag) {
   'use strict';

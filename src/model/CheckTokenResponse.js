@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('./CheckTokenMessage'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.CheckTokenResponse = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.CheckTokenMessage);
+    root.ArtikCloud.CheckTokenResponse = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.CheckTokenMessage);
   }
 }(this, function(ApiClient, CheckTokenMessage) {
   'use strict';

@@ -1,4 +1,4 @@
-# ArtikCloudApi.DeviceEnvelope
+# ArtikCloud.DeviceEnvelope
 
 ## Properties
 Name | Type | Description | Notes

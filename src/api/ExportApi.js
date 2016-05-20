@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/ExportRequestInfo'), require('../model/ExportRequestResponse'), require('../model/ExportHistoryResponse'), require('../model/ExportStatusResponse'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.ExportApi = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.ExportRequestInfo, root.ArtikCloudApi.ExportRequestResponse, root.ArtikCloudApi.ExportHistoryResponse, root.ArtikCloudApi.ExportStatusResponse);
+    root.ArtikCloud.ExportApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.ExportRequestInfo, root.ArtikCloud.ExportRequestResponse, root.ArtikCloud.ExportHistoryResponse, root.ArtikCloud.ExportStatusResponse);
   }
 }(this, function(ApiClient, ExportRequestInfo, ExportRequestResponse, ExportHistoryResponse, ExportStatusResponse) {
   'use strict';

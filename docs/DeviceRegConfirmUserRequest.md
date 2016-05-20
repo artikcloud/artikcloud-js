@@ -1,4 +1,4 @@
-# ArtikCloudApi.DeviceRegConfirmUserRequest
+# ArtikCloud.DeviceRegConfirmUserRequest
 
 ## Properties
 Name | Type | Description | Notes

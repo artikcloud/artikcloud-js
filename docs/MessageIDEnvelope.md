@@ -1,4 +1,4 @@
-# ArtikCloudApi.MessageIDEnvelope
+# ArtikCloud.MessageIDEnvelope
 
 ## Properties
 Name | Type | Description | Notes

@@ -7,10 +7,10 @@
     module.exports = factory(require('superagent'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.ApiClient = factory(root.superagent);
+    root.ArtikCloud.ApiClient = factory(root.superagent);
   }
 }(this, function(superagent) {
   'use strict';

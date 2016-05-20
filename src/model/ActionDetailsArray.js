@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('./ActionDetails'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.ActionDetailsArray = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.ActionDetails);
+    root.ArtikCloud.ActionDetailsArray = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.ActionDetails);
   }
 }(this, function(ApiClient, ActionDetails) {
   'use strict';
@@ -43,8 +43,8 @@
     if (data) { 
       obj = obj || new exports();
 
-      if (data.hasOwnProperty('tags')) {
-        obj['tags'] = ApiClient.convertToType(data['tags'], [ActionDetails]);
+      if (data.hasOwnProperty('actions')) {
+        obj['actions'] = ApiClient.convertToType(data['actions'], [ActionDetails]);
       }
     }
     return obj;
@@ -52,9 +52,9 @@
 
 
   /**
-   * @member {Array.<module:model/ActionDetails>} tags
+   * @member {Array.<module:model/ActionDetails>} actions
    */
-  exports.prototype['tags'] = undefined;
+  exports.prototype['actions'] = undefined;
 
 
 

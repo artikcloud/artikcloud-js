@@ -1,4 +1,4 @@
-# ArtikCloudApi.UsersApi
+# ArtikCloud.UsersApi
 
 All URIs are relative to *https://api.artik.cloud/v1.1*
 
@@ -24,18 +24,18 @@ Create application properties for a user
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.UsersApi()
+var apiInstance = new ArtikCloud.UsersApi()
 
 var userId = "userId_example"; // {String} User Id
 
-var properties = new ArtikCloudApi.AppProperties(); // {AppProperties} Properties to be updated
+var properties = new ArtikCloud.AppProperties(); // {AppProperties} Properties to be updated
 
 var opts = { 
   'aid': "aid_example" // {String} Application ID
@@ -82,14 +82,14 @@ Deletes a user&#39;s application properties
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.UsersApi()
+var apiInstance = new ArtikCloud.UsersApi()
 
 var userId = "userId_example"; // {String} User Id
 
@@ -137,14 +137,14 @@ Get&#39;s the current user&#39;s profile
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.UsersApi()
+var apiInstance = new ArtikCloud.UsersApi()
 
 var callback = function(error, data, response) {
   if (error) {
@@ -182,14 +182,14 @@ Retrieve User&#39;s Device Types
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.UsersApi()
+var apiInstance = new ArtikCloud.UsersApi()
 
 var userId = "userId_example"; // {String} User ID.
 
@@ -241,14 +241,14 @@ Retrieve User&#39;s Devices
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.UsersApi()
+var apiInstance = new ArtikCloud.UsersApi()
 
 var userId = "userId_example"; // {String} User ID
 
@@ -300,14 +300,14 @@ Get application properties of a user
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.UsersApi()
+var apiInstance = new ArtikCloud.UsersApi()
 
 var userId = "userId_example"; // {String} User Id
 
@@ -355,20 +355,19 @@ Retrieve User&#39;s Rules
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.UsersApi()
+var apiInstance = new ArtikCloud.UsersApi()
 
 var userId = "userId_example"; // {String} User ID.
 
 var opts = { 
   'excludeDisabled': true, // {Boolean} Exclude disabled rules in the result.
-  'otherApplications': true, // {Boolean} List rules of other applications if current application id has full read access
   'count': 56, // {Integer} Desired count of items in the result set.
   'offset': 56 // {Integer} Offset for pagination.
 };
@@ -389,7 +388,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userId** | **String**| User ID. | 
  **excludeDisabled** | **Boolean**| Exclude disabled rules in the result. | [optional] 
- **otherApplications** | **Boolean**| List rules of other applications if current application id has full read access | [optional] 
  **count** | [**Integer**](.md)| Desired count of items in the result set. | [optional] 
  **offset** | [**Integer**](.md)| Offset for pagination. | [optional] 
 
@@ -416,18 +414,18 @@ Updates application properties of a user
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.UsersApi()
+var apiInstance = new ArtikCloud.UsersApi()
 
 var userId = "userId_example"; // {String} User Id
 
-var properties = new ArtikCloudApi.AppProperties(); // {AppProperties} Properties to be updated
+var properties = new ArtikCloud.AppProperties(); // {AppProperties} Properties to be updated
 
 var opts = { 
   'aid': "aid_example" // {String} Application ID

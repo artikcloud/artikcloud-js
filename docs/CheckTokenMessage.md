@@ -1,4 +1,4 @@
-# ArtikCloudApi.CheckTokenMessage
+# ArtikCloud.CheckTokenMessage
 
 ## Properties
 Name | Type | Description | Notes

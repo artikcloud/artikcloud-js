@@ -1,4 +1,4 @@
-# ArtikCloudApi.MessageID
+# ArtikCloud.MessageID
 
 ## Properties
 Name | Type | Description | Notes

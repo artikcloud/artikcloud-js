@@ -1,4 +1,4 @@
-# ArtikCloudApi.ManifestPropertiesEnvelope
+# ArtikCloud.ManifestPropertiesEnvelope
 
 ## Properties
 Name | Type | Description | Notes

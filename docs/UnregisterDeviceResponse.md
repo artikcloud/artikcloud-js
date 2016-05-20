@@ -1,4 +1,4 @@
-# ArtikCloudApi.UnregisterDeviceResponse
+# ArtikCloud.UnregisterDeviceResponse
 
 ## Properties
 Name | Type | Description | Notes

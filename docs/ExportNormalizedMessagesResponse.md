@@ -1,4 +1,4 @@
-# ArtikCloudApi.ExportNormalizedMessagesResponse
+# ArtikCloud.ExportNormalizedMessagesResponse
 
 ## Properties
 Name | Type | Description | Notes

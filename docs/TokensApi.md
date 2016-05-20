@@ -1,4 +1,4 @@
-# ArtikCloudApi.TokensApi
+# ArtikCloud.TokensApi
 
 All URIs are relative to *https://api.artik.cloud/v1.1*
 
@@ -18,16 +18,16 @@ Check Token
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.TokensApi()
+var apiInstance = new ArtikCloud.TokensApi()
 
-var tokenInfo = new ArtikCloudApi.TokenRequest(); // {TokenRequest} Token object to be checked
+var tokenInfo = new ArtikCloud.TokenRequest(); // {TokenRequest} Token object to be checked
 
 
 var callback = function(error, data, response) {
@@ -69,14 +69,14 @@ Refresh Token
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.TokensApi()
+var apiInstance = new ArtikCloud.TokensApi()
 
 var grantType = "grantType_example"; // {String} Grant Type.
 

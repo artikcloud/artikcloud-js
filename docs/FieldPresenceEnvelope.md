@@ -1,4 +1,4 @@
-# ArtikCloudApi.FieldPresenceEnvelope
+# ArtikCloud.FieldPresenceEnvelope
 
 ## Properties
 Name | Type | Description | Notes

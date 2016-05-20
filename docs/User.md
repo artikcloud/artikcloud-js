@@ -1,4 +1,4 @@
-# ArtikCloudApi.User
+# ArtikCloud.User
 
 ## Properties
 Name | Type | Description | Notes

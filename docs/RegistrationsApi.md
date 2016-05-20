@@ -1,4 +1,4 @@
-# ArtikCloudApi.RegistrationsApi
+# ArtikCloud.RegistrationsApi
 
 All URIs are relative to *https://api.artik.cloud/v1.1*
 
@@ -19,16 +19,16 @@ This call updates the registration request issued earlier by associating it with
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.RegistrationsApi()
+var apiInstance = new ArtikCloud.RegistrationsApi()
 
-var registrationInfo = new ArtikCloudApi.DeviceRegConfirmUserRequest(); // {DeviceRegConfirmUserRequest} Device Registration information.
+var registrationInfo = new ArtikCloud.DeviceRegConfirmUserRequest(); // {DeviceRegConfirmUserRequest} Device Registration information.
 
 
 var callback = function(error, data, response) {
@@ -70,14 +70,14 @@ This call checks the status of the request so users can poll and know when regis
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.RegistrationsApi()
+var apiInstance = new ArtikCloud.RegistrationsApi()
 
 var requestId = "requestId_example"; // {String} Request ID.
 
@@ -121,14 +121,14 @@ This call clears any associations from the secure device registration.
 
 ### Example
 ```javascript
-var ArtikCloudApi = require('artikcloud-js');
-var defaultClient = ArtikCloudApi.ApiClient.instance;
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloudApi.RegistrationsApi()
+var apiInstance = new ArtikCloud.RegistrationsApi()
 
 var deviceId = "deviceId_example"; // {String} Device ID.
 

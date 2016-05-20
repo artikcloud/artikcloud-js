@@ -1,4 +1,4 @@
-# ArtikCloudApi.FieldPresence
+# ArtikCloud.FieldPresence
 
 ## Properties
 Name | Type | Description | Notes

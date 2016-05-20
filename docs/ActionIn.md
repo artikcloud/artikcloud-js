@@ -1,4 +1,4 @@
-# ArtikCloudApi.ActionIn
+# ArtikCloud.ActionIn
 
 ## Properties
 Name | Type | Description | Notes

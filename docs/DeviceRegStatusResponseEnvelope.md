@@ -1,4 +1,4 @@
-# ArtikCloudApi.DeviceRegStatusResponseEnvelope
+# ArtikCloud.DeviceRegStatusResponseEnvelope
 
 ## Properties
 Name | Type | Description | Notes

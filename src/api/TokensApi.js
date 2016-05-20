@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/TokenRequest'), require('../model/CheckTokenResponse'), require('../model/RefreshTokenResponse'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.TokensApi = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.TokenRequest, root.ArtikCloudApi.CheckTokenResponse, root.ArtikCloudApi.RefreshTokenResponse);
+    root.ArtikCloud.TokensApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.TokenRequest, root.ArtikCloud.CheckTokenResponse, root.ArtikCloud.RefreshTokenResponse);
   }
 }(this, function(ApiClient, TokenRequest, CheckTokenResponse, RefreshTokenResponse) {
   'use strict';

@@ -7,10 +7,10 @@
     module.exports = factory(require('../ApiClient'), require('./ManifestVersions'));
   } else {
     // Browser globals (root is window)
-    if (!root.ArtikCloudApi) {
-      root.ArtikCloudApi = {};
+    if (!root.ArtikCloud) {
+      root.ArtikCloud = {};
     }
-    root.ArtikCloudApi.ManifestVersionsEnvelope = factory(root.ArtikCloudApi.ApiClient, root.ArtikCloudApi.ManifestVersions);
+    root.ArtikCloud.ManifestVersionsEnvelope = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.ManifestVersions);
   }
 }(this, function(ApiClient, ManifestVersions) {
   'use strict';

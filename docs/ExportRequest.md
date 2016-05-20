@@ -1,4 +1,4 @@
-# ArtikCloudApi.ExportRequest
+# ArtikCloud.ExportRequest
 
 ## Properties
 Name | Type | Description | Notes
