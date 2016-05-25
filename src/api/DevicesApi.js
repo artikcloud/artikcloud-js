@@ -348,7 +348,7 @@
       };
 
       var authNames = ['artikcloud_oauth'];
-      var contentTypes = ['application/json'];
+      var contentTypes = ['text/plain'];
       var accepts = ['application/json'];
       var returnType = DeviceTokenEnvelope;
 
