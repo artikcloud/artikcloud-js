@@ -75,5 +75,23 @@
       });
     });
 
+    it('getLastNormalizedMessage', function(done) {
+      api.getLastNormalizedMessages({"sdids": "16f54be9b9ce4c69be14a6c8ff33ea8d"}, function(error, response) {
+        if (error) throw error;
+
+        expect(response.size).to.be(1);
+
+        var normalized = response.data[0];
+
+        var distance = normalized.data['distance'];
+        expect(distance).to.be(850.745);
+
+        var steps = normalized.data['steps'];
+        expect(steps).to.be(935);
+
+        done();
+      });
+    });
+
   });
 }));
