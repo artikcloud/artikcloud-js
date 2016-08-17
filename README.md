@@ -1,6 +1,8 @@
 ARTIK Cloud JavaScript SDK
 ================
 
+[![npm version](https://badge.fury.io/js/artikcloud-js.svg)](https://badge.fury.io/js/artikcloud-js)
+
 This SDK helps you connect your JavaScript applications to ARTIK Cloud. The SDK exposes a number of methods to easily execute REST API calls to ARTIK Cloud.
 
 ## Installation
