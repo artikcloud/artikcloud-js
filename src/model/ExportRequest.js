@@ -18,7 +18,7 @@
   /**
    * The ExportRequest model module.
    * @module model/ExportRequest
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -80,42 +80,42 @@
 
 
   /**
-   * @member {Integer} endDate
+   * @member Integer endDate
    */
   exports.prototype['endDate'] = undefined;
 
   /**
-   * @member {String} format
+   * @member String format
    */
   exports.prototype['format'] = undefined;
 
   /**
-   * @member {String} order
+   * @member String order
    */
   exports.prototype['order'] = undefined;
 
   /**
-   * @member {String} sdids
+   * @member String sdids
    */
   exports.prototype['sdids'] = undefined;
 
   /**
-   * @member {String} sdtids
+   * @member String sdtids
    */
   exports.prototype['sdtids'] = undefined;
 
   /**
-   * @member {Integer} startDate
+   * @member Integer startDate
    */
   exports.prototype['startDate'] = undefined;
 
   /**
-   * @member {String} trialId
+   * @member String trialId
    */
   exports.prototype['trialId'] = undefined;
 
   /**
-   * @member {String} uids
+   * @member String uids
    */
   exports.prototype['uids'] = undefined;
 

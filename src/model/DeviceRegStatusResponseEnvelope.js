@@ -18,7 +18,7 @@
   /**
    * The DeviceRegStatusResponseEnvelope model module.
    * @module model/DeviceRegStatusResponseEnvelope
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -52,7 +52,7 @@
 
 
   /**
-   * @member {module:model/DeviceRegStatusResponse} data
+   * @member module:model/DeviceRegStatusResponse data
    */
   exports.prototype['data'] = undefined;
 

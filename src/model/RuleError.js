@@ -18,7 +18,7 @@
   /**
    * The RuleError model module.
    * @module model/RuleError
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -64,22 +64,22 @@
 
 
   /**
-   * @member {Integer} errorCode
+   * @member Integer errorCode
    */
   exports.prototype['errorCode'] = undefined;
 
   /**
-   * @member {module:model/FieldPath} fieldPath
+   * @member module:model/FieldPath fieldPath
    */
   exports.prototype['fieldPath'] = undefined;
 
   /**
-   * @member {Array.<String>} messageArgs
+   * @member Array.<String> messageArgs
    */
   exports.prototype['messageArgs'] = undefined;
 
   /**
-   * @member {String} messageKey
+   * @member String messageKey
    */
   exports.prototype['messageKey'] = undefined;
 

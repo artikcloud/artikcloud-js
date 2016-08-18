@@ -18,7 +18,7 @@
   /**
    * The RefreshTokenResponse model module.
    * @module model/RefreshTokenResponse
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -64,22 +64,22 @@
 
 
   /**
-   * @member {String} access_token
+   * @member String access_token
    */
   exports.prototype['access_token'] = undefined;
 
   /**
-   * @member {Integer} expires_in
+   * @member Integer expires_in
    */
   exports.prototype['expires_in'] = undefined;
 
   /**
-   * @member {String} refresh_token
+   * @member String refresh_token
    */
   exports.prototype['refresh_token'] = undefined;
 
   /**
-   * @member {String} token_type
+   * @member String token_type
    */
   exports.prototype['token_type'] = undefined;
 

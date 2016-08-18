@@ -18,7 +18,7 @@
   /**
    * The ActionOut model module.
    * @module model/ActionOut
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -69,31 +69,31 @@
 
   /**
    * Message ID.
-   * @member {String} mid
+   * @member String mid
    */
   exports.prototype['mid'] = undefined;
 
   /**
    * User ID.
-   * @member {String} uid
+   * @member String uid
    */
   exports.prototype['uid'] = undefined;
 
   /**
    * Source Device Type ID.
-   * @member {String} sdtid
+   * @member String sdtid
    */
   exports.prototype['sdtid'] = undefined;
 
   /**
    * Created Timestamp (past, present or future). Defaults to current time if not provided.
-   * @member {Integer} cts
+   * @member Integer cts
    */
   exports.prototype['cts'] = undefined;
 
   /**
    * Manifest Version.
-   * @member {Integer} mv
+   * @member Integer mv
    */
   exports.prototype['mv'] = undefined;
 

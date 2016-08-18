@@ -18,7 +18,7 @@
   /**
    * The NormalizedMessagesEnvelope model module.
    * @module model/NormalizedMessagesEnvelope
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -26,9 +26,9 @@
    * Normalized Messages Envelope
    * @alias module:model/NormalizedMessagesEnvelope
    * @class
-   * @param count
-   * @param size
-   * @param data
+   * @param count(Integer)
+   * @param size(Integer)
+   * @param data([NormalizedMessage])
    */
   var exports = function(count, size, data) {
 
@@ -52,7 +52,7 @@
    * @return {module:model/NormalizedMessagesEnvelope} The populated <code>NormalizedMessagesEnvelope</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) { 
+    if (data) {
       obj = obj || new exports();
 
       if (data.hasOwnProperty('sdids')) {
@@ -91,52 +91,52 @@
 
 
   /**
-   * @member {String} sdids
+   * @member String sdids
    */
   exports.prototype['sdids'] = undefined;
 
   /**
-   * @member {String} sdid
+   * @member String sdid
    */
   exports.prototype['sdid'] = undefined;
 
   /**
-   * @member {String} uid
+   * @member String uid
    */
   exports.prototype['uid'] = undefined;
 
   /**
-   * @member {Integer} startDate
+   * @member Integer startDate
    */
   exports.prototype['startDate'] = undefined;
 
   /**
-   * @member {Integer} endDate
+   * @member Integer endDate
    */
   exports.prototype['endDate'] = undefined;
 
   /**
-   * @member {String} order
+   * @member String order
    */
   exports.prototype['order'] = undefined;
 
   /**
-   * @member {String} next
+   * @member String next
    */
   exports.prototype['next'] = undefined;
 
   /**
-   * @member {Integer} count
+   * @member Integer count
    */
   exports.prototype['count'] = undefined;
 
   /**
-   * @member {Integer} size
+   * @member Integer size
    */
   exports.prototype['size'] = undefined;
 
   /**
-   * @member {Array.<module:model/NormalizedMessage>} data
+   * @member Array.<module:model/NormalizedMessage> data
    */
   exports.prototype['data'] = undefined;
 

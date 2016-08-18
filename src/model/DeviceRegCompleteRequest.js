@@ -18,7 +18,7 @@
   /**
    * The DeviceRegCompleteRequest model module.
    * @module model/DeviceRegCompleteRequest
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -53,7 +53,7 @@
 
   /**
    * Nonce obtained from the initial registration request.
-   * @member {String} nonce
+   * @member String nonce
    */
   exports.prototype['nonce'] = undefined;
 

@@ -18,7 +18,7 @@
   /**
    * The ExportHistoryResponse model module.
    * @module model/ExportHistoryResponse
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -64,22 +64,22 @@
 
 
   /**
-   * @member {Integer} count
+   * @member Integer count
    */
   exports.prototype['count'] = undefined;
 
   /**
-   * @member {module:model/ExportDataArray} data
+   * @member module:model/ExportDataArray data
    */
   exports.prototype['data'] = undefined;
 
   /**
-   * @member {Integer} offset
+   * @member Integer offset
    */
   exports.prototype['offset'] = undefined;
 
   /**
-   * @member {Integer} total
+   * @member Integer total
    */
   exports.prototype['total'] = undefined;
 

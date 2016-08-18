@@ -18,7 +18,7 @@
   /**
    * The DevicesEnvelope model module.
    * @module model/DevicesEnvelope
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -26,9 +26,9 @@
    * Devices Envelope
    * @alias module:model/DevicesEnvelope
    * @class
-   * @param total
-   * @param count
-   * @param offset
+   * @param total(Integer)
+   * @param count(Integer)
+   * @param offset(Integer)
    */
   var exports = function(total, count, offset) {
 
@@ -46,7 +46,7 @@
    * @return {module:model/DevicesEnvelope} The populated <code>DevicesEnvelope</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) { 
+    if (data) {
       obj = obj || new exports();
 
       if (data.hasOwnProperty('total')) {
@@ -67,22 +67,22 @@
 
 
   /**
-   * @member {Integer} total
+   * @member Integer total
    */
   exports.prototype['total'] = undefined;
 
   /**
-   * @member {Integer} count
+   * @member Integer count
    */
   exports.prototype['count'] = undefined;
 
   /**
-   * @member {Integer} offset
+   * @member Integer offset
    */
   exports.prototype['offset'] = undefined;
 
   /**
-   * @member {module:model/DeviceArray} data
+   * @member module:model/DeviceArray data
    */
   exports.prototype['data'] = undefined;
 

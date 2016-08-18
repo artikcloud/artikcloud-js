@@ -18,7 +18,7 @@
   /**
    * The ExportRequestResponse model module.
    * @module model/ExportRequestResponse
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -52,7 +52,7 @@
 
 
   /**
-   * @member {module:model/ExportRequestData} data
+   * @member module:model/ExportRequestData data
    */
   exports.prototype['data'] = undefined;
 

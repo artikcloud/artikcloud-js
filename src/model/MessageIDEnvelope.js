@@ -18,7 +18,7 @@
   /**
    * The MessageIDEnvelope model module.
    * @module model/MessageIDEnvelope
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -52,7 +52,7 @@
 
 
   /**
-   * @member {module:model/MessageID} data
+   * @member module:model/MessageID data
    */
   exports.prototype['data'] = undefined;
 

@@ -18,7 +18,7 @@
   /**
    * The AckEnvelope model module.
    * @module model/AckEnvelope
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -52,7 +52,7 @@
 
 
   /**
-   * @member {module:model/Acknowledgement} data
+   * @member module:model/Acknowledgement data
    */
   exports.prototype['data'] = undefined;
 

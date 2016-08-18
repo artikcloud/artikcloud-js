@@ -18,7 +18,7 @@
   /**
    * The TokenRequest model module.
    * @module model/TokenRequest
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -52,7 +52,7 @@
 
 
   /**
-   * @member {String} token
+   * @member String token
    */
   exports.prototype['token'] = undefined;
 

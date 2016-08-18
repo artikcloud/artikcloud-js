@@ -21,7 +21,7 @@ Export normalized messages. The following input combinations are supported:&lt;b
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -46,7 +46,7 @@ api.exportRequest(exportRequestInfo, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **exportRequestInfo** | [**ExportRequestInfo**](ExportRequestInfo.md)| ExportRequest object that is passed in the body |
+ **exportRequestInfo** | [**ExportRequestInfo**](ExportRequestInfo.md)| ExportRequest object that is passed in the body | 
 
 ### Return type
 
@@ -72,7 +72,7 @@ Get the history of export requests.
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -80,7 +80,7 @@ artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
 var apiInstance = new ArtikCloud.ExportApi()
 
-var opts = {
+var opts = { 
   'trialId': "trialId_example", // {String} Filter by trialId.
   'count': 56, // {Integer} Pagination count.
   'offset': 56 // {Integer} Pagination offset.
@@ -100,9 +100,9 @@ api.getExportHistory(opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **trialId** | **String**| Filter by trialId. | [optional]
- **count** | [**Integer**](.md)| Pagination count. | [optional]
- **offset** | [**Integer**](.md)| Pagination offset. | [optional]
+ **trialId** | **String**| Filter by trialId. | [optional] 
+ **count** | **Integer**| Pagination count. | [optional] 
+ **offset** | **Integer**| Pagination offset. | [optional] 
 
 ### Return type
 
@@ -128,7 +128,7 @@ Retrieve result of the export query in tgz format. The tar file may contain one 
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -153,7 +153,7 @@ api.getExportResult(exportId, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **exportId** | **String**| Export ID of the export query. |
+ **exportId** | **String**| Export ID of the export query. | 
 
 ### Return type
 
@@ -179,7 +179,7 @@ Check status of the export query.
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -204,7 +204,7 @@ api.getExportStatus(exportId, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **exportId** | **String**| Export ID of the export query. |
+ **exportId** | **String**| Export ID of the export query. | 
 
 ### Return type
 
@@ -218,3 +218,4 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
+

@@ -18,7 +18,7 @@
   /**
    * The DeviceTypeEnvelope model module.
    * @module model/DeviceTypeEnvelope
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -26,7 +26,7 @@
    * Device Type Envelope
    * @alias module:model/DeviceTypeEnvelope
    * @class
-   * @param data
+   * @param data(DeviceType)
    */
   var exports = function(data) {
 
@@ -41,7 +41,7 @@
    * @return {module:model/DeviceTypeEnvelope} The populated <code>DeviceTypeEnvelope</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) { 
+    if (data) {
       obj = obj || new exports();
 
       if (data.hasOwnProperty('data')) {
@@ -53,7 +53,7 @@
 
 
   /**
-   * @member {module:model/DeviceType} data
+   * @member module:model/DeviceType data
    */
   exports.prototype['data'] = undefined;
 

@@ -18,7 +18,7 @@
   /**
    * DeviceTypes service.
    * @module api/DeviceTypesApi
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -36,16 +36,16 @@
      * Callback function to receive the result of the getAvailableManifestVersions operation.
      * @callback module:api/DeviceTypesApi~getAvailableManifestVersionsCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/ManifestVersionsEnvelope} data The data returned by the service call.
+     * @param module:model/ManifestVersionsEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Get Available Manifest Versions
      * Get a Device Type&#39;s available manifest versions
-     * @param {String} deviceTypeId deviceTypeId
+     * @param String deviceTypeId deviceTypeId
      * @param {module:api/DeviceTypesApi~getAvailableManifestVersionsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/ManifestVersionsEnvelope}
+     * data is of type: module:model/ManifestVersionsEnvelope
      */
     this.getAvailableManifestVersions = function(deviceTypeId, callback) {
       var postBody = null;
@@ -82,16 +82,16 @@
      * Callback function to receive the result of the getDeviceType operation.
      * @callback module:api/DeviceTypesApi~getDeviceTypeCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/DeviceTypeEnvelope} data The data returned by the service call.
+     * @param module:model/DeviceTypeEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Get Device Type
      * Retrieves a Device Type
-     * @param {String} deviceTypeId deviceTypeId
+     * @param String deviceTypeId deviceTypeId
      * @param {module:api/DeviceTypesApi~getDeviceTypeCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/DeviceTypeEnvelope}
+     * data is of type: module:model/DeviceTypeEnvelope
      */
     this.getDeviceType = function(deviceTypeId, callback) {
       var postBody = null;
@@ -128,20 +128,20 @@
      * Callback function to receive the result of the getDeviceTypes operation.
      * @callback module:api/DeviceTypesApi~getDeviceTypesCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/DeviceTypesEnvelope} data The data returned by the service call.
+     * @param module:model/DeviceTypesEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Get Device Types
      * Retrieves Device Types
-     * @param {String} name Device Type name
+     * @param String name Device Type name
      * @param {Object} opts Optional parameters
-     * @param {Integer} opts.offset Offset for pagination.
-     * @param {Integer} opts.count Desired count of items in the result set
-     * @param {String} opts.tags Elements tagged with the list of tags. (comma separated)
+     * @param Integer opts.offset Offset for pagination.
+     * @param Integer opts.count Desired count of items in the result set
+     * @param String opts.tags Elements tagged with the list of tags. (comma separated)
      * @param {module:api/DeviceTypesApi~getDeviceTypesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/DeviceTypesEnvelope}
+     * data is of type: module:model/DeviceTypesEnvelope
      */
     this.getDeviceTypes = function(name, opts, callback) {
       opts = opts || {};
@@ -182,16 +182,16 @@
      * Callback function to receive the result of the getLatestManifestProperties operation.
      * @callback module:api/DeviceTypesApi~getLatestManifestPropertiesCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/ManifestPropertiesEnvelope} data The data returned by the service call.
+     * @param module:model/ManifestPropertiesEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Get Latest Manifest Properties
      * Get a Device Type&#39;s manifest properties for the latest version.
-     * @param {String} deviceTypeId Device Type ID.
+     * @param String deviceTypeId Device Type ID.
      * @param {module:api/DeviceTypesApi~getLatestManifestPropertiesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/ManifestPropertiesEnvelope}
+     * data is of type: module:model/ManifestPropertiesEnvelope
      */
     this.getLatestManifestProperties = function(deviceTypeId, callback) {
       var postBody = null;
@@ -228,17 +228,17 @@
      * Callback function to receive the result of the getManifestProperties operation.
      * @callback module:api/DeviceTypesApi~getManifestPropertiesCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/ManifestPropertiesEnvelope} data The data returned by the service call.
+     * @param module:model/ManifestPropertiesEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Get manifest properties
      * Get a Device Type&#39;s manifest properties for a specific version.
-     * @param {String} deviceTypeId Device Type ID.
-     * @param {String} version Manifest Version.
+     * @param String deviceTypeId Device Type ID.
+     * @param String version Manifest Version.
      * @param {module:api/DeviceTypesApi~getManifestPropertiesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/ManifestPropertiesEnvelope}
+     * data is of type: module:model/ManifestPropertiesEnvelope
      */
     this.getManifestProperties = function(deviceTypeId, version, callback) {
       var postBody = null;

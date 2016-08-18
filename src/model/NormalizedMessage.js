@@ -18,7 +18,7 @@
   /**
    * The NormalizedMessage model module.
    * @module model/NormalizedMessage
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -26,14 +26,14 @@
    * Normalized Message
    * @alias module:model/NormalizedMessage
    * @class
-   * @param cts
-   * @param ts
-   * @param mid
-   * @param sdid
-   * @param sdtid
-   * @param uid
-   * @param mv
-   * @param data
+   * @param cts(Integer)
+   * @param ts(Integer)
+   * @param mid(String)
+   * @param sdid(String)
+   * @param sdtid(String)
+   * @param uid(String)
+   * @param mv(Integer)
+   * @param data({String: Object})
    */
   var exports = function(cts, ts, mid, sdid, sdtid, uid, mv, data) {
 
@@ -55,7 +55,7 @@
    * @return {module:model/NormalizedMessage} The populated <code>NormalizedMessage</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) { 
+    if (data) {
       obj = obj || new exports();
 
       if (data.hasOwnProperty('cts')) {
@@ -88,42 +88,42 @@
 
 
   /**
-   * @member {Integer} cts
+   * @member Integer cts
    */
   exports.prototype['cts'] = undefined;
 
   /**
-   * @member {Integer} ts
+   * @member Integer ts
    */
   exports.prototype['ts'] = undefined;
 
   /**
-   * @member {String} mid
+   * @member String mid
    */
   exports.prototype['mid'] = undefined;
 
   /**
-   * @member {String} sdid
+   * @member String sdid
    */
   exports.prototype['sdid'] = undefined;
 
   /**
-   * @member {String} sdtid
+   * @member String sdtid
    */
   exports.prototype['sdtid'] = undefined;
 
   /**
-   * @member {String} uid
+   * @member String uid
    */
   exports.prototype['uid'] = undefined;
 
   /**
-   * @member {Integer} mv
+   * @member Integer mv
    */
   exports.prototype['mv'] = undefined;
 
   /**
-   * @member {Object.<String, Object>} data
+   * @member Object.<String, Object> data
    */
   exports.prototype['data'] = undefined;
 

@@ -18,7 +18,7 @@
   /**
    * The ExportNormalizedMessagesResponse model module.
    * @module model/ExportNormalizedMessagesResponse
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -100,67 +100,67 @@
 
 
   /**
-   * @member {Boolean} csvHeaders
+   * @member Boolean csvHeaders
    */
   exports.prototype['csvHeaders'] = undefined;
 
   /**
-   * @member {Integer} endDate
+   * @member Integer endDate
    */
   exports.prototype['endDate'] = undefined;
 
   /**
-   * @member {String} exportId
+   * @member String exportId
    */
   exports.prototype['exportId'] = undefined;
 
   /**
-   * @member {String} format
+   * @member String format
    */
   exports.prototype['format'] = undefined;
 
   /**
-   * @member {String} order
+   * @member String order
    */
   exports.prototype['order'] = undefined;
 
   /**
-   * @member {String} sdid
+   * @member String sdid
    */
   exports.prototype['sdid'] = undefined;
 
   /**
-   * @member {String} sdids
+   * @member String sdids
    */
   exports.prototype['sdids'] = undefined;
 
   /**
-   * @member {Integer} startDate
+   * @member Integer startDate
    */
   exports.prototype['startDate'] = undefined;
 
   /**
-   * @member {String} stdids
+   * @member String stdids
    */
   exports.prototype['stdids'] = undefined;
 
   /**
-   * @member {String} trialId
+   * @member String trialId
    */
   exports.prototype['trialId'] = undefined;
 
   /**
-   * @member {String} uid
+   * @member String uid
    */
   exports.prototype['uid'] = undefined;
 
   /**
-   * @member {String} uids
+   * @member String uids
    */
   exports.prototype['uids'] = undefined;
 
   /**
-   * @member {String} url
+   * @member String url
    */
   exports.prototype['url'] = undefined;
 

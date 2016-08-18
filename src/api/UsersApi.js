@@ -18,7 +18,7 @@
   /**
    * Users service.
    * @module api/UsersApi
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -36,19 +36,19 @@
      * Callback function to receive the result of the createUserProperties operation.
      * @callback module:api/UsersApi~createUserPropertiesCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/PropertiesEnvelope} data The data returned by the service call.
+     * @param module:model/PropertiesEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Create User Application Properties
      * Create application properties for a user
-     * @param {String} userId User Id
-     * @param {module:model/AppProperties} properties Properties to be updated
+     * @param String userId User Id
+     * @param module:model/AppProperties properties Properties to be updated
      * @param {Object} opts Optional parameters
-     * @param {String} opts.aid Application ID
+     * @param String opts.aid Application ID
      * @param {module:api/UsersApi~createUserPropertiesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/PropertiesEnvelope}
+     * data is of type: module:model/PropertiesEnvelope
      */
     this.createUserProperties = function(userId, properties, opts, callback) {
       opts = opts || {};
@@ -92,18 +92,18 @@
      * Callback function to receive the result of the deleteUserProperties operation.
      * @callback module:api/UsersApi~deleteUserPropertiesCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/PropertiesEnvelope} data The data returned by the service call.
+     * @param module:model/PropertiesEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Delete User Application Properties
      * Deletes a user&#39;s application properties
-     * @param {String} userId User Id
+     * @param String userId User Id
      * @param {Object} opts Optional parameters
-     * @param {String} opts.aid Application ID
+     * @param String opts.aid Application ID
      * @param {module:api/UsersApi~deleteUserPropertiesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/PropertiesEnvelope}
+     * data is of type: module:model/PropertiesEnvelope
      */
     this.deleteUserProperties = function(userId, opts, callback) {
       opts = opts || {};
@@ -142,7 +142,7 @@
      * Callback function to receive the result of the getSelf operation.
      * @callback module:api/UsersApi~getSelfCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/UserEnvelope} data The data returned by the service call.
+     * @param module:model/UserEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -150,7 +150,7 @@
      * Get Current User Profile
      * Get&#39;s the current user&#39;s profile
      * @param {module:api/UsersApi~getSelfCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/UserEnvelope}
+     * data is of type: module:model/UserEnvelope
      */
     this.getSelf = function(callback) {
       var postBody = null;
@@ -181,20 +181,20 @@
      * Callback function to receive the result of the getUserDeviceTypes operation.
      * @callback module:api/UsersApi~getUserDeviceTypesCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/DeviceTypesEnvelope} data The data returned by the service call.
+     * @param module:model/DeviceTypesEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Get User Device Types
      * Retrieve User&#39;s Device Types
-     * @param {String} userId User ID.
+     * @param String userId User ID.
      * @param {Object} opts Optional parameters
-     * @param {Integer} opts.offset Offset for pagination.
-     * @param {Integer} opts.count Desired count of items in the result set
-     * @param {Boolean} opts.includeShared Optional. Boolean (true/false) - If false, only return the user&#39;s device types. If true, also return device types shared by other users.
+     * @param Integer opts.offset Offset for pagination.
+     * @param Integer opts.count Desired count of items in the result set
+     * @param Boolean opts.includeShared Optional. Boolean (true/false) - If false, only return the user&#39;s device types. If true, also return device types shared by other users.
      * @param {module:api/UsersApi~getUserDeviceTypesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/DeviceTypesEnvelope}
+     * data is of type: module:model/DeviceTypesEnvelope
      */
     this.getUserDeviceTypes = function(userId, opts, callback) {
       opts = opts || {};
@@ -235,20 +235,20 @@
      * Callback function to receive the result of the getUserDevices operation.
      * @callback module:api/UsersApi~getUserDevicesCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/DevicesEnvelope} data The data returned by the service call.
+     * @param module:model/DevicesEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Get User Devices
      * Retrieve User&#39;s Devices
-     * @param {String} userId User ID
+     * @param String userId User ID
      * @param {Object} opts Optional parameters
-     * @param {Integer} opts.offset Offset for pagination.
-     * @param {Integer} opts.count Desired count of items in the result set
-     * @param {Boolean} opts.includeProperties Optional. Boolean (true/false) - If false, only return the user&#39;s device types. If true, also return device types shared by other users.
+     * @param Integer opts.offset Offset for pagination.
+     * @param Integer opts.count Desired count of items in the result set
+     * @param Boolean opts.includeProperties Optional. Boolean (true/false) - If false, only return the user&#39;s device types. If true, also return device types shared by other users.
      * @param {module:api/UsersApi~getUserDevicesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/DevicesEnvelope}
+     * data is of type: module:model/DevicesEnvelope
      */
     this.getUserDevices = function(userId, opts, callback) {
       opts = opts || {};
@@ -289,18 +289,18 @@
      * Callback function to receive the result of the getUserProperties operation.
      * @callback module:api/UsersApi~getUserPropertiesCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/PropertiesEnvelope} data The data returned by the service call.
+     * @param module:model/PropertiesEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Get User application properties
      * Get application properties of a user
-     * @param {String} userId User Id
+     * @param String userId User Id
      * @param {Object} opts Optional parameters
-     * @param {String} opts.aid Application ID
+     * @param String opts.aid Application ID
      * @param {module:api/UsersApi~getUserPropertiesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/PropertiesEnvelope}
+     * data is of type: module:model/PropertiesEnvelope
      */
     this.getUserProperties = function(userId, opts, callback) {
       opts = opts || {};
@@ -339,20 +339,20 @@
      * Callback function to receive the result of the getUserRules operation.
      * @callback module:api/UsersApi~getUserRulesCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/RulesEnvelope} data The data returned by the service call.
+     * @param module:model/RulesEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Get User Rules
      * Retrieve User&#39;s Rules
-     * @param {String} userId User ID.
+     * @param String userId User ID.
      * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.excludeDisabled Exclude disabled rules in the result.
-     * @param {Integer} opts.count Desired count of items in the result set.
-     * @param {Integer} opts.offset Offset for pagination.
+     * @param Boolean opts.excludeDisabled Exclude disabled rules in the result.
+     * @param Integer opts.count Desired count of items in the result set.
+     * @param Integer opts.offset Offset for pagination.
      * @param {module:api/UsersApi~getUserRulesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/RulesEnvelope}
+     * data is of type: module:model/RulesEnvelope
      */
     this.getUserRules = function(userId, opts, callback) {
       opts = opts || {};
@@ -393,19 +393,19 @@
      * Callback function to receive the result of the updateUserProperties operation.
      * @callback module:api/UsersApi~updateUserPropertiesCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/PropertiesEnvelope} data The data returned by the service call.
+     * @param module:model/PropertiesEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Update User Application Properties
      * Updates application properties of a user
-     * @param {String} userId User Id
-     * @param {module:model/AppProperties} properties Properties to be updated
+     * @param String userId User Id
+     * @param module:model/AppProperties properties Properties to be updated
      * @param {Object} opts Optional parameters
-     * @param {String} opts.aid Application ID
+     * @param String opts.aid Application ID
      * @param {module:api/UsersApi~updateUserPropertiesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/PropertiesEnvelope}
+     * data is of type: module:model/PropertiesEnvelope
      */
     this.updateUserProperties = function(userId, properties, opts, callback) {
       opts = opts || {};

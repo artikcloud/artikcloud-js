@@ -18,7 +18,7 @@
   /**
    * The TagArray model module.
    * @module model/TagArray
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -52,7 +52,7 @@
 
 
   /**
-   * @member {Array.<module:model/Tag>} tags
+   * @member Array.<module:model/Tag> tags
    */
   exports.prototype['tags'] = undefined;
 

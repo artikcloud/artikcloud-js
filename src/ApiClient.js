@@ -17,7 +17,7 @@
 
   /**
    * @module ApiClient
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -42,7 +42,6 @@
     this.authentications = {
       'artikcloud_oauth': {type: 'oauth2'}
     };
-
     /**
      * The default HTTP headers to be included for all API calls.
      * @type {Array.<String>}

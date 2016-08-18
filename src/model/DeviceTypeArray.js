@@ -18,7 +18,7 @@
   /**
    * The DeviceTypeArray model module.
    * @module model/DeviceTypeArray
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -52,7 +52,7 @@
 
 
   /**
-   * @member {Array.<module:model/DeviceType>} deviceTypes
+   * @member Array.<module:model/DeviceType> deviceTypes
    */
   exports.prototype['deviceTypes'] = undefined;
 

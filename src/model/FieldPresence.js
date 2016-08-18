@@ -18,7 +18,7 @@
   /**
    * The FieldPresence model module.
    * @module model/FieldPresence
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -26,7 +26,7 @@
    * Field Presence
    * @alias module:model/FieldPresence
    * @class
-   * @param startDate
+   * @param startDate(Integer)
    */
   var exports = function(startDate) {
 
@@ -41,7 +41,7 @@
    * @return {module:model/FieldPresence} The populated <code>FieldPresence</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) { 
+    if (data) {
       obj = obj || new exports();
 
       if (data.hasOwnProperty('startDate')) {
@@ -53,7 +53,7 @@
 
 
   /**
-   * @member {Integer} startDate
+   * @member Integer startDate
    */
   exports.prototype['startDate'] = undefined;
 

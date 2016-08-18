@@ -18,7 +18,7 @@
   /**
    * Tokens service.
    * @module api/TokensApi
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -36,16 +36,16 @@
      * Callback function to receive the result of the checkToken operation.
      * @callback module:api/TokensApi~checkTokenCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/CheckTokenResponse} data The data returned by the service call.
+     * @param module:model/CheckTokenResponse data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Check Token
      * Check Token
-     * @param {module:model/TokenRequest} tokenInfo Token object to be checked
+     * @param module:model/TokenRequest tokenInfo Token object to be checked
      * @param {module:api/TokensApi~checkTokenCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/CheckTokenResponse}
+     * data is of type: module:model/CheckTokenResponse
      */
     this.checkToken = function(tokenInfo, callback) {
       var postBody = tokenInfo;
@@ -81,17 +81,17 @@
      * Callback function to receive the result of the refreshToken operation.
      * @callback module:api/TokensApi~refreshTokenCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/RefreshTokenResponse} data The data returned by the service call.
+     * @param module:model/RefreshTokenResponse data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Refresh Token
      * Refresh Token
-     * @param {String} grantType Grant Type.
-     * @param {String} refreshToken Refresh Token.
+     * @param String grantType Grant Type.
+     * @param String refreshToken Refresh Token.
      * @param {module:api/TokensApi~refreshTokenCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/RefreshTokenResponse}
+     * data is of type: module:model/RefreshTokenResponse
      */
     this.refreshToken = function(grantType, refreshToken, callback) {
       var postBody = null;

@@ -18,7 +18,7 @@
   /**
    * The ExportDataArray model module.
    * @module model/ExportDataArray
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -52,7 +52,7 @@
 
 
   /**
-   * @member {Array.<module:model/ExportData>} exports
+   * @member Array.<module:model/ExportData> exports
    */
   exports.prototype['exports'] = undefined;
 

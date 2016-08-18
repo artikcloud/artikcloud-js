@@ -18,7 +18,7 @@
   /**
    * Tags service.
    * @module api/TagsApi
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -36,7 +36,7 @@
      * Callback function to receive the result of the getTagCategories operation.
      * @callback module:api/TagsApi~getTagCategoriesCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/TagsEnvelope} data The data returned by the service call.
+     * @param module:model/TagsEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -44,7 +44,7 @@
      * Get all categories
      * Get all tags marked as categories
      * @param {module:api/TagsApi~getTagCategoriesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/TagsEnvelope}
+     * data is of type: module:model/TagsEnvelope
      */
     this.getTagCategories = function(callback) {
       var postBody = null;
@@ -75,7 +75,7 @@
      * Callback function to receive the result of the getTagSuggestions operation.
      * @callback module:api/TagsApi~getTagSuggestionsCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/TagsEnvelope} data The data returned by the service call.
+     * @param module:model/TagsEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -83,12 +83,12 @@
      * Get tag suggestions
      * Get tag suggestions for applications, device types that have been most used with a group of tags.
      * @param {Object} opts Optional parameters
-     * @param {module:model/String} opts.entityType Entity type name.
-     * @param {String} opts.tags Comma separated list of tags.
-     * @param {String} opts.name Name of tags used for type ahead.
-     * @param {Integer} opts.count Number of results to return. Max 10.
+     * @param module:model/String opts.entityType Entity type name.
+     * @param String opts.tags Comma separated list of tags.
+     * @param String opts.name Name of tags used for type ahead.
+     * @param Integer opts.count Number of results to return. Max 10.
      * @param {module:api/TagsApi~getTagSuggestionsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/TagsEnvelope}
+     * data is of type: module:model/TagsEnvelope
      */
     this.getTagSuggestions = function(opts, callback) {
       opts = opts || {};
@@ -124,7 +124,7 @@
      * Callback function to receive the result of the getTagsByCategories operation.
      * @callback module:api/TagsApi~getTagsByCategoriesCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/TagsEnvelope} data The data returned by the service call.
+     * @param module:model/TagsEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -132,9 +132,9 @@
      * Get all tags of categories
      * Get all tags related to the list of categories
      * @param {Object} opts Optional parameters
-     * @param {String} opts.categories Comma separated list of categories.
+     * @param String opts.categories Comma separated list of categories.
      * @param {module:api/TagsApi~getTagsByCategoriesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/TagsEnvelope}
+     * data is of type: module:model/TagsEnvelope
      */
     this.getTagsByCategories = function(opts, callback) {
       opts = opts || {};

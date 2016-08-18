@@ -18,7 +18,7 @@
   /**
    * The DeviceRegConfirmUserRequest model module.
    * @module model/DeviceRegConfirmUserRequest
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -61,19 +61,19 @@
 
   /**
    * Device ID. Optional if deviceName is present
-   * @member {String} deviceId
+   * @member String deviceId
    */
   exports.prototype['deviceId'] = undefined;
 
   /**
    * Device Name. Optional if deviceId is present
-   * @member {String} deviceName
+   * @member String deviceName
    */
   exports.prototype['deviceName'] = undefined;
 
   /**
    * Pin obtained in the registrations call.
-   * @member {String} pin
+   * @member String pin
    */
   exports.prototype['pin'] = undefined;
 

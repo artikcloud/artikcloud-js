@@ -18,7 +18,7 @@
   /**
    * The AggregatesHistogramResponse model module.
    * @module model/AggregatesHistogramResponse
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -76,37 +76,37 @@
 
 
   /**
-   * @member {Array.<module:model/AggregatesHistogramData>} data
+   * @member Array.<module:model/AggregatesHistogramData> data
    */
   exports.prototype['data'] = undefined;
 
   /**
-   * @member {Integer} endDate
+   * @member Integer endDate
    */
   exports.prototype['endDate'] = undefined;
 
   /**
-   * @member {String} field
+   * @member String field
    */
   exports.prototype['field'] = undefined;
 
   /**
-   * @member {String} interval
+   * @member String interval
    */
   exports.prototype['interval'] = undefined;
 
   /**
-   * @member {String} sdid
+   * @member String sdid
    */
   exports.prototype['sdid'] = undefined;
 
   /**
-   * @member {Integer} size
+   * @member Integer size
    */
   exports.prototype['size'] = undefined;
 
   /**
-   * @member {Integer} startDate
+   * @member Integer startDate
    */
   exports.prototype['startDate'] = undefined;
 

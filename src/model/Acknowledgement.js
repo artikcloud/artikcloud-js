@@ -18,7 +18,7 @@
   /**
    * The Acknowledgement model module.
    * @module model/Acknowledgement
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -65,25 +65,25 @@
 
   /**
    * Message ID.
-   * @member {String} mid
+   * @member String mid
    */
   exports.prototype['mid'] = undefined;
 
   /**
    * Confirmation ID.
-   * @member {String} cid
+   * @member String cid
    */
   exports.prototype['cid'] = undefined;
 
   /**
    * Message.
-   * @member {String} message
+   * @member String message
    */
   exports.prototype['message'] = undefined;
 
   /**
    * Code
-   * @member {String} code
+   * @member String code
    */
   exports.prototype['code'] = undefined;
 

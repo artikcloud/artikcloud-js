@@ -18,7 +18,7 @@
   /**
    * The RuleArray model module.
    * @module model/RuleArray
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -52,7 +52,7 @@
 
 
   /**
-   * @member {Array.<module:model/OutputRule>} rules
+   * @member Array.<module:model/OutputRule> rules
    */
   exports.prototype['rules'] = undefined;
 

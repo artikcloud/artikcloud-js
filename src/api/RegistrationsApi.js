@@ -18,7 +18,7 @@
   /**
    * Registrations service.
    * @module api/RegistrationsApi
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -36,16 +36,16 @@
      * Callback function to receive the result of the confirmUser operation.
      * @callback module:api/RegistrationsApi~confirmUserCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/DeviceRegConfirmUserResponseEnvelope} data The data returned by the service call.
+     * @param module:model/DeviceRegConfirmUserResponseEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Confirm User
      * This call updates the registration request issued earlier by associating it with an authenticated user and captures all additional information required to add a new device.
-     * @param {module:model/DeviceRegConfirmUserRequest} registrationInfo Device Registration information.
+     * @param module:model/DeviceRegConfirmUserRequest registrationInfo Device Registration information.
      * @param {module:api/RegistrationsApi~confirmUserCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/DeviceRegConfirmUserResponseEnvelope}
+     * data is of type: module:model/DeviceRegConfirmUserResponseEnvelope
      */
     this.confirmUser = function(registrationInfo, callback) {
       var postBody = registrationInfo;
@@ -81,16 +81,16 @@
      * Callback function to receive the result of the getRequestStatusForUser operation.
      * @callback module:api/RegistrationsApi~getRequestStatusForUserCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/DeviceRegStatusResponseEnvelope} data The data returned by the service call.
+     * @param module:model/DeviceRegStatusResponseEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Get Request Status For User
      * This call checks the status of the request so users can poll and know when registration is complete.
-     * @param {String} requestId Request ID.
+     * @param String requestId Request ID.
      * @param {module:api/RegistrationsApi~getRequestStatusForUserCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/DeviceRegStatusResponseEnvelope}
+     * data is of type: module:model/DeviceRegStatusResponseEnvelope
      */
     this.getRequestStatusForUser = function(requestId, callback) {
       var postBody = null;
@@ -127,16 +127,16 @@
      * Callback function to receive the result of the unregisterDevice operation.
      * @callback module:api/RegistrationsApi~unregisterDeviceCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/UnregisterDeviceResponseEnvelope} data The data returned by the service call.
+     * @param module:model/UnregisterDeviceResponseEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Unregister Device
      * This call clears any associations from the secure device registration.
-     * @param {String} deviceId Device ID.
+     * @param String deviceId Device ID.
      * @param {module:api/RegistrationsApi~unregisterDeviceCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/UnregisterDeviceResponseEnvelope}
+     * data is of type: module:model/UnregisterDeviceResponseEnvelope
      */
     this.unregisterDevice = function(deviceId, callback) {
       var postBody = null;

@@ -18,7 +18,7 @@
   /**
    * Export service.
    * @module api/ExportApi
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -36,16 +36,16 @@
      * Callback function to receive the result of the exportRequest operation.
      * @callback module:api/ExportApi~exportRequestCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/ExportRequestResponse} data The data returned by the service call.
+     * @param module:model/ExportRequestResponse data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Create Export Request
      * Export normalized messages. The following input combinations are supported:&lt;br/&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Combination&lt;/th&gt;&lt;th&gt;Parameters&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Get by users&lt;/td&gt;&lt;td&gt;uids&lt;/td&gt;&lt;td&gt;Search by a list of User IDs. For each user in the list, the current authenticated user must have read access over the specified user.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Get by devices&lt;/td&gt;&lt;td&gt;sdids&lt;/td&gt;&lt;td&gt;Search by Source Device IDs.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Get by device types&lt;/td&gt;&lt;td&gt;uids,sdtids&lt;/td&gt;&lt;td&gt;Search by list of Source Device Type IDs for the given list of users.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Get by trial&lt;/td&gt;&lt;td&gt;trialId&lt;/td&gt;&lt;td&gt;Search by Trial ID.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Get by combination of parameters&lt;/td&gt;&lt;td&gt;uids,sdids,sdtids&lt;/td&gt;&lt;td&gt;Search by list of Source Device IDs. Each Device ID must belong to a Source Device Type ID and a User ID.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Common&lt;/td&gt;&lt;td&gt;startDate,endDate,order,format,url,csvHeaders&lt;/td&gt;&lt;td&gt;Parameters that can be used with the above combinations.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-     * @param {module:model/ExportRequestInfo} exportRequestInfo ExportRequest object that is passed in the body
+     * @param module:model/ExportRequestInfo exportRequestInfo ExportRequest object that is passed in the body
      * @param {module:api/ExportApi~exportRequestCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/ExportRequestResponse}
+     * data is of type: module:model/ExportRequestResponse
      */
     this.exportRequest = function(exportRequestInfo, callback) {
       var postBody = exportRequestInfo;
@@ -81,7 +81,7 @@
      * Callback function to receive the result of the getExportHistory operation.
      * @callback module:api/ExportApi~getExportHistoryCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/ExportHistoryResponse} data The data returned by the service call.
+     * @param module:model/ExportHistoryResponse data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -89,11 +89,11 @@
      * Get Export History
      * Get the history of export requests.
      * @param {Object} opts Optional parameters
-     * @param {String} opts.trialId Filter by trialId.
-     * @param {Integer} opts.count Pagination count.
-     * @param {Integer} opts.offset Pagination offset.
+     * @param String opts.trialId Filter by trialId.
+     * @param Integer opts.count Pagination count.
+     * @param Integer opts.offset Pagination offset.
      * @param {module:api/ExportApi~getExportHistoryCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/ExportHistoryResponse}
+     * data is of type: module:model/ExportHistoryResponse
      */
     this.getExportHistory = function(opts, callback) {
       opts = opts || {};
@@ -128,16 +128,16 @@
      * Callback function to receive the result of the getExportResult operation.
      * @callback module:api/ExportApi~getExportResultCallback
      * @param {String} error Error message, if any.
-     * @param {'String'} data The data returned by the service call.
+     * @param 'String' data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Get Export Result
      * Retrieve result of the export query in tgz format. The tar file may contain one or more files with the results.
-     * @param {String} exportId Export ID of the export query.
+     * @param String exportId Export ID of the export query.
      * @param {module:api/ExportApi~getExportResultCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {'String'}
+     * data is of type: 'String'
      */
     this.getExportResult = function(exportId, callback) {
       var postBody = null;
@@ -174,16 +174,16 @@
      * Callback function to receive the result of the getExportStatus operation.
      * @callback module:api/ExportApi~getExportStatusCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/ExportStatusResponse} data The data returned by the service call.
+     * @param module:model/ExportStatusResponse data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Check Export Status
      * Check status of the export query.
-     * @param {String} exportId Export ID of the export query.
+     * @param String exportId Export ID of the export query.
      * @param {module:api/ExportApi~getExportStatusCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/ExportStatusResponse}
+     * data is of type: module:model/ExportStatusResponse
      */
     this.getExportStatus = function(exportId, callback) {
       var postBody = null;

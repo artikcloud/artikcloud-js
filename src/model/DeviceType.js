@@ -18,7 +18,7 @@
   /**
    * The DeviceType model module.
    * @module model/DeviceType
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -121,108 +121,108 @@
 
   /**
    * Device Type ID.
-   * @member {String} id
+   * @member String id
    */
   exports.prototype['id'] = undefined;
 
   /**
    * Unique Name.
-   * @member {String} uniqueName
+   * @member String uniqueName
    */
   exports.prototype['uniqueName'] = undefined;
 
   /**
    * Latest Manifest version.
-   * @member {Integer} latestVersion
+   * @member Integer latestVersion
    */
   exports.prototype['latestVersion'] = undefined;
 
   /**
-   * @member {Integer} lastUpdated
+   * @member Integer lastUpdated
    */
   exports.prototype['lastUpdated'] = undefined;
 
   /**
    * Name.
-   * @member {String} name
+   * @member String name
    */
   exports.prototype['name'] = undefined;
 
   /**
    * Description.
-   * @member {String} description
+   * @member String description
    */
   exports.prototype['description'] = undefined;
 
   /**
    * User ID.
-   * @member {String} uid
+   * @member String uid
    */
   exports.prototype['uid'] = undefined;
 
   /**
    * Organization ID.
-   * @member {String} oid
+   * @member String oid
    */
   exports.prototype['oid'] = undefined;
 
   /**
    * Uses Cloud Connectors SDK
-   * @member {Boolean} hasCloudConnector
+   * @member Boolean hasCloudConnector
    */
   exports.prototype['hasCloudConnector'] = undefined;
 
   /**
    * Approval status.
-   * @member {Boolean} approved
+   * @member Boolean approved
    */
   exports.prototype['approved'] = undefined;
 
   /**
    * Published status.
-   * @member {Boolean} published
+   * @member Boolean published
    */
   exports.prototype['published'] = undefined;
 
   /**
    * Protected status.
-   * @member {Boolean} protected
+   * @member Boolean protected
    */
   exports.prototype['protected'] = undefined;
 
   /**
    * In Store.
-   * @member {Boolean} inStore
+   * @member Boolean inStore
    */
   exports.prototype['inStore'] = undefined;
 
   /**
    * Does the current user own a device of this device type
-   * @member {Boolean} ownedByCurrentUser
+   * @member Boolean ownedByCurrentUser
    */
   exports.prototype['ownedByCurrentUser'] = undefined;
 
   /**
    * Tags
-   * @member {Array.<module:model/Tag>} tags
+   * @member Array.<module:model/Tag> tags
    */
   exports.prototype['tags'] = undefined;
 
   /**
    * Require Secure Device Registration (SDR) Protocol.
-   * @member {Boolean} rsp
+   * @member Boolean rsp
    */
   exports.prototype['rsp'] = undefined;
 
   /**
    * Issuer Distinguished Name (Used in SDR)
-   * @member {String} issuerDn
+   * @member String issuerDn
    */
   exports.prototype['issuerDn'] = undefined;
 
   /**
    * Vendor ID. (Used in SDR)
-   * @member {String} vid
+   * @member String vid
    */
   exports.prototype['vid'] = undefined;
 

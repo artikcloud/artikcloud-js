@@ -18,7 +18,7 @@
   /**
    * The DeviceRegStatusResponse model module.
    * @module model/DeviceRegStatusResponse
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -57,13 +57,13 @@
 
   /**
    * The created or existing device id.
-   * @member {String} did
+   * @member String did
    */
   exports.prototype['did'] = undefined;
 
   /**
    * Status of the ongoing device registration request.
-   * @member {String} status
+   * @member String status
    */
   exports.prototype['status'] = undefined;
 

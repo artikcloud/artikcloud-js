@@ -18,7 +18,7 @@
   /**
    * The FieldsActions model module.
    * @module model/FieldsActions
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -57,13 +57,13 @@
 
   /**
    * Message Fields
-   * @member {Object.<String, Object>} fields
+   * @member Object.<String, Object> fields
    */
   exports.prototype['fields'] = undefined;
 
   /**
    * Actions
-   * @member {Object.<String, Object>} actions
+   * @member Object.<String, Object> actions
    */
   exports.prototype['actions'] = undefined;
 

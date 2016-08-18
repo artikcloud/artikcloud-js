@@ -18,7 +18,7 @@
   /**
    * The WebSocketError model module.
    * @module model/WebSocketError
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -61,19 +61,19 @@
 
   /**
    * Message.
-   * @member {String} message
+   * @member String message
    */
   exports.prototype['message'] = undefined;
 
   /**
    * Code
-   * @member {Integer} code
+   * @member Integer code
    */
   exports.prototype['code'] = undefined;
 
   /**
    * Confirmation ID
-   * @member {String} cid
+   * @member String cid
    */
   exports.prototype['cid'] = undefined;
 

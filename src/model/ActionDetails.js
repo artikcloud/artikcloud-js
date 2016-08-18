@@ -18,7 +18,7 @@
   /**
    * The ActionDetails model module.
    * @module model/ActionDetails
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -57,13 +57,13 @@
 
   /**
    * Parameters.
-   * @member {Object.<String, Object>} parameters
+   * @member Object.<String, Object> parameters
    */
   exports.prototype['parameters'] = undefined;
 
   /**
    * Name.
-   * @member {String} name
+   * @member String name
    */
   exports.prototype['name'] = undefined;
 

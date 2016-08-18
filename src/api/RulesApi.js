@@ -18,7 +18,7 @@
   /**
    * Rules service.
    * @module api/RulesApi
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -36,17 +36,17 @@
      * Callback function to receive the result of the createRule operation.
      * @callback module:api/RulesApi~createRuleCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/RuleEnvelope} data The data returned by the service call.
+     * @param module:model/RuleEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Create Rule
      * Create a new Rule
-     * @param {module:model/RuleCreationInfo} ruleInfo Rule object that needs to be added
-     * @param {String} userId User ID
+     * @param module:model/RuleCreationInfo ruleInfo Rule object that needs to be added
+     * @param String userId User ID
      * @param {module:api/RulesApi~createRuleCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/RuleEnvelope}
+     * data is of type: module:model/RuleEnvelope
      */
     this.createRule = function(ruleInfo, userId, callback) {
       var postBody = ruleInfo;
@@ -88,16 +88,16 @@
      * Callback function to receive the result of the deleteRule operation.
      * @callback module:api/RulesApi~deleteRuleCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/RuleEnvelope} data The data returned by the service call.
+     * @param module:model/RuleEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Delete Rule
      * Delete a Rule
-     * @param {String} ruleId Rule ID.
+     * @param String ruleId Rule ID.
      * @param {module:api/RulesApi~deleteRuleCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/RuleEnvelope}
+     * data is of type: module:model/RuleEnvelope
      */
     this.deleteRule = function(ruleId, callback) {
       var postBody = null;
@@ -134,16 +134,16 @@
      * Callback function to receive the result of the getRule operation.
      * @callback module:api/RulesApi~getRuleCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/RuleEnvelope} data The data returned by the service call.
+     * @param module:model/RuleEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Get Rule
      * Get a rule using the Rule ID
-     * @param {String} ruleId Rule ID.
+     * @param String ruleId Rule ID.
      * @param {module:api/RulesApi~getRuleCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/RuleEnvelope}
+     * data is of type: module:model/RuleEnvelope
      */
     this.getRule = function(ruleId, callback) {
       var postBody = null;
@@ -180,17 +180,17 @@
      * Callback function to receive the result of the updateRule operation.
      * @callback module:api/RulesApi~updateRuleCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/RuleEnvelope} data The data returned by the service call.
+     * @param module:model/RuleEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Update Rule
      * Update an existing Rule
-     * @param {String} ruleId Rule ID.
-     * @param {module:model/RuleUpdateInfo} ruleInfo Rule object that needs to be updated
+     * @param String ruleId Rule ID.
+     * @param module:model/RuleUpdateInfo ruleInfo Rule object that needs to be updated
      * @param {module:api/RulesApi~updateRuleCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/RuleEnvelope}
+     * data is of type: module:model/RuleEnvelope
      */
     this.updateRule = function(ruleId, ruleInfo, callback) {
       var postBody = ruleInfo;

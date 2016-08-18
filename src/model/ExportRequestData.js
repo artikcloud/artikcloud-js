@@ -18,7 +18,7 @@
   /**
    * The ExportRequestData model module.
    * @module model/ExportRequestData
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -93,67 +93,67 @@
 
   /**
    * Add header to csv format
-   * @member {Boolean} csvHeaders
+   * @member Boolean csvHeaders
    */
   exports.prototype['csvHeaders'] = undefined;
 
   /**
    * Timestamp of latest message (in milliseconds since epoch).
-   * @member {Integer} endDate
+   * @member Integer endDate
    */
   exports.prototype['endDate'] = undefined;
 
   /**
    * Returned Export ID that should be used to check status and get the export result.
-   * @member {String} exportId
+   * @member String exportId
    */
   exports.prototype['exportId'] = undefined;
 
   /**
    * Format of the export.
-   * @member {String} format
+   * @member String format
    */
   exports.prototype['format'] = undefined;
 
   /**
    * Ascending or descending sort order.
-   * @member {String} order
+   * @member String order
    */
   exports.prototype['order'] = undefined;
 
   /**
    * Source Device IDs being searched for messages (Comma-separated for multiple Device IDs).
-   * @member {String} sdids
+   * @member String sdids
    */
   exports.prototype['sdids'] = undefined;
 
   /**
    * Source Device Type IDs being searched for messages (Comma-separated for multiple Device Type IDs).
-   * @member {String} sdtids
+   * @member String sdtids
    */
   exports.prototype['sdtids'] = undefined;
 
   /**
    * Timestamp of earliest message (in milliseconds since epoch).
-   * @member {Integer} startDate
+   * @member Integer startDate
    */
   exports.prototype['startDate'] = undefined;
 
   /**
    * Trial ID being searched for messages.
-   * @member {String} trialId
+   * @member String trialId
    */
   exports.prototype['trialId'] = undefined;
 
   /**
    * Owner's user IDs being searched for messages (Comma-separated for multiple User IDs).
-   * @member {String} uids
+   * @member String uids
    */
   exports.prototype['uids'] = undefined;
 
   /**
    * URL added to successful email message.
-   * @member {String} url
+   * @member String url
    */
   exports.prototype['url'] = undefined;
 

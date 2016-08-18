@@ -18,7 +18,7 @@
   /**
    * The UnregisterDeviceResponse model module.
    * @module model/UnregisterDeviceResponse
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -93,67 +93,67 @@
 
   /**
    * Device certificate information.
-   * @member {String} certificateInfo
+   * @member String certificateInfo
    */
   exports.prototype['certificateInfo'] = undefined;
 
   /**
    * Certificate's signature.
-   * @member {String} certificateSignature
+   * @member String certificateSignature
    */
   exports.prototype['certificateSignature'] = undefined;
 
   /**
    * Device created on date.
-   * @member {Integer} createdOn
+   * @member Integer createdOn
    */
   exports.prototype['createdOn'] = undefined;
 
   /**
    * Device type id.
-   * @member {String} dtid
+   * @member String dtid
    */
   exports.prototype['dtid'] = undefined;
 
   /**
    * External ID of the device.
-   * @member {String} eid
+   * @member String eid
    */
   exports.prototype['eid'] = undefined;
 
   /**
    * Device id.
-   * @member {String} id
+   * @member String id
    */
   exports.prototype['id'] = undefined;
 
   /**
    * Device manifest version.
-   * @member {Integer} manifestVersion
+   * @member Integer manifestVersion
    */
   exports.prototype['manifestVersion'] = undefined;
 
   /**
    * Device manifest version policy.
-   * @member {String} manifestVersionPolicy
+   * @member String manifestVersionPolicy
    */
   exports.prototype['manifestVersionPolicy'] = undefined;
 
   /**
    * Device name.
-   * @member {String} name
+   * @member String name
    */
   exports.prototype['name'] = undefined;
 
   /**
    * Device need provider auth.
-   * @member {Boolean} needProviderAuth
+   * @member Boolean needProviderAuth
    */
   exports.prototype['needProviderAuth'] = undefined;
 
   /**
    * User id.
-   * @member {String} uid
+   * @member String uid
    */
   exports.prototype['uid'] = undefined;
 

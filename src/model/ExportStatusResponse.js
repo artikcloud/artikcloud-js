@@ -18,7 +18,7 @@
   /**
    * The ExportStatusResponse model module.
    * @module model/ExportStatusResponse
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -68,28 +68,28 @@
 
 
   /**
-   * @member {Integer} expirationDate
+   * @member Integer expirationDate
    */
   exports.prototype['expirationDate'] = undefined;
 
   /**
-   * @member {String} exportId
+   * @member String exportId
    */
   exports.prototype['exportId'] = undefined;
 
   /**
-   * @member {String} md5
+   * @member String md5
    */
   exports.prototype['md5'] = undefined;
 
   /**
    * Export status
-   * @member {String} status
+   * @member String status
    */
   exports.prototype['status'] = undefined;
 
   /**
-   * @member {String} ttl
+   * @member String ttl
    */
   exports.prototype['ttl'] = undefined;
 

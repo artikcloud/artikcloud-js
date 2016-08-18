@@ -18,7 +18,7 @@
   /**
    * The TokenResponse model module.
    * @module model/TokenResponse
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -52,7 +52,7 @@
 
 
   /**
-   * @member {module:model/Token} data
+   * @member module:model/Token data
    */
   exports.prototype['data'] = undefined;
 

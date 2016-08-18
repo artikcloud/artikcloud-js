@@ -18,7 +18,7 @@
   /**
    * The TagsEnvelope model module.
    * @module model/TagsEnvelope
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -52,7 +52,7 @@
 
 
   /**
-   * @member {module:model/TagArray} data
+   * @member module:model/TagArray data
    */
   exports.prototype['data'] = undefined;
 

@@ -18,7 +18,7 @@
   /**
    * The Device model module.
    * @module model/Device
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -105,83 +105,83 @@
 
   /**
    * Device ID
-   * @member {String} id
+   * @member String id
    */
   exports.prototype['id'] = undefined;
 
   /**
    * User ID
-   * @member {String} uid
+   * @member String uid
    */
   exports.prototype['uid'] = undefined;
 
   /**
    * Device Type ID
-   * @member {String} dtid
+   * @member String dtid
    */
   exports.prototype['dtid'] = undefined;
 
   /**
    * Name
-   * @member {String} name
+   * @member String name
    */
   exports.prototype['name'] = undefined;
 
   /**
    * Manifest Version
-   * @member {Integer} manifestVersion
+   * @member Integer manifestVersion
    */
   exports.prototype['manifestVersion'] = undefined;
 
   /**
    * Manifest Version Policy (LATEST, DEVICE)
-   * @member {String} manifestVersionPolicy
+   * @member String manifestVersionPolicy
    */
   exports.prototype['manifestVersionPolicy'] = undefined;
 
   /**
    * Needs Provider Authentication
-   * @member {Boolean} needProviderAuth
+   * @member Boolean needProviderAuth
    */
   exports.prototype['needProviderAuth'] = undefined;
 
   /**
-   * @member {Object.<String, Object>} properties
+   * @member Object.<String, Object> properties
    */
   exports.prototype['properties'] = undefined;
 
   /**
    * Created On (milliseconds since epoch)
-   * @member {Integer} createdOn
+   * @member Integer createdOn
    */
   exports.prototype['createdOn'] = undefined;
 
   /**
    * Is Connected
-   * @member {Boolean} connected
+   * @member Boolean connected
    */
   exports.prototype['connected'] = undefined;
 
   /**
    * Certificate Info (if any)
-   * @member {String} certificateInfo
+   * @member String certificateInfo
    */
   exports.prototype['certificateInfo'] = undefined;
 
   /**
    * Certificate Signature (if any)
-   * @member {String} certificateSignature
+   * @member String certificateSignature
    */
   exports.prototype['certificateSignature'] = undefined;
 
   /**
    * External ID (if any)
-   * @member {String} eid
+   * @member String eid
    */
   exports.prototype['eid'] = undefined;
 
   /**
-   * @member {Object.<String, Object>} providerCredentials
+   * @member Object.<String, Object> providerCredentials
    */
   exports.prototype['providerCredentials'] = undefined;
 

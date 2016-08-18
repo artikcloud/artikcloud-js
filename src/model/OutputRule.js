@@ -18,7 +18,7 @@
   /**
    * The OutputRule model module.
    * @module model/OutputRule
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -104,72 +104,72 @@
 
 
   /**
-   * @member {String} aid
+   * @member String aid
    */
   exports.prototype['aid'] = undefined;
 
   /**
-   * @member {Integer} createdOn
+   * @member Integer createdOn
    */
   exports.prototype['createdOn'] = undefined;
 
   /**
-   * @member {String} description
+   * @member String description
    */
   exports.prototype['description'] = undefined;
 
   /**
-   * @member {Boolean} enabled
+   * @member Boolean enabled
    */
   exports.prototype['enabled'] = undefined;
 
   /**
-   * @member {module:model/RuleError} error
+   * @member module:model/RuleError error
    */
   exports.prototype['error'] = undefined;
 
   /**
-   * @member {String} id
+   * @member String id
    */
   exports.prototype['id'] = undefined;
 
   /**
-   * @member {Integer} index
+   * @member Integer index
    */
   exports.prototype['index'] = undefined;
 
   /**
-   * @member {Integer} invalidatedOn
+   * @member Integer invalidatedOn
    */
   exports.prototype['invalidatedOn'] = undefined;
 
   /**
-   * @member {Integer} languageVersion
+   * @member Integer languageVersion
    */
   exports.prototype['languageVersion'] = undefined;
 
   /**
-   * @member {Integer} modifiedOn
+   * @member Integer modifiedOn
    */
   exports.prototype['modifiedOn'] = undefined;
 
   /**
-   * @member {String} name
+   * @member String name
    */
   exports.prototype['name'] = undefined;
 
   /**
-   * @member {Object.<String, Object>} rule
+   * @member Object.<String, Object> rule
    */
   exports.prototype['rule'] = undefined;
 
   /**
-   * @member {String} uid
+   * @member String uid
    */
   exports.prototype['uid'] = undefined;
 
   /**
-   * @member {module:model/RuleWarningOutput} warning
+   * @member module:model/RuleWarningOutput warning
    */
   exports.prototype['warning'] = undefined;
 

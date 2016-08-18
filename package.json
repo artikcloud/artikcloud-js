@@ -1,12 +1,8 @@
 {
   "name": "artikcloud-js",
-  "version": "2.0.2",
-  "description": "Client library of artikcloud-js",
+  "version": "2.0.5",
+  "description": "JS, Node.js client for ARTIK Cloud",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/artikcloud/artikcloud-js.git"
-  },
   "main": "src/index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --recursive"

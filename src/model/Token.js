@@ -18,7 +18,7 @@
   /**
    * The Token model module.
    * @module model/Token
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -64,22 +64,22 @@
 
 
   /**
-   * @member {String} access_token
+   * @member String access_token
    */
   exports.prototype['access_token'] = undefined;
 
   /**
-   * @member {Integer} expires_in
+   * @member Integer expires_in
    */
   exports.prototype['expires_in'] = undefined;
 
   /**
-   * @member {String} scope
+   * @member String scope
    */
   exports.prototype['scope'] = undefined;
 
   /**
-   * @member {String} token_type
+   * @member String token_type
    */
   exports.prototype['token_type'] = undefined;
 

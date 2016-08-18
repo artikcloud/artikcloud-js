@@ -18,7 +18,7 @@
   /**
    * The AggregateData model module.
    * @module model/AggregateData
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -72,32 +72,32 @@
 
 
   /**
-   * @member {Integer} count
+   * @member Integer count
    */
   exports.prototype['count'] = undefined;
 
   /**
-   * @member {Number} max
+   * @member Number max
    */
   exports.prototype['max'] = undefined;
 
   /**
-   * @member {Number} mean
+   * @member Number mean
    */
   exports.prototype['mean'] = undefined;
 
   /**
-   * @member {Number} min
+   * @member Number min
    */
   exports.prototype['min'] = undefined;
 
   /**
-   * @member {Number} sum
+   * @member Number sum
    */
   exports.prototype['sum'] = undefined;
 
   /**
-   * @member {Number} variance
+   * @member Number variance
    */
   exports.prototype['variance'] = undefined;
 

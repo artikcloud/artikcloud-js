@@ -18,7 +18,7 @@
   /**
    * The MessageID model module.
    * @module model/MessageID
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -53,7 +53,7 @@
 
   /**
    * Message ID.
-   * @member {String} mid
+   * @member String mid
    */
   exports.prototype['mid'] = undefined;
 

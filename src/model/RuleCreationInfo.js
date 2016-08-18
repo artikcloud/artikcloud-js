@@ -18,7 +18,7 @@
   /**
    * The RuleCreationInfo model module.
    * @module model/RuleCreationInfo
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -65,25 +65,25 @@
 
   /**
    * Description
-   * @member {String} description
+   * @member String description
    */
   exports.prototype['description'] = undefined;
 
   /**
    * Is Enabled
-   * @member {Boolean} enabled
+   * @member Boolean enabled
    */
   exports.prototype['enabled'] = undefined;
 
   /**
    * Name
-   * @member {String} name
+   * @member String name
    */
   exports.prototype['name'] = undefined;
 
   /**
    * Rule
-   * @member {Object.<String, Object>} rule
+   * @member Object.<String, Object> rule
    */
   exports.prototype['rule'] = undefined;
 

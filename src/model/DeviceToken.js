@@ -18,7 +18,7 @@
   /**
    * The DeviceToken model module.
    * @module model/DeviceToken
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -26,10 +26,10 @@
    * Device Token
    * @alias module:model/DeviceToken
    * @class
-   * @param accessToken
-   * @param uid
-   * @param did
-   * @param cid
+   * @param accessToken(String)
+   * @param uid(String)
+   * @param did(String)
+   * @param cid(String)
    */
   var exports = function(accessToken, uid, did, cid) {
 
@@ -47,7 +47,7 @@
    * @return {module:model/DeviceToken} The populated <code>DeviceToken</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) { 
+    if (data) {
       obj = obj || new exports();
 
       if (data.hasOwnProperty('accessToken')) {
@@ -68,22 +68,22 @@
 
 
   /**
-   * @member {String} accessToken
+   * @member String accessToken
    */
   exports.prototype['accessToken'] = undefined;
 
   /**
-   * @member {String} uid
+   * @member String uid
    */
   exports.prototype['uid'] = undefined;
 
   /**
-   * @member {String} did
+   * @member String did
    */
   exports.prototype['did'] = undefined;
 
   /**
-   * @member {String} cid
+   * @member String cid
    */
   exports.prototype['cid'] = undefined;
 

@@ -18,7 +18,7 @@
   /**
    * The UserEnvelope model module.
    * @module model/UserEnvelope
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -26,7 +26,7 @@
    * User Envelope
    * @alias module:model/UserEnvelope
    * @class
-   * @param data
+   * @param data(User)
    */
   var exports = function(data) {
 
@@ -41,7 +41,7 @@
    * @return {module:model/UserEnvelope} The populated <code>UserEnvelope</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) { 
+    if (data) {
       obj = obj || new exports();
 
       if (data.hasOwnProperty('data')) {
@@ -53,7 +53,7 @@
 
 
   /**
-   * @member {module:model/User} data
+   * @member module:model/User data
    */
   exports.prototype['data'] = undefined;
 

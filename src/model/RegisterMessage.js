@@ -18,7 +18,7 @@
   /**
    * The RegisterMessage model module.
    * @module model/RegisterMessage
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -69,31 +69,31 @@
 
   /**
    * Confirmation ID.
-   * @member {String} cid
+   * @member String cid
    */
   exports.prototype['cid'] = undefined;
 
   /**
    * Authorization header containing access token (Bearer <access_token>).
-   * @member {String} authorization
+   * @member String authorization
    */
   exports.prototype['authorization'] = undefined;
 
   /**
    * Source Device ID.
-   * @member {String} sdid
+   * @member String sdid
    */
   exports.prototype['sdid'] = undefined;
 
   /**
    * Timestamp (past, present or future). Defaults to current time if not provided.
-   * @member {Integer} ts
+   * @member Integer ts
    */
   exports.prototype['ts'] = undefined;
 
   /**
    * Type.
-   * @member {String} type
+   * @member String type
    * @default 'register'
    */
   exports.prototype['type'] = 'register';

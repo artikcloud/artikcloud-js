@@ -18,7 +18,7 @@
   /**
    * The ActionDetailsArray model module.
    * @module model/ActionDetailsArray
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -52,7 +52,7 @@
 
 
   /**
-   * @member {Array.<module:model/ActionDetails>} actions
+   * @member Array.<module:model/ActionDetails> actions
    */
   exports.prototype['actions'] = undefined;
 

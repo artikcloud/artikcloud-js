@@ -18,7 +18,7 @@
   /**
    * The FieldPresenceEnvelope model module.
    * @module model/FieldPresenceEnvelope
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -26,13 +26,13 @@
    * Field Presence Envelope
    * @alias module:model/FieldPresenceEnvelope
    * @class
-   * @param sdid
-   * @param fieldPresence
-   * @param startDate
-   * @param endDate
-   * @param interval
-   * @param size
-   * @param data
+   * @param sdid(String)
+   * @param fieldPresence(String)
+   * @param startDate(Integer)
+   * @param endDate(Integer)
+   * @param interval(String)
+   * @param size(Integer)
+   * @param data([FieldPresence])
    */
   var exports = function(sdid, fieldPresence, startDate, endDate, interval, size, data) {
 
@@ -53,7 +53,7 @@
    * @return {module:model/FieldPresenceEnvelope} The populated <code>FieldPresenceEnvelope</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) { 
+    if (data) {
       obj = obj || new exports();
 
       if (data.hasOwnProperty('sdid')) {
@@ -83,37 +83,37 @@
 
 
   /**
-   * @member {String} sdid
+   * @member String sdid
    */
   exports.prototype['sdid'] = undefined;
 
   /**
-   * @member {String} fieldPresence
+   * @member String fieldPresence
    */
   exports.prototype['fieldPresence'] = undefined;
 
   /**
-   * @member {Integer} startDate
+   * @member Integer startDate
    */
   exports.prototype['startDate'] = undefined;
 
   /**
-   * @member {Integer} endDate
+   * @member Integer endDate
    */
   exports.prototype['endDate'] = undefined;
 
   /**
-   * @member {String} interval
+   * @member String interval
    */
   exports.prototype['interval'] = undefined;
 
   /**
-   * @member {Integer} size
+   * @member Integer size
    */
   exports.prototype['size'] = undefined;
 
   /**
-   * @member {Array.<module:model/FieldPresence>} data
+   * @member Array.<module:model/FieldPresence> data
    */
   exports.prototype['data'] = undefined;
 

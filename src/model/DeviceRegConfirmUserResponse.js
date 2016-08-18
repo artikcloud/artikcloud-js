@@ -18,7 +18,7 @@
   /**
    * The DeviceRegConfirmUserResponse model module.
    * @module model/DeviceRegConfirmUserResponse
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -53,7 +53,7 @@
 
   /**
    * The registration request id.
-   * @member {String} rid
+   * @member String rid
    */
   exports.prototype['rid'] = undefined;
 

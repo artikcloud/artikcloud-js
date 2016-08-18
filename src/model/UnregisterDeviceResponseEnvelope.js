@@ -18,7 +18,7 @@
   /**
    * The UnregisterDeviceResponseEnvelope model module.
    * @module model/UnregisterDeviceResponseEnvelope
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -52,7 +52,7 @@
 
 
   /**
-   * @member {module:model/UnregisterDeviceResponse} data
+   * @member module:model/UnregisterDeviceResponse data
    */
   exports.prototype['data'] = undefined;
 

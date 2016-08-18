@@ -18,7 +18,7 @@
   /**
    * The ErrorEnvelope model module.
    * @module model/ErrorEnvelope
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -53,7 +53,7 @@
 
   /**
    * Error Data
-   * @member {module:model/WebSocketError} error
+   * @member module:model/WebSocketError error
    */
   exports.prototype['error'] = undefined;
 

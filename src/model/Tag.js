@@ -18,7 +18,7 @@
   /**
    * The Tag model module.
    * @module model/Tag
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -57,13 +57,13 @@
 
   /**
    * Tag Name.
-   * @member {String} name
+   * @member String name
    */
   exports.prototype['name'] = undefined;
 
   /**
    * Is Category.
-   * @member {Boolean} isCategory
+   * @member Boolean isCategory
    */
   exports.prototype['isCategory'] = undefined;
 

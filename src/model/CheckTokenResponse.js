@@ -18,7 +18,7 @@
   /**
    * The CheckTokenResponse model module.
    * @module model/CheckTokenResponse
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -52,7 +52,7 @@
 
 
   /**
-   * @member {module:model/CheckTokenMessage} data
+   * @member module:model/CheckTokenMessage data
    */
   exports.prototype['data'] = undefined;
 

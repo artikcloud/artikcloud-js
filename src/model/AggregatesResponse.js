@@ -18,7 +18,7 @@
   /**
    * The AggregatesResponse model module.
    * @module model/AggregatesResponse
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -72,32 +72,32 @@
 
 
   /**
-   * @member {Array.<module:model/AggregateData>} data
+   * @member Array.<module:model/AggregateData> data
    */
   exports.prototype['data'] = undefined;
 
   /**
-   * @member {Integer} endDate
+   * @member Integer endDate
    */
   exports.prototype['endDate'] = undefined;
 
   /**
-   * @member {String} field
+   * @member String field
    */
   exports.prototype['field'] = undefined;
 
   /**
-   * @member {String} sdid
+   * @member String sdid
    */
   exports.prototype['sdid'] = undefined;
 
   /**
-   * @member {Integer} size
+   * @member Integer size
    */
   exports.prototype['size'] = undefined;
 
   /**
-   * @member {Integer} startDate
+   * @member Integer startDate
    */
   exports.prototype['startDate'] = undefined;
 

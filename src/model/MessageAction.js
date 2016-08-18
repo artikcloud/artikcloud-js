@@ -18,7 +18,7 @@
   /**
    * The MessageAction model module.
    * @module model/MessageAction
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -68,31 +68,31 @@
 
 
   /**
-   * @member {Object.<String, Object>} data
+   * @member Object.<String, Object> data
    */
   exports.prototype['data'] = undefined;
 
   /**
    * Destination Device ID.
-   * @member {String} ddid
+   * @member String ddid
    */
   exports.prototype['ddid'] = undefined;
 
   /**
    * Source Device ID.
-   * @member {String} sdid
+   * @member String sdid
    */
   exports.prototype['sdid'] = undefined;
 
   /**
    * Timestamp (past, present or future). Defaults to current time if not provided.
-   * @member {Integer} ts
+   * @member Integer ts
    */
   exports.prototype['ts'] = undefined;
 
   /**
    * Type.
-   * @member {String} type
+   * @member String type
    */
   exports.prototype['type'] = undefined;
 

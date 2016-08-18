@@ -18,7 +18,7 @@
   /**
    * The User model module.
    * @module model/User
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -26,12 +26,12 @@
    * User Information
    * @alias module:model/User
    * @class
-   * @param id
-   * @param name
-   * @param email
-   * @param fullName
-   * @param createdOn
-   * @param modifiedOn
+   * @param id(String)
+   * @param name(String)
+   * @param email(String)
+   * @param fullName(String)
+   * @param createdOn(Integer)
+   * @param modifiedOn(Integer)
    */
   var exports = function(id, name, email, fullName, createdOn, modifiedOn) {
 
@@ -52,7 +52,7 @@
    * @return {module:model/User} The populated <code>User</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) { 
+    if (data) {
       obj = obj || new exports();
 
       if (data.hasOwnProperty('id')) {
@@ -82,37 +82,37 @@
 
 
   /**
-   * @member {String} id
+   * @member String id
    */
   exports.prototype['id'] = undefined;
 
   /**
-   * @member {String} name
+   * @member String name
    */
   exports.prototype['name'] = undefined;
 
   /**
-   * @member {String} email
+   * @member String email
    */
   exports.prototype['email'] = undefined;
 
   /**
-   * @member {String} fullName
+   * @member String fullName
    */
   exports.prototype['fullName'] = undefined;
 
   /**
-   * @member {String} saIdentity
+   * @member String saIdentity
    */
   exports.prototype['saIdentity'] = undefined;
 
   /**
-   * @member {Integer} createdOn
+   * @member Integer createdOn
    */
   exports.prototype['createdOn'] = undefined;
 
   /**
-   * @member {Integer} modifiedOn
+   * @member Integer modifiedOn
    */
   exports.prototype['modifiedOn'] = undefined;
 

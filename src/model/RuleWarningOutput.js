@@ -18,7 +18,7 @@
   /**
    * The RuleWarningOutput model module.
    * @module model/RuleWarningOutput
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -56,12 +56,12 @@
 
 
   /**
-   * @member {String} code
+   * @member String code
    */
   exports.prototype['code'] = undefined;
 
   /**
-   * @member {String} message
+   * @member String message
    */
   exports.prototype['message'] = undefined;
 

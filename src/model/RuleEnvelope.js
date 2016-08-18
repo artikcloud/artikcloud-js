@@ -18,7 +18,7 @@
   /**
    * The RuleEnvelope model module.
    * @module model/RuleEnvelope
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -52,7 +52,7 @@
 
 
   /**
-   * @member {module:model/OutputRule} data
+   * @member module:model/OutputRule data
    */
   exports.prototype['data'] = undefined;
 

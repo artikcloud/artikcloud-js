@@ -18,7 +18,7 @@
   /**
    * The ExportData model module.
    * @module model/ExportData
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -76,38 +76,38 @@
 
 
   /**
-   * @member {Integer} expirationDate
+   * @member Integer expirationDate
    */
   exports.prototype['expirationDate'] = undefined;
 
   /**
-   * @member {String} exportId
+   * @member String exportId
    */
   exports.prototype['exportId'] = undefined;
 
   /**
-   * @member {Integer} fileSize
+   * @member Integer fileSize
    */
   exports.prototype['fileSize'] = undefined;
 
   /**
-   * @member {String} md5
+   * @member String md5
    */
   exports.prototype['md5'] = undefined;
 
   /**
-   * @member {module:model/ExportRequest} request
+   * @member module:model/ExportRequest request
    */
   exports.prototype['request'] = undefined;
 
   /**
    * Export status
-   * @member {String} status
+   * @member String status
    */
   exports.prototype['status'] = undefined;
 
   /**
-   * @member {Integer} totalMessages
+   * @member Integer totalMessages
    */
   exports.prototype['totalMessages'] = undefined;
 

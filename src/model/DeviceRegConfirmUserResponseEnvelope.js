@@ -18,7 +18,7 @@
   /**
    * The DeviceRegConfirmUserResponseEnvelope model module.
    * @module model/DeviceRegConfirmUserResponseEnvelope
-   * @version 2.0.0
+   * @version 2.0.5
    */
 
   /**
@@ -52,7 +52,7 @@
 
 
   /**
-   * @member {module:model/DeviceRegConfirmUserResponse} data
+   * @member module:model/DeviceRegConfirmUserResponse data
    */
   exports.prototype['data'] = undefined;
 
