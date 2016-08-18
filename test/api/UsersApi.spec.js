@@ -36,10 +36,17 @@
 }(this, function(expect, ArtikCloud) {
   'use strict';
 
-  var instance;
+  var api;
 
   beforeEach(function() {
-    instance = new ArtikCloud.UsersApi();
+    var newClient = new ArtikCloud.ApiClient();
+
+    // Configure OAuth2 access token for authorization: artikcloud_oauth
+    var artikcloud_oauth = newClient.authentications['artikcloud_oauth'];
+    artikcloud_oauth.accessToken = "56eecae18bcb45c48a0d62571ee852fe"
+
+    api = new ArtikCloud.UsersApi(newClient);
+    api.getApiClient
   });
 
   var getProperty = function(object, getter, property) {
@@ -81,14 +88,15 @@
     });
     describe('getSelf', function() {
       it('should call getSelf successfully', function(done) {
-        if (error) throw error;
+        api.getSelf(function(error, response) {
+          if (error) throw error;
 
-        //expect(response).to.be.a(ArtikCloud.InlineResponse200);
-        expect(response.data.fullName).to.be("Maneesh Sahu");
-        expect(response.data.name).to.be("maneesh");
+          //expect(response).to.be.a(ArtikCloud.InlineResponse200);
+          expect(response.data.fullName).to.be("Maneesh Sahu");
+          expect(response.data.name).to.be("maneesh");
 
-        done();
-      });
+          done();
+        });
       });
     });
     describe('getUserDeviceTypes', function() {
