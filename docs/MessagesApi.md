@@ -256,7 +256,7 @@ Name | Type | Description  | Notes
 
 <a name="getMessageSnapshots"></a>
 # **getMessageSnapshots**
-> SnapshotsResponseEnvelope getMessageSnapshots(sdids, opts)
+> SnapshotResponses getMessageSnapshots(sdids, opts)
 
 Get Message Snapshots
 
@@ -298,7 +298,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SnapshotsResponseEnvelope**](SnapshotsResponseEnvelope.md)
+[**SnapshotResponses**](SnapshotResponses.md)
 
 ### Authorization
 

@@ -1,18 +1,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['../ApiClient', '../model/AggregatesHistogramResponse', '../model/FieldPresenceEnvelope', '../model/NormalizedMessagesEnvelope', '../model/AggregatesResponse', '../model/SnapshotsResponseEnvelope', '../model/MessageAction', '../model/MessageIDEnvelope'], factory);
+    define(['../ApiClient', '../model/AggregatesHistogramResponse', '../model/FieldPresenceEnvelope', '../model/NormalizedMessagesEnvelope', '../model/AggregatesResponse', '../model/SnapshotResponses', '../model/MessageAction', '../model/MessageIDEnvelope'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/AggregatesHistogramResponse'), require('../model/FieldPresenceEnvelope'), require('../model/NormalizedMessagesEnvelope'), require('../model/AggregatesResponse'), require('../model/SnapshotsResponseEnvelope'), require('../model/MessageAction'), require('../model/MessageIDEnvelope'));
+    module.exports = factory(require('../ApiClient'), require('../model/AggregatesHistogramResponse'), require('../model/FieldPresenceEnvelope'), require('../model/NormalizedMessagesEnvelope'), require('../model/AggregatesResponse'), require('../model/SnapshotResponses'), require('../model/MessageAction'), require('../model/MessageIDEnvelope'));
   } else {
     // Browser globals (root is window)
     if (!root.ArtikCloud) {
       root.ArtikCloud = {};
     }
-    root.ArtikCloud.MessagesApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.AggregatesHistogramResponse, root.ArtikCloud.FieldPresenceEnvelope, root.ArtikCloud.NormalizedMessagesEnvelope, root.ArtikCloud.AggregatesResponse, root.ArtikCloud.SnapshotsResponseEnvelope, root.ArtikCloud.MessageAction, root.ArtikCloud.MessageIDEnvelope);
+    root.ArtikCloud.MessagesApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.AggregatesHistogramResponse, root.ArtikCloud.FieldPresenceEnvelope, root.ArtikCloud.NormalizedMessagesEnvelope, root.ArtikCloud.AggregatesResponse, root.ArtikCloud.SnapshotResponses, root.ArtikCloud.MessageAction, root.ArtikCloud.MessageIDEnvelope);
   }
-}(this, function(ApiClient, AggregatesHistogramResponse, FieldPresenceEnvelope, NormalizedMessagesEnvelope, AggregatesResponse, SnapshotsResponseEnvelope, MessageAction, MessageIDEnvelope) {
+}(this, function(ApiClient, AggregatesHistogramResponse, FieldPresenceEnvelope, NormalizedMessagesEnvelope, AggregatesResponse, SnapshotResponses, MessageAction, MessageIDEnvelope) {
   'use strict';
 
   /**
@@ -277,7 +277,7 @@
      * Callback function to receive the result of the getMessageSnapshots operation.
      * @callback module:api/MessagesApi~getMessageSnapshotsCallback
      * @param {String} error Error message, if any.
-     * @param module:model/SnapshotsResponseEnvelope data The data returned by the service call.
+     * @param module:model/SnapshotResponses data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -288,7 +288,7 @@
      * @param {Object} opts Optional parameters
      * @param Boolean opts.includeTimestamp Indicates whether to return timestamps of the last update for each field.
      * @param {module:api/MessagesApi~getMessageSnapshotsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: module:model/SnapshotsResponseEnvelope
+     * data is of type: module:model/SnapshotResponses
      */
     this.getMessageSnapshots = function(sdids, opts, callback) {
       opts = opts || {};
@@ -314,7 +314,7 @@
       var authNames = ['artikcloud_oauth'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = SnapshotsResponseEnvelope;
+      var returnType = SnapshotResponses;
 
       return this.apiClient.callApi(
         '/messages/snapshots', 'GET',
