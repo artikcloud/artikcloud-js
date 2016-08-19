@@ -71,7 +71,7 @@
       var returnType = CheckTokenResponse;
 
       return this.apiClient.callApi(
-        '/checkToken', 'POST',
+        '/accounts/checkToken', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -124,7 +124,7 @@
       var returnType = RefreshTokenResponse;
 
       return this.apiClient.callApi(
-        '/token', 'POST',
+        '/accounts/token', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
