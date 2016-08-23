@@ -42,7 +42,7 @@
 
     /**
      * Check Token
-     * Check Token
+     * (Deprecated) Check Token. See tokenInfo
      * @param module:model/TokenRequest tokenInfo Token object to be checked
      * @param {module:api/TokensApi~checkTokenCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: module:model/CheckTokenResponse
