@@ -1,12 +1,20 @@
 if (typeof module === 'object' && module.exports) {
   var expect = require('expect.js');
+  var propertiesReader = require('properties-reader');
   var ArtikCloud = require('../src/index');
   var sinon = require('sinon');
 }
 
 var apiClient = ArtikCloud.ApiClient.instance;
+var properties = propertiesReader('./test/artik.properties');
 
 describe('ApiClient', function() {
+  describe('properties', function() {
+    it('should have artik.properties', function() {
+      expect(properties.get('user1.id')).to.be('04ddbd35d57d4d7b8f07f219c44457b2');
+    });
+  });
+
   describe('defaults', function() {
     it('should have correct default values with the default API client', function() {
       expect(apiClient).to.be.ok();

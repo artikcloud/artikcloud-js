@@ -36,6 +36,9 @@
 }(this, function(expect, ArtikCloud) {
   'use strict';
 
+  var propertiesReader = require('properties-reader');
+  var properties = propertiesReader('./test/artik.properties');
+
   var api;
 
   beforeEach(function() {
@@ -43,7 +46,7 @@
 
     // Configure OAuth2 access token for authorization: artikcloud_oauth
     var artikcloud_oauth = newClient.authentications['artikcloud_oauth'];
-    artikcloud_oauth.accessToken = "f9f75bd0b0fc46a9a604703909f4331d"
+    artikcloud_oauth.accessToken = properties.get("device1.token");
 
     api = new ArtikCloud.MessagesApi(newClient);
     api.getApiClient
@@ -88,15 +91,16 @@
     });
     describe('getLastNormalizedMessages', function() {
       it('should call getLastNormalizedMessages successfully', function(done) {
-        api.getLastNormalizedMessages({"sdids": "16f54be9b9ce4c69be14a6c8ff33ea8d"}, function(error, response) {
+        var sdid = properties.get("device1.id");
+        api.getLastNormalizedMessages({"sdids": sdid}, function(error, response) {
           if (error) throw error;
 
           expect(response.size).to.be(1);
 
           var normalized = response.data[0];
 
-          var distance = normalized.data['distance'];
-          expect(distance).to.be(850.745);
+          //var distance = normalized.data['distance'];
+          //expect(distance).to.be(850.745);
 
           var steps = normalized.data['steps'];
           expect(steps).to.be(935);
@@ -135,15 +139,14 @@
         done();
       });
     });
-    describe('sendMessageAction', function() {
-      it('should call sendMessageAction successfully', function(done) {
-        var message = new ArtikCloud.MessageAction();
-        message.sdid = '16f54be9b9ce4c69be14a6c8ff33ea8d';
-        message.type = 'message';
+    describe('sendMessage', function() {
+      it('should call sendMessage successfully', function(done) {
+        var message = new ArtikCloud.Message();
+        message.sdid = properties.get("device1.id");
         message.ts = Date.now();
         message.data = {"distance":850.745,"steps":935};
 
-        api.sendMessageAction(message, function(error, response) {
+        api.sendMessage(message, function(error, response) {
           if (error) throw error;
 
           var messageId = response.data.mid;
@@ -168,6 +171,58 @@
         });
       });
     });
+    describe('sendActions', function() {
+      it('should call sendActions successfully', function(done) {
+
+        var newClient = new ArtikCloud.ApiClient();
+        var artikcloud_oauth = newClient.authentications['artikcloud_oauth'];
+        artikcloud_oauth.accessToken = properties.get("device4.token");
+
+        var api2 = new ArtikCloud.MessagesApi(newClient);
+
+        var action = new ArtikCloud.Action();
+        action.name = "setVolume";
+        action.parameters = {"volume": 5};
+
+        var actionArray = new ArtikCloud.ActionArray();
+        //actionArray.actions = [];
+        //actionArray.actions.push(action);
+        actionArray.actions = [ action ];
+
+        var actions = new ArtikCloud.Actions();
+        actions.ddid = properties.get("device4.id");
+        actions.ts = Date.now();
+        actions.data = actionArray;
+        actions.type = "action";
+
+        api2.sendActions(actions, function(error, response) {
+          console.log(response);
+          if (error) throw error;
+
+          var messageId = response.data.mid;
+          var opts = {'mid': messageId, 'type': 'action'};
+
+          api2.getNormalizedActions(opts, function(error2, response2) {
+            if (error2) throw error2;
+
+            expect(response2.size).to.be(1);
+
+            var normalized = response2.data[0];
+            expect(normalized.mid).to.be(messageId);
+
+            var name = normalized.data.actions[0].name;
+            expect(name).to.be('setVolume');
+
+            var parameters = normalized.data.actions[0].parameters;
+            expect(parameters.volume).to.be(5);
+
+            done();
+          });
+
+        });
+      });
+    });
+
   });
 
 }));

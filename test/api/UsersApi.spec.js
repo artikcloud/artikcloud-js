@@ -25,7 +25,7 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD.
-    define(['expect.js', '../../src/index'], factory);
+    define(['expect.js', 'properties-reader', '../../src/index'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
     factory(require('expect.js'), require('../../src/index'));
@@ -36,14 +36,20 @@
 }(this, function(expect, ArtikCloud) {
   'use strict';
 
+  var propertiesReader = require('properties-reader');
+  var properties = propertiesReader('./test/artik.properties');
+
   var api;
 
   beforeEach(function() {
+    //var property = properties.get('user1.id');
+    //console.log(properties.get('user1.id'));
+
     var newClient = new ArtikCloud.ApiClient();
 
     // Configure OAuth2 access token for authorization: artikcloud_oauth
     var artikcloud_oauth = newClient.authentications['artikcloud_oauth'];
-    artikcloud_oauth.accessToken = "56eecae18bcb45c48a0d62571ee852fe"
+    artikcloud_oauth.accessToken = properties.get("user1.token");
 
     api = new ArtikCloud.UsersApi(newClient);
     api.getApiClient
@@ -92,8 +98,8 @@
           if (error) throw error;
 
           //expect(response).to.be.a(ArtikCloud.InlineResponse200);
-          expect(response.data.fullName).to.be("Maneesh Sahu");
-          expect(response.data.name).to.be("maneesh");
+          expect(response.data.fullName).to.be(properties.get("user1.fullname"));
+          expect(response.data.name).to.be(properties.get("user1.name"));
 
           done();
         });
@@ -111,7 +117,7 @@
     });
     describe('getUserDevices', function() {
       it('should call getUserDevices successfully', function(done) {
-        var userId = '04ddbd35d57d4d7b8f07f219c44457b2';
+        var userId = properties.get("user1.id");
         var opts = {};
 
         api.getUserDevices(userId, opts, function(error, response) {

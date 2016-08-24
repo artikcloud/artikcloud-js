@@ -6,6 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**checkToken**](TokensApi.md#checkToken) | **POST** /accounts/checkToken | Check Token
 [**refreshToken**](TokensApi.md#refreshToken) | **POST** /accounts/token | Refresh Token
+[**tokenInfo**](TokensApi.md#tokenInfo) | **GET** /accounts/tokenInfo | Token Info
 
 
 <a name="checkToken"></a>
@@ -111,5 +112,50 @@ Name | Type | Description  | Notes
 ### HTTP reuqest headers
 
  - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+<a name="tokenInfo"></a>
+# **tokenInfo**
+> TokenInfoSuccessResponse tokenInfo
+
+Token Info
+
+Returns the Token Information
+
+### Example
+```javascript
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.default;
+
+// Configure OAuth2 access token for authorization: artikcloud_oauth
+var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
+artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
+
+var apiInstance = new ArtikCloud.TokensApi()
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+api.tokenInfo(callback);
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**TokenInfoSuccessResponse**](TokenInfoSuccessResponse.md)
+
+### Authorization
+
+[artikcloud_oauth](../README.md#artikcloud_oauth)
+
+### HTTP reuqest headers
+
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 

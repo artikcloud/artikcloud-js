@@ -1,18 +1,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['../ApiClient', '../model/TokenRequest', '../model/CheckTokenResponse', '../model/RefreshTokenResponse'], factory);
+    define(['../ApiClient', '../model/TokenRequest', '../model/CheckTokenResponse', '../model/RefreshTokenResponse', '../model/TokenInfoSuccessResponse'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/TokenRequest'), require('../model/CheckTokenResponse'), require('../model/RefreshTokenResponse'));
+    module.exports = factory(require('../ApiClient'), require('../model/TokenRequest'), require('../model/CheckTokenResponse'), require('../model/RefreshTokenResponse'), require('../model/TokenInfoSuccessResponse'));
   } else {
     // Browser globals (root is window)
     if (!root.ArtikCloud) {
       root.ArtikCloud = {};
     }
-    root.ArtikCloud.TokensApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.TokenRequest, root.ArtikCloud.CheckTokenResponse, root.ArtikCloud.RefreshTokenResponse);
+    root.ArtikCloud.TokensApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.TokenRequest, root.ArtikCloud.CheckTokenResponse, root.ArtikCloud.RefreshTokenResponse, root.ArtikCloud.TokenInfoSuccessResponse);
   }
-}(this, function(ApiClient, TokenRequest, CheckTokenResponse, RefreshTokenResponse) {
+}(this, function(ApiClient, TokenRequest, CheckTokenResponse, RefreshTokenResponse, TokenInfoSuccessResponse) {
   'use strict';
 
   /**
@@ -125,6 +125,45 @@
 
       return this.apiClient.callApi(
         '/accounts/token', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the tokenInfo operation.
+     * @callback module:api/TokensApi~tokenInfoCallback
+     * @param {String} error Error message, if any.
+     * @param module:model/TokenInfoSuccessResponse data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Token Info
+     * Returns the Token Information
+     * @param {module:api/TokensApi~tokenInfoCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: module:model/TokenInfoSuccessResponse
+     */
+    this.tokenInfo = function(callback) {
+      var postBody = null;
+
+
+      var pathParams = {
+      };
+      var queryParams = {
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = ['artikcloud_oauth'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = TokenInfoSuccessResponse;
+
+      return this.apiClient.callApi(
+        '/accounts/tokenInfo', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
