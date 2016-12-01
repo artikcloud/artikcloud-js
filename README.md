@@ -228,7 +228,7 @@ Class | Method | HTTP request | Description
 
 - **Type**: OAuth
 - **Flow**: implicit
-- **Authorizatoin URL**: https://accounts.artik.cloud/authorize
+- **Authorization URL**: https://accounts.artik.cloud/authorize
 - **Scopes**: 
   - read:artikcloud: Read from ARTIK Cloud
   - write:artikcloud: Write from ARTIK Cloud
