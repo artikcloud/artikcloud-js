@@ -80,6 +80,7 @@ Class | Method | HTTP request | Description
 *ArtikCloud.DeviceTypesApi* | [**getAvailableManifestVersions**](docs/DeviceTypesApi.md#getAvailableManifestVersions) | **GET** /devicetypes/{deviceTypeId}/availablemanifestversions | Get Available Manifest Versions
 *ArtikCloud.DeviceTypesApi* | [**getDeviceType**](docs/DeviceTypesApi.md#getDeviceType) | **GET** /devicetypes/{deviceTypeId} | Get Device Type
 *ArtikCloud.DeviceTypesApi* | [**getDeviceTypes**](docs/DeviceTypesApi.md#getDeviceTypes) | **GET** /devicetypes | Get Device Types
+*ArtikCloud.DeviceTypesApi* | [**getDeviceTypesByApplication**](docs/DeviceTypesApi.md#getDeviceTypesByApplication) | **GET** /applications/{appId}/devicetypes | Get Device Types by Application
 *ArtikCloud.DeviceTypesApi* | [**getLatestManifestProperties**](docs/DeviceTypesApi.md#getLatestManifestProperties) | **GET** /devicetypes/{deviceTypeId}/manifests/latest/properties | Get Latest Manifest Properties
 *ArtikCloud.DeviceTypesApi* | [**getManifestProperties**](docs/DeviceTypesApi.md#getManifestProperties) | **GET** /devicetypes/{deviceTypeId}/manifests/{version}/properties | Get manifest properties
 *ArtikCloud.DevicesApi* | [**addDevice**](docs/DevicesApi.md#addDevice) | **POST** /devices | Add Device
@@ -90,6 +91,21 @@ Class | Method | HTTP request | Description
 *ArtikCloud.DevicesApi* | [**getDeviceToken**](docs/DevicesApi.md#getDeviceToken) | **GET** /devices/{deviceId}/tokens | Get Device Token
 *ArtikCloud.DevicesApi* | [**updateDevice**](docs/DevicesApi.md#updateDevice) | **PUT** /devices/{deviceId} | Update Device
 *ArtikCloud.DevicesApi* | [**updateDeviceToken**](docs/DevicesApi.md#updateDeviceToken) | **PUT** /devices/{deviceId}/tokens | Update Device Token
+*ArtikCloud.DevicesManagementApi* | [**createTasks**](docs/DevicesManagementApi.md#createTasks) | **POST** /devicemgmt/tasks | Create a new task for one or more devices
+*ArtikCloud.DevicesManagementApi* | [**deleteServerProperties**](docs/DevicesManagementApi.md#deleteServerProperties) | **DELETE** /devicemgmt/devices/{did}/serverproperties | Deletes a device&#39;s properties.
+*ArtikCloud.DevicesManagementApi* | [**getAllByDid**](docs/DevicesManagementApi.md#getAllByDid) | **GET** /devicemgmt/devices/{did}/tasks | Returns the list of tasks for a particular device id with optional status filter.
+*ArtikCloud.DevicesManagementApi* | [**getDeviceTypesInfo**](docs/DevicesManagementApi.md#getDeviceTypesInfo) | **GET** /devicemgmt/devicetypes/{dtid} | Read a device type device management information.
+*ArtikCloud.DevicesManagementApi* | [**getManifestProperties**](docs/DevicesManagementApi.md#getManifestProperties) | **GET** /devicemgmt/devicetypes/{dtid}/manifest/properties | Get a device type&#39;s device management manifest properties
+*ArtikCloud.DevicesManagementApi* | [**getProperties**](docs/DevicesManagementApi.md#getProperties) | **GET** /devicemgmt/devices/{did}/properties | Read a device&#39;s properties.
+*ArtikCloud.DevicesManagementApi* | [**getStatuses**](docs/DevicesManagementApi.md#getStatuses) | **GET** /devicemgmt/tasks/{tid}/statuses | Returns the details and status of a task id and the individual statuses of each device id in the list.
+*ArtikCloud.DevicesManagementApi* | [**getStatusesHistory**](docs/DevicesManagementApi.md#getStatusesHistory) | **GET** /devicemgmt/tasks/{tid}/statuses/history | Returns the history of the status changes for a specific task id, or for a specific device id in that task.
+*ArtikCloud.DevicesManagementApi* | [**getTaskByID**](docs/DevicesManagementApi.md#getTaskByID) | **GET** /devicemgmt/tasks/{tid} | Returns the details and global status of a specific task id.
+*ArtikCloud.DevicesManagementApi* | [**getTasks**](docs/DevicesManagementApi.md#getTasks) | **GET** /devicemgmt/tasks | Returns the all the tasks for a device type.
+*ArtikCloud.DevicesManagementApi* | [**queryProperties**](docs/DevicesManagementApi.md#queryProperties) | **GET** /devicemgmt/devices/properties | Query device properties across devices.
+*ArtikCloud.DevicesManagementApi* | [**updateDeviceTypesInfo**](docs/DevicesManagementApi.md#updateDeviceTypesInfo) | **PUT** /devicemgmt/devicetypes/{dtid} | Updates a device type information
+*ArtikCloud.DevicesManagementApi* | [**updateServerProperties**](docs/DevicesManagementApi.md#updateServerProperties) | **POST** /devicemgmt/devices/{did}/serverproperties | Updates a device&#39;s server properties.
+*ArtikCloud.DevicesManagementApi* | [**updateTask**](docs/DevicesManagementApi.md#updateTask) | **PUT** /devicemgmt/tasks/{tid} | Updates a task for all devices - For now just allows changing the state to cancelled.
+*ArtikCloud.DevicesManagementApi* | [**updateTaskForDevice**](docs/DevicesManagementApi.md#updateTaskForDevice) | **PUT** /devicemgmt/tasks/{tid}/devices/{did} | Updates a task for a specific device - For now just allows changing the state to cancelled.
 *ArtikCloud.ExportApi* | [**exportRequest**](docs/ExportApi.md#exportRequest) | **POST** /messages/export | Create Export Request
 *ArtikCloud.ExportApi* | [**getExportHistory**](docs/ExportApi.md#getExportHistory) | **GET** /messages/export/history | Get Export History
 *ArtikCloud.ExportApi* | [**getExportResult**](docs/ExportApi.md#getExportResult) | **GET** /messages/export/{exportId}/result | Get Export Result
@@ -153,14 +169,22 @@ Class | Method | HTTP request | Description
  - [ArtikCloud.DeviceRegConfirmUserResponseEnvelope](docs/DeviceRegConfirmUserResponseEnvelope.md)
  - [ArtikCloud.DeviceRegStatusResponse](docs/DeviceRegStatusResponse.md)
  - [ArtikCloud.DeviceRegStatusResponseEnvelope](docs/DeviceRegStatusResponseEnvelope.md)
+ - [ArtikCloud.DeviceTask](docs/DeviceTask.md)
+ - [ArtikCloud.DeviceTaskUpdateRequest](docs/DeviceTaskUpdateRequest.md)
+ - [ArtikCloud.DeviceTaskUpdateResponse](docs/DeviceTaskUpdateResponse.md)
  - [ArtikCloud.DeviceToken](docs/DeviceToken.md)
  - [ArtikCloud.DeviceTokenEnvelope](docs/DeviceTokenEnvelope.md)
  - [ArtikCloud.DeviceType](docs/DeviceType.md)
  - [ArtikCloud.DeviceTypeArray](docs/DeviceTypeArray.md)
  - [ArtikCloud.DeviceTypeEnvelope](docs/DeviceTypeEnvelope.md)
+ - [ArtikCloud.DeviceTypeInfo](docs/DeviceTypeInfo.md)
+ - [ArtikCloud.DeviceTypeInfoEnvelope](docs/DeviceTypeInfoEnvelope.md)
  - [ArtikCloud.DeviceTypesEnvelope](docs/DeviceTypesEnvelope.md)
+ - [ArtikCloud.DeviceTypesInfo](docs/DeviceTypesInfo.md)
+ - [ArtikCloud.DeviceTypesInfoEnvelope](docs/DeviceTypesInfoEnvelope.md)
  - [ArtikCloud.DevicesEnvelope](docs/DevicesEnvelope.md)
  - [ArtikCloud.ErrorEnvelope](docs/ErrorEnvelope.md)
+ - [ArtikCloud.EventFeedData](docs/EventFeedData.md)
  - [ArtikCloud.ExportData](docs/ExportData.md)
  - [ArtikCloud.ExportDataArray](docs/ExportDataArray.md)
  - [ArtikCloud.ExportHistoryResponse](docs/ExportHistoryResponse.md)
@@ -185,6 +209,9 @@ Class | Method | HTTP request | Description
  - [ArtikCloud.MessageIDEnvelope](docs/MessageIDEnvelope.md)
  - [ArtikCloud.MessageIn](docs/MessageIn.md)
  - [ArtikCloud.MessageOut](docs/MessageOut.md)
+ - [ArtikCloud.MetadataEnvelope](docs/MetadataEnvelope.md)
+ - [ArtikCloud.MetadataPropertiesEnvelope](docs/MetadataPropertiesEnvelope.md)
+ - [ArtikCloud.MetadataQueryEnvelope](docs/MetadataQueryEnvelope.md)
  - [ArtikCloud.NonEmptyString](docs/NonEmptyString.md)
  - [ArtikCloud.NormalizedAction](docs/NormalizedAction.md)
  - [ArtikCloud.NormalizedActionsEnvelope](docs/NormalizedActionsEnvelope.md)
@@ -209,6 +236,25 @@ Class | Method | HTTP request | Description
  - [ArtikCloud.Tag](docs/Tag.md)
  - [ArtikCloud.TagArray](docs/TagArray.md)
  - [ArtikCloud.TagsEnvelope](docs/TagsEnvelope.md)
+ - [ArtikCloud.Task](docs/Task.md)
+ - [ArtikCloud.TaskByDid](docs/TaskByDid.md)
+ - [ArtikCloud.TaskByDidList](docs/TaskByDidList.md)
+ - [ArtikCloud.TaskByDidListEnvelope](docs/TaskByDidListEnvelope.md)
+ - [ArtikCloud.TaskEnvelope](docs/TaskEnvelope.md)
+ - [ArtikCloud.TaskHistory](docs/TaskHistory.md)
+ - [ArtikCloud.TaskHistoryList](docs/TaskHistoryList.md)
+ - [ArtikCloud.TaskList](docs/TaskList.md)
+ - [ArtikCloud.TaskListEnvelope](docs/TaskListEnvelope.md)
+ - [ArtikCloud.TaskParameters](docs/TaskParameters.md)
+ - [ArtikCloud.TaskRequest](docs/TaskRequest.md)
+ - [ArtikCloud.TaskStatus](docs/TaskStatus.md)
+ - [ArtikCloud.TaskStatusCounts](docs/TaskStatusCounts.md)
+ - [ArtikCloud.TaskStatuses](docs/TaskStatuses.md)
+ - [ArtikCloud.TaskStatusesEnvelope](docs/TaskStatusesEnvelope.md)
+ - [ArtikCloud.TaskStatusesHistoryEnvelope](docs/TaskStatusesHistoryEnvelope.md)
+ - [ArtikCloud.TaskUpdateRequest](docs/TaskUpdateRequest.md)
+ - [ArtikCloud.TaskUpdateResponse](docs/TaskUpdateResponse.md)
+ - [ArtikCloud.TasksStatusCounts](docs/TasksStatusCounts.md)
  - [ArtikCloud.Token](docs/Token.md)
  - [ArtikCloud.TokenInfo](docs/TokenInfo.md)
  - [ArtikCloud.TokenInfoSuccessResponse](docs/TokenInfoSuccessResponse.md)
