@@ -20,7 +20,7 @@ Get all tags marked as categories
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.default;
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -65,7 +65,7 @@ Get tag suggestions for applications, device types that have been most used with
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.default;
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -123,7 +123,7 @@ Get all tags related to the list of categories
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.default;
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];

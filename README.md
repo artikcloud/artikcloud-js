@@ -49,7 +49,7 @@ Please follow the [installation](#installation) instruction and execute the foll
 ```javascript
 var ArtikCloud = require('artikcloud-js');
 
-var defaultClient = ArtikCloud.ApiClient.default;
+var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
