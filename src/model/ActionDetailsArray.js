@@ -18,7 +18,7 @@
   /**
    * The ActionDetailsArray model module.
    * @module model/ActionDetailsArray
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**

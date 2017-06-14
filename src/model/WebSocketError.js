@@ -18,7 +18,7 @@
   /**
    * The WebSocketError model module.
    * @module model/WebSocketError
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -49,7 +49,7 @@
         obj['message'] = ApiClient.convertToType(data['message'], 'String');
       }
       if (data.hasOwnProperty('code')) {
-        obj['code'] = ApiClient.convertToType(data['code'], 'Integer');
+        obj['code'] = ApiClient.convertToType(data['code'], 'Number');
       }
       if (data.hasOwnProperty('cid')) {
         obj['cid'] = ApiClient.convertToType(data['cid'], 'String');
@@ -67,7 +67,7 @@
 
   /**
    * Code
-   * @member Integer code
+   * @member Number code
    */
   exports.prototype['code'] = undefined;
 

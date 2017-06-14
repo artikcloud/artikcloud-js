@@ -6,12 +6,12 @@ Name | Type | Description | Notes
 **sdids** | **String** |  | [optional] 
 **sdid** | **String** |  | [optional] 
 **uid** | **String** |  | [optional] 
-**startDate** | **Integer** |  | [optional] 
-**endDate** | **Integer** |  | [optional] 
+**startDate** | **Number** |  | [optional] 
+**endDate** | **Number** |  | [optional] 
 **order** | **String** |  | [optional] 
 **next** | **String** |  | [optional] 
-**count** | **Integer** |  | 
-**size** | **Integer** |  | 
+**count** | **Number** |  | 
+**size** | **Number** |  | 
 **data** | [**[NormalizedMessage]**](NormalizedMessage.md) |  | 
 
 

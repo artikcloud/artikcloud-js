@@ -18,7 +18,7 @@
   /**
    * The FieldPresenceEnvelope model module.
    * @module model/FieldPresenceEnvelope
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -28,13 +28,13 @@
    * @class
    * @param sdid(String)
    * @param fieldPresence(String)
-   * @param startDate(Integer)
-   * @param endDate(Integer)
+   * @param startDate(Number)
+   * @param endDate(Number)
    * @param interval(String)
-   * @param size(Integer)
+   * @param size(Number)
    * @param data([FieldPresence])
    */
-  var exports = function(sdid, fieldPresence, startDate, endDate, interval, size, data) {
+  var exports = function(sdid(String), fieldPresence(String), startDate(Number), endDate(Number), interval(String), size(Number), data([FieldPresence])) {
 
     this['sdid'] = sdid;
     this['fieldPresence'] = fieldPresence;
@@ -53,7 +53,7 @@
    * @return {module:model/FieldPresenceEnvelope} The populated <code>FieldPresenceEnvelope</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) {
+    if (data) { 
       obj = obj || new exports();
 
       if (data.hasOwnProperty('sdid')) {
@@ -63,16 +63,16 @@
         obj['fieldPresence'] = ApiClient.convertToType(data['fieldPresence'], 'String');
       }
       if (data.hasOwnProperty('startDate')) {
-        obj['startDate'] = ApiClient.convertToType(data['startDate'], 'Integer');
+        obj['startDate'] = ApiClient.convertToType(data['startDate'], 'Number');
       }
       if (data.hasOwnProperty('endDate')) {
-        obj['endDate'] = ApiClient.convertToType(data['endDate'], 'Integer');
+        obj['endDate'] = ApiClient.convertToType(data['endDate'], 'Number');
       }
       if (data.hasOwnProperty('interval')) {
         obj['interval'] = ApiClient.convertToType(data['interval'], 'String');
       }
       if (data.hasOwnProperty('size')) {
-        obj['size'] = ApiClient.convertToType(data['size'], 'Integer');
+        obj['size'] = ApiClient.convertToType(data['size'], 'Number');
       }
       if (data.hasOwnProperty('data')) {
         obj['data'] = ApiClient.convertToType(data['data'], [FieldPresence]);
@@ -93,12 +93,12 @@
   exports.prototype['fieldPresence'] = undefined;
 
   /**
-   * @member Integer startDate
+   * @member Number startDate
    */
   exports.prototype['startDate'] = undefined;
 
   /**
-   * @member Integer endDate
+   * @member Number endDate
    */
   exports.prototype['endDate'] = undefined;
 
@@ -108,7 +108,7 @@
   exports.prototype['interval'] = undefined;
 
   /**
-   * @member Integer size
+   * @member Number size
    */
   exports.prototype['size'] = undefined;
 

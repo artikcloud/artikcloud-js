@@ -18,7 +18,7 @@
   /**
    * The SnapshotResponses model module.
    * @module model/SnapshotResponses
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -49,7 +49,7 @@
         obj['sdids'] = ApiClient.convertToType(data['sdids'], 'String');
       }
       if (data.hasOwnProperty('size')) {
-        obj['size'] = ApiClient.convertToType(data['size'], 'Integer');
+        obj['size'] = ApiClient.convertToType(data['size'], 'Number');
       }
       if (data.hasOwnProperty('data')) {
         obj['data'] = ApiClient.convertToType(data['data'], [SnapshotResponse]);
@@ -65,7 +65,7 @@
   exports.prototype['sdids'] = undefined;
 
   /**
-   * @member Integer size
+   * @member Number size
    */
   exports.prototype['size'] = undefined;
 

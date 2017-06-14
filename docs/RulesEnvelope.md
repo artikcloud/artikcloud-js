@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**count** | **Integer** |  | [optional] 
+**count** | **Number** |  | [optional] 
 **data** | [**[OutputRule]**](OutputRule.md) |  | [optional] 
-**offset** | **Integer** |  | [optional] 
-**total** | **Integer** |  | [optional] 
+**offset** | **Number** |  | [optional] 
+**total** | **Number** |  | [optional] 
 
 

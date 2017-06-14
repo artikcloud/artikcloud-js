@@ -18,7 +18,7 @@
   /**
    * The RegisterMessage model module.
    * @module model/RegisterMessage
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -57,7 +57,7 @@
         obj['sdid'] = ApiClient.convertToType(data['sdid'], 'String');
       }
       if (data.hasOwnProperty('ts')) {
-        obj['ts'] = ApiClient.convertToType(data['ts'], 'Integer');
+        obj['ts'] = ApiClient.convertToType(data['ts'], 'Number');
       }
       if (data.hasOwnProperty('type')) {
         obj['type'] = ApiClient.convertToType(data['type'], 'String');
@@ -87,7 +87,7 @@
 
   /**
    * Timestamp (past, present or future). Defaults to current time if not provided.
-   * @member Integer ts
+   * @member Number ts
    */
   exports.prototype['ts'] = undefined;
 

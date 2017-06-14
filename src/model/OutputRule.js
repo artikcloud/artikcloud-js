@@ -18,7 +18,7 @@
   /**
    * The OutputRule model module.
    * @module model/OutputRule
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -60,7 +60,7 @@
         obj['aid'] = ApiClient.convertToType(data['aid'], 'String');
       }
       if (data.hasOwnProperty('createdOn')) {
-        obj['createdOn'] = ApiClient.convertToType(data['createdOn'], 'Integer');
+        obj['createdOn'] = ApiClient.convertToType(data['createdOn'], 'Number');
       }
       if (data.hasOwnProperty('description')) {
         obj['description'] = ApiClient.convertToType(data['description'], 'String');
@@ -75,16 +75,16 @@
         obj['id'] = ApiClient.convertToType(data['id'], 'String');
       }
       if (data.hasOwnProperty('index')) {
-        obj['index'] = ApiClient.convertToType(data['index'], 'Integer');
+        obj['index'] = ApiClient.convertToType(data['index'], 'Number');
       }
       if (data.hasOwnProperty('invalidatedOn')) {
-        obj['invalidatedOn'] = ApiClient.convertToType(data['invalidatedOn'], 'Integer');
+        obj['invalidatedOn'] = ApiClient.convertToType(data['invalidatedOn'], 'Number');
       }
       if (data.hasOwnProperty('languageVersion')) {
-        obj['languageVersion'] = ApiClient.convertToType(data['languageVersion'], 'Integer');
+        obj['languageVersion'] = ApiClient.convertToType(data['languageVersion'], 'Number');
       }
       if (data.hasOwnProperty('modifiedOn')) {
-        obj['modifiedOn'] = ApiClient.convertToType(data['modifiedOn'], 'Integer');
+        obj['modifiedOn'] = ApiClient.convertToType(data['modifiedOn'], 'Number');
       }
       if (data.hasOwnProperty('name')) {
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
@@ -109,7 +109,7 @@
   exports.prototype['aid'] = undefined;
 
   /**
-   * @member Integer createdOn
+   * @member Number createdOn
    */
   exports.prototype['createdOn'] = undefined;
 
@@ -134,22 +134,22 @@
   exports.prototype['id'] = undefined;
 
   /**
-   * @member Integer index
+   * @member Number index
    */
   exports.prototype['index'] = undefined;
 
   /**
-   * @member Integer invalidatedOn
+   * @member Number invalidatedOn
    */
   exports.prototype['invalidatedOn'] = undefined;
 
   /**
-   * @member Integer languageVersion
+   * @member Number languageVersion
    */
   exports.prototype['languageVersion'] = undefined;
 
   /**
-   * @member Integer modifiedOn
+   * @member Number modifiedOn
    */
   exports.prototype['modifiedOn'] = undefined;
 

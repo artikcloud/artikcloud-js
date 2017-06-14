@@ -18,7 +18,7 @@
   /**
    * The ManifestProperties model module.
    * @module model/ManifestProperties
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -28,7 +28,7 @@
    * @class
    * @param properties(FieldsActions)
    */
-  var exports = function(properties) {
+  var exports = function(properties(FieldsActions)) {
 
     this['properties'] = properties;
   };
@@ -41,7 +41,7 @@
    * @return {module:model/ManifestProperties} The populated <code>ManifestProperties</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) {
+    if (data) { 
       obj = obj || new exports();
 
       if (data.hasOwnProperty('properties')) {

@@ -1,24 +1,24 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['../ApiClient', '../model/TokenRequest', '../model/CheckTokenResponse', '../model/RefreshTokenResponse', '../model/TokenInfoSuccessResponse'], factory);
+    define(['../ApiClient', '../model/CheckTokenResponse', '../model/RefreshTokenResponse', '../model/TokenInfoSuccessResponse', '../model/TokenRequest'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/TokenRequest'), require('../model/CheckTokenResponse'), require('../model/RefreshTokenResponse'), require('../model/TokenInfoSuccessResponse'));
+    module.exports = factory(require('../ApiClient'), require('../model/CheckTokenResponse'), require('../model/RefreshTokenResponse'), require('../model/TokenInfoSuccessResponse'), require('../model/TokenRequest'));
   } else {
     // Browser globals (root is window)
     if (!root.ArtikCloud) {
       root.ArtikCloud = {};
     }
-    root.ArtikCloud.TokensApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.TokenRequest, root.ArtikCloud.CheckTokenResponse, root.ArtikCloud.RefreshTokenResponse, root.ArtikCloud.TokenInfoSuccessResponse);
+    root.ArtikCloud.TokensApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.CheckTokenResponse, root.ArtikCloud.RefreshTokenResponse, root.ArtikCloud.TokenInfoSuccessResponse, root.ArtikCloud.TokenRequest);
   }
-}(this, function(ApiClient, TokenRequest, CheckTokenResponse, RefreshTokenResponse, TokenInfoSuccessResponse) {
+}(this, function(ApiClient, CheckTokenResponse, RefreshTokenResponse, TokenInfoSuccessResponse, TokenRequest) {
   'use strict';
 
   /**
    * Tokens service.
    * @module api/TokensApi
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**

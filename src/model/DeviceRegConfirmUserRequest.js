@@ -18,7 +18,7 @@
   /**
    * The DeviceRegConfirmUserRequest model module.
    * @module model/DeviceRegConfirmUserRequest
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**

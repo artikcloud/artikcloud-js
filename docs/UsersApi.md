@@ -11,6 +11,7 @@ Method | HTTP request | Description
 [**getUserDevices**](UsersApi.md#getUserDevices) | **GET** /users/{userId}/devices | Get User Devices
 [**getUserProperties**](UsersApi.md#getUserProperties) | **GET** /users/{userId}/properties | Get User application properties
 [**getUserRules**](UsersApi.md#getUserRules) | **GET** /users/{userId}/rules | Get User Rules
+[**listAllSharesForUser**](UsersApi.md#listAllSharesForUser) | **GET** in/api/users/{userId}/shares | Get User shares
 [**updateUserProperties**](UsersApi.md#updateUserProperties) | **PUT** /users/{userId}/properties | Update User Application Properties
 
 
@@ -25,7 +26,7 @@ Create application properties for a user
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -83,7 +84,7 @@ Deletes a user&#39;s application properties
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -138,7 +139,7 @@ Get&#39;s the current user&#39;s profile
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -183,7 +184,7 @@ Retrieve User&#39;s Device Types
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -194,8 +195,8 @@ var apiInstance = new ArtikCloud.UsersApi()
 var userId = "userId_example"; // {String} User ID.
 
 var opts = { 
-  'offset': 56, // {Integer} Offset for pagination.
-  'count': 56, // {Integer} Desired count of items in the result set
+  'offset': 56, // {Number} Offset for pagination.
+  'count': 56, // {Number} Desired count of items in the result set
   'includeShared': true // {Boolean} Optional. Boolean (true/false) - If false, only return the user's device types. If true, also return device types shared by other users.
 };
 
@@ -214,8 +215,8 @@ api.getUserDeviceTypes(userId, opts, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userId** | **String**| User ID. | 
- **offset** | **Integer**| Offset for pagination. | [optional] 
- **count** | **Integer**| Desired count of items in the result set | [optional] 
+ **offset** | **Number**| Offset for pagination. | [optional] 
+ **count** | **Number**| Desired count of items in the result set | [optional] 
  **includeShared** | **Boolean**| Optional. Boolean (true/false) - If false, only return the user&#39;s device types. If true, also return device types shared by other users. | [optional] 
 
 ### Return type
@@ -242,7 +243,7 @@ Retrieve User&#39;s Devices
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -253,9 +254,11 @@ var apiInstance = new ArtikCloud.UsersApi()
 var userId = "userId_example"; // {String} User ID
 
 var opts = { 
-  'offset': 56, // {Integer} Offset for pagination.
-  'count': 56, // {Integer} Desired count of items in the result set
-  'includeProperties': true // {Boolean} Optional. Boolean (true/false) - If false, only return the user's device types. If true, also return device types shared by other users.
+  'offset': 56, // {Number} Offset for pagination.
+  'count': 56, // {Number} Desired count of items in the result set
+  'includeProperties': true, // {Boolean} Optional. Boolean (true/false) - If false, only return the user's device types. If true, also return device types shared by other users.
+  'owner': "owner_example", // {String} Return owned and/or shared devices. Default to ALL.
+  'includeShareInfo': true // {Boolean} Include share info
 };
 
 var callback = function(error, data, response) {
@@ -273,9 +276,11 @@ api.getUserDevices(userId, opts, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userId** | **String**| User ID | 
- **offset** | **Integer**| Offset for pagination. | [optional] 
- **count** | **Integer**| Desired count of items in the result set | [optional] 
+ **offset** | **Number**| Offset for pagination. | [optional] 
+ **count** | **Number**| Desired count of items in the result set | [optional] 
  **includeProperties** | **Boolean**| Optional. Boolean (true/false) - If false, only return the user&#39;s device types. If true, also return device types shared by other users. | [optional] 
+ **owner** | **String**| Return owned and/or shared devices. Default to ALL. | [optional] 
+ **includeShareInfo** | **Boolean**| Include share info | [optional] 
 
 ### Return type
 
@@ -301,7 +306,7 @@ Get application properties of a user
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -356,7 +361,7 @@ Retrieve User&#39;s Rules
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -368,8 +373,8 @@ var userId = "userId_example"; // {String} User ID.
 
 var opts = { 
   'excludeDisabled': true, // {Boolean} Exclude disabled rules in the result.
-  'count': 56, // {Integer} Desired count of items in the result set.
-  'offset': 56 // {Integer} Offset for pagination.
+  'count': 56, // {Number} Desired count of items in the result set.
+  'offset': 56 // {Number} Offset for pagination.
 };
 
 var callback = function(error, data, response) {
@@ -388,12 +393,72 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userId** | **String**| User ID. | 
  **excludeDisabled** | **Boolean**| Exclude disabled rules in the result. | [optional] 
- **count** | **Integer**| Desired count of items in the result set. | [optional] 
- **offset** | **Integer**| Offset for pagination. | [optional] 
+ **count** | **Number**| Desired count of items in the result set. | [optional] 
+ **offset** | **Number**| Offset for pagination. | [optional] 
 
 ### Return type
 
 [**RulesEnvelope**](RulesEnvelope.md)
+
+### Authorization
+
+[artikcloud_oauth](../README.md#artikcloud_oauth)
+
+### HTTP reuqest headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="listAllSharesForUser"></a>
+# **listAllSharesForUser**
+> DeviceSharingEnvelope listAllSharesForUser(userId, filter, opts)
+
+Get User shares
+
+Get User shares
+
+### Example
+```javascript
+var ArtikCloud = require('artikcloud-js');
+var defaultClient = ArtikCloud.ApiClient.default;
+
+// Configure OAuth2 access token for authorization: artikcloud_oauth
+var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
+artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
+
+var apiInstance = new ArtikCloud.UsersApi()
+
+var userId = "userId_example"; // {String} User ID.
+
+var filter = "filter_example"; // {String} filter
+
+var opts = { 
+  'count': 56, // {Number} Desired count of items in the result set.
+  'offset': 56 // {Number} Offset for pagination.
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+api.listAllSharesForUser(userId, filter, opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **String**| User ID. | 
+ **filter** | **String**| filter | 
+ **count** | **Number**| Desired count of items in the result set. | [optional] 
+ **offset** | **Number**| Offset for pagination. | [optional] 
+
+### Return type
+
+[**DeviceSharingEnvelope**](DeviceSharingEnvelope.md)
 
 ### Authorization
 
@@ -415,7 +480,7 @@ Updates application properties of a user
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];

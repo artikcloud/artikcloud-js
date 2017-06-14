@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**count** | **Integer** |  | [optional] 
+**count** | **Number** |  | [optional] 
 **max** | **Number** |  | [optional] 
 **mean** | **Number** |  | [optional] 
 **min** | **Number** |  | [optional] 

@@ -18,7 +18,7 @@
   /**
    * The AggregatesHistogramResponse model module.
    * @module model/AggregatesHistogramResponse
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -53,7 +53,7 @@
         obj['data'] = ApiClient.convertToType(data['data'], [AggregatesHistogramData]);
       }
       if (data.hasOwnProperty('endDate')) {
-        obj['endDate'] = ApiClient.convertToType(data['endDate'], 'Integer');
+        obj['endDate'] = ApiClient.convertToType(data['endDate'], 'Number');
       }
       if (data.hasOwnProperty('field')) {
         obj['field'] = ApiClient.convertToType(data['field'], 'String');
@@ -65,10 +65,10 @@
         obj['sdid'] = ApiClient.convertToType(data['sdid'], 'String');
       }
       if (data.hasOwnProperty('size')) {
-        obj['size'] = ApiClient.convertToType(data['size'], 'Integer');
+        obj['size'] = ApiClient.convertToType(data['size'], 'Number');
       }
       if (data.hasOwnProperty('startDate')) {
-        obj['startDate'] = ApiClient.convertToType(data['startDate'], 'Integer');
+        obj['startDate'] = ApiClient.convertToType(data['startDate'], 'Number');
       }
     }
     return obj;
@@ -81,7 +81,7 @@
   exports.prototype['data'] = undefined;
 
   /**
-   * @member Integer endDate
+   * @member Number endDate
    */
   exports.prototype['endDate'] = undefined;
 
@@ -101,12 +101,12 @@
   exports.prototype['sdid'] = undefined;
 
   /**
-   * @member Integer size
+   * @member Number size
    */
   exports.prototype['size'] = undefined;
 
   /**
-   * @member Integer startDate
+   * @member Number startDate
    */
   exports.prototype['startDate'] = undefined;
 

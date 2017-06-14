@@ -18,7 +18,7 @@
   /**
    * The NormalizedAction model module.
    * @module model/NormalizedAction
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -26,16 +26,16 @@
    * Normalized Action
    * @alias module:model/NormalizedAction
    * @class
-   * @param cts(Integer)
-   * @param ts(Integer)
+   * @param cts(Number)
+   * @param ts(Number)
    * @param mid(String)
    * @param ddid(String)
    * @param ddtid(String)
    * @param uid(String)
-   * @param mv(Integer)
+   * @param mv(Number)
    * @param data(ActionArray)
    */
-  var exports = function(cts, ts, mid, ddid, ddtid, uid, mv, data) {
+  var exports = function(cts(Number), ts(Number), mid(String), ddid(String), ddtid(String), uid(String), mv(Number), data(ActionArray)) {
 
     this['cts'] = cts;
     this['ts'] = ts;
@@ -56,14 +56,14 @@
    * @return {module:model/NormalizedAction} The populated <code>NormalizedAction</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) {
+    if (data) { 
       obj = obj || new exports();
 
       if (data.hasOwnProperty('cts')) {
-        obj['cts'] = ApiClient.convertToType(data['cts'], 'Integer');
+        obj['cts'] = ApiClient.convertToType(data['cts'], 'Number');
       }
       if (data.hasOwnProperty('ts')) {
-        obj['ts'] = ApiClient.convertToType(data['ts'], 'Integer');
+        obj['ts'] = ApiClient.convertToType(data['ts'], 'Number');
       }
       if (data.hasOwnProperty('mid')) {
         obj['mid'] = ApiClient.convertToType(data['mid'], 'String');
@@ -81,7 +81,7 @@
         obj['uid'] = ApiClient.convertToType(data['uid'], 'String');
       }
       if (data.hasOwnProperty('mv')) {
-        obj['mv'] = ApiClient.convertToType(data['mv'], 'Integer');
+        obj['mv'] = ApiClient.convertToType(data['mv'], 'Number');
       }
       if (data.hasOwnProperty('data')) {
         obj['data'] = ActionArray.constructFromObject(data['data']);
@@ -92,12 +92,12 @@
 
 
   /**
-   * @member Integer cts
+   * @member Number cts
    */
   exports.prototype['cts'] = undefined;
 
   /**
-   * @member Integer ts
+   * @member Number ts
    */
   exports.prototype['ts'] = undefined;
 
@@ -127,7 +127,7 @@
   exports.prototype['uid'] = undefined;
 
   /**
-   * @member Integer mv
+   * @member Number mv
    */
   exports.prototype['mv'] = undefined;
 

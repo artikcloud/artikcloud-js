@@ -20,7 +20,7 @@ Get all tags marked as categories
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -65,7 +65,7 @@ Get tag suggestions for applications, device types that have been most used with
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -77,7 +77,7 @@ var opts = {
   'entityType': "entityType_example", // {String} Entity type name.
   'tags': "tags_example", // {String} Comma separated list of tags.
   'name': "name_example", // {String} Name of tags used for type ahead.
-  'count': 56 // {Integer} Number of results to return. Max 10.
+  'count': 56 // {Number} Number of results to return. Max 10.
 };
 
 var callback = function(error, data, response) {
@@ -97,7 +97,7 @@ Name | Type | Description  | Notes
  **entityType** | **String**| Entity type name. | [optional] 
  **tags** | **String**| Comma separated list of tags. | [optional] 
  **name** | **String**| Name of tags used for type ahead. | [optional] 
- **count** | **Integer**| Number of results to return. Max 10. | [optional] 
+ **count** | **Number**| Number of results to return. Max 10. | [optional] 
 
 ### Return type
 
@@ -123,7 +123,7 @@ Get all tags related to the list of categories
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];

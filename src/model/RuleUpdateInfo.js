@@ -18,7 +18,7 @@
   /**
    * The RuleUpdateInfo model module.
    * @module model/RuleUpdateInfo
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**

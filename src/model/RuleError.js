@@ -18,7 +18,7 @@
   /**
    * The RuleError model module.
    * @module model/RuleError
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -47,7 +47,7 @@
       obj = obj || new exports();
 
       if (data.hasOwnProperty('errorCode')) {
-        obj['errorCode'] = ApiClient.convertToType(data['errorCode'], 'Integer');
+        obj['errorCode'] = ApiClient.convertToType(data['errorCode'], 'Number');
       }
       if (data.hasOwnProperty('fieldPath')) {
         obj['fieldPath'] = FieldPath.constructFromObject(data['fieldPath']);
@@ -64,7 +64,7 @@
 
 
   /**
-   * @member Integer errorCode
+   * @member Number errorCode
    */
   exports.prototype['errorCode'] = undefined;
 

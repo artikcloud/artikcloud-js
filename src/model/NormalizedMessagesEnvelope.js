@@ -18,7 +18,7 @@
   /**
    * The NormalizedMessagesEnvelope model module.
    * @module model/NormalizedMessagesEnvelope
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -26,11 +26,11 @@
    * Normalized Messages Envelope
    * @alias module:model/NormalizedMessagesEnvelope
    * @class
-   * @param count(Integer)
-   * @param size(Integer)
+   * @param count(Number)
+   * @param size(Number)
    * @param data([NormalizedMessage])
    */
-  var exports = function(count, size, data) {
+  var exports = function(count(Number), size(Number), data([NormalizedMessage])) {
 
 
 
@@ -52,7 +52,7 @@
    * @return {module:model/NormalizedMessagesEnvelope} The populated <code>NormalizedMessagesEnvelope</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) {
+    if (data) { 
       obj = obj || new exports();
 
       if (data.hasOwnProperty('sdids')) {
@@ -65,10 +65,10 @@
         obj['uid'] = ApiClient.convertToType(data['uid'], 'String');
       }
       if (data.hasOwnProperty('startDate')) {
-        obj['startDate'] = ApiClient.convertToType(data['startDate'], 'Integer');
+        obj['startDate'] = ApiClient.convertToType(data['startDate'], 'Number');
       }
       if (data.hasOwnProperty('endDate')) {
-        obj['endDate'] = ApiClient.convertToType(data['endDate'], 'Integer');
+        obj['endDate'] = ApiClient.convertToType(data['endDate'], 'Number');
       }
       if (data.hasOwnProperty('order')) {
         obj['order'] = ApiClient.convertToType(data['order'], 'String');
@@ -77,10 +77,10 @@
         obj['next'] = ApiClient.convertToType(data['next'], 'String');
       }
       if (data.hasOwnProperty('count')) {
-        obj['count'] = ApiClient.convertToType(data['count'], 'Integer');
+        obj['count'] = ApiClient.convertToType(data['count'], 'Number');
       }
       if (data.hasOwnProperty('size')) {
-        obj['size'] = ApiClient.convertToType(data['size'], 'Integer');
+        obj['size'] = ApiClient.convertToType(data['size'], 'Number');
       }
       if (data.hasOwnProperty('data')) {
         obj['data'] = ApiClient.convertToType(data['data'], [NormalizedMessage]);
@@ -106,12 +106,12 @@
   exports.prototype['uid'] = undefined;
 
   /**
-   * @member Integer startDate
+   * @member Number startDate
    */
   exports.prototype['startDate'] = undefined;
 
   /**
-   * @member Integer endDate
+   * @member Number endDate
    */
   exports.prototype['endDate'] = undefined;
 
@@ -126,12 +126,12 @@
   exports.prototype['next'] = undefined;
 
   /**
-   * @member Integer count
+   * @member Number count
    */
   exports.prototype['count'] = undefined;
 
   /**
-   * @member Integer size
+   * @member Number size
    */
   exports.prototype['size'] = undefined;
 

@@ -18,7 +18,7 @@
   /**
    * The DeviceToken model module.
    * @module model/DeviceToken
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -31,7 +31,7 @@
    * @param did(String)
    * @param cid(String)
    */
-  var exports = function(accessToken, uid, did, cid) {
+  var exports = function(accessToken(String), uid(String), did(String), cid(String)) {
 
     this['accessToken'] = accessToken;
     this['uid'] = uid;
@@ -47,7 +47,7 @@
    * @return {module:model/DeviceToken} The populated <code>DeviceToken</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) {
+    if (data) { 
       obj = obj || new exports();
 
       if (data.hasOwnProperty('accessToken')) {

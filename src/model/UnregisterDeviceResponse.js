@@ -18,7 +18,7 @@
   /**
    * The UnregisterDeviceResponse model module.
    * @module model/UnregisterDeviceResponse
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -60,7 +60,7 @@
         obj['certificateSignature'] = ApiClient.convertToType(data['certificateSignature'], 'String');
       }
       if (data.hasOwnProperty('createdOn')) {
-        obj['createdOn'] = ApiClient.convertToType(data['createdOn'], 'Integer');
+        obj['createdOn'] = ApiClient.convertToType(data['createdOn'], 'Number');
       }
       if (data.hasOwnProperty('dtid')) {
         obj['dtid'] = ApiClient.convertToType(data['dtid'], 'String');
@@ -72,7 +72,7 @@
         obj['id'] = ApiClient.convertToType(data['id'], 'String');
       }
       if (data.hasOwnProperty('manifestVersion')) {
-        obj['manifestVersion'] = ApiClient.convertToType(data['manifestVersion'], 'Integer');
+        obj['manifestVersion'] = ApiClient.convertToType(data['manifestVersion'], 'Number');
       }
       if (data.hasOwnProperty('manifestVersionPolicy')) {
         obj['manifestVersionPolicy'] = ApiClient.convertToType(data['manifestVersionPolicy'], 'String');
@@ -105,7 +105,7 @@
 
   /**
    * Device created on date.
-   * @member Integer createdOn
+   * @member Number createdOn
    */
   exports.prototype['createdOn'] = undefined;
 
@@ -129,7 +129,7 @@
 
   /**
    * Device manifest version.
-   * @member Integer manifestVersion
+   * @member Number manifestVersion
    */
   exports.prototype['manifestVersion'] = undefined;
 

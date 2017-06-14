@@ -18,7 +18,7 @@
   /**
    * The Token model module.
    * @module model/Token
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -50,7 +50,7 @@
         obj['access_token'] = ApiClient.convertToType(data['access_token'], 'String');
       }
       if (data.hasOwnProperty('expires_in')) {
-        obj['expires_in'] = ApiClient.convertToType(data['expires_in'], 'Integer');
+        obj['expires_in'] = ApiClient.convertToType(data['expires_in'], 'Number');
       }
       if (data.hasOwnProperty('scope')) {
         obj['scope'] = ApiClient.convertToType(data['scope'], 'String');
@@ -69,7 +69,7 @@
   exports.prototype['access_token'] = undefined;
 
   /**
-   * @member Integer expires_in
+   * @member Number expires_in
    */
   exports.prototype['expires_in'] = undefined;
 

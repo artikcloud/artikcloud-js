@@ -18,7 +18,7 @@
   /**
    * The FieldPath model module.
    * @module model/FieldPath
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**

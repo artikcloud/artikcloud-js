@@ -18,7 +18,7 @@
   /**
    * The DeviceTypesEnvelope model module.
    * @module model/DeviceTypesEnvelope
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -26,11 +26,11 @@
    * DeviceTypes Envelope
    * @alias module:model/DeviceTypesEnvelope
    * @class
-   * @param total(Integer)
-   * @param count(Integer)
-   * @param offset(Integer)
+   * @param total(Number)
+   * @param count(Number)
+   * @param offset(Number)
    */
-  var exports = function(total, count, offset) {
+  var exports = function(total(Number), count(Number), offset(Number)) {
 
     this['total'] = total;
     this['count'] = count;
@@ -46,17 +46,17 @@
    * @return {module:model/DeviceTypesEnvelope} The populated <code>DeviceTypesEnvelope</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) {
+    if (data) { 
       obj = obj || new exports();
 
       if (data.hasOwnProperty('total')) {
-        obj['total'] = ApiClient.convertToType(data['total'], 'Integer');
+        obj['total'] = ApiClient.convertToType(data['total'], 'Number');
       }
       if (data.hasOwnProperty('count')) {
-        obj['count'] = ApiClient.convertToType(data['count'], 'Integer');
+        obj['count'] = ApiClient.convertToType(data['count'], 'Number');
       }
       if (data.hasOwnProperty('offset')) {
-        obj['offset'] = ApiClient.convertToType(data['offset'], 'Integer');
+        obj['offset'] = ApiClient.convertToType(data['offset'], 'Number');
       }
       if (data.hasOwnProperty('data')) {
         obj['data'] = DeviceTypeArray.constructFromObject(data['data']);
@@ -67,17 +67,17 @@
 
 
   /**
-   * @member Integer total
+   * @member Number total
    */
   exports.prototype['total'] = undefined;
 
   /**
-   * @member Integer count
+   * @member Number count
    */
   exports.prototype['count'] = undefined;
 
   /**
-   * @member Integer offset
+   * @member Number offset
    */
   exports.prototype['offset'] = undefined;
 

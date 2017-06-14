@@ -18,7 +18,7 @@
   /**
    * The TokenResponse model module.
    * @module model/TokenResponse
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**

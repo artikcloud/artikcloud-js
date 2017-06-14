@@ -18,7 +18,7 @@
   /**
    * The ExportStatusResponse model module.
    * @module model/ExportStatusResponse
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -48,7 +48,7 @@
       obj = obj || new exports();
 
       if (data.hasOwnProperty('expirationDate')) {
-        obj['expirationDate'] = ApiClient.convertToType(data['expirationDate'], 'Integer');
+        obj['expirationDate'] = ApiClient.convertToType(data['expirationDate'], 'Number');
       }
       if (data.hasOwnProperty('exportId')) {
         obj['exportId'] = ApiClient.convertToType(data['exportId'], 'String');
@@ -68,7 +68,7 @@
 
 
   /**
-   * @member Integer expirationDate
+   * @member Number expirationDate
    */
   exports.prototype['expirationDate'] = undefined;
 

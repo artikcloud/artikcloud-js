@@ -18,7 +18,7 @@
   /**
    * The Acknowledgement model module.
    * @module model/Acknowledgement
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**

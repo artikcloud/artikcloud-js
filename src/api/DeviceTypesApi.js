@@ -1,24 +1,24 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['../ApiClient', '../model/ManifestVersionsEnvelope', '../model/DeviceTypeEnvelope', '../model/DeviceTypesEnvelope', '../model/ManifestPropertiesEnvelope'], factory);
+    define(['../ApiClient', '../model/DeviceTypeEnvelope', '../model/DeviceTypesEnvelope', '../model/ManifestPropertiesEnvelope', '../model/ManifestVersionsEnvelope'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/ManifestVersionsEnvelope'), require('../model/DeviceTypeEnvelope'), require('../model/DeviceTypesEnvelope'), require('../model/ManifestPropertiesEnvelope'));
+    module.exports = factory(require('../ApiClient'), require('../model/DeviceTypeEnvelope'), require('../model/DeviceTypesEnvelope'), require('../model/ManifestPropertiesEnvelope'), require('../model/ManifestVersionsEnvelope'));
   } else {
     // Browser globals (root is window)
     if (!root.ArtikCloud) {
       root.ArtikCloud = {};
     }
-    root.ArtikCloud.DeviceTypesApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.ManifestVersionsEnvelope, root.ArtikCloud.DeviceTypeEnvelope, root.ArtikCloud.DeviceTypesEnvelope, root.ArtikCloud.ManifestPropertiesEnvelope);
+    root.ArtikCloud.DeviceTypesApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.DeviceTypeEnvelope, root.ArtikCloud.DeviceTypesEnvelope, root.ArtikCloud.ManifestPropertiesEnvelope, root.ArtikCloud.ManifestVersionsEnvelope);
   }
-}(this, function(ApiClient, ManifestVersionsEnvelope, DeviceTypeEnvelope, DeviceTypesEnvelope, ManifestPropertiesEnvelope) {
+}(this, function(ApiClient, DeviceTypeEnvelope, DeviceTypesEnvelope, ManifestPropertiesEnvelope, ManifestVersionsEnvelope) {
   'use strict';
 
   /**
    * DeviceTypes service.
    * @module api/DeviceTypesApi
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -137,8 +137,8 @@
      * Retrieves Device Types
      * @param String name Device Type name
      * @param {Object} opts Optional parameters
-     * @param Integer opts.offset Offset for pagination.
-     * @param Integer opts.count Desired count of items in the result set
+     * @param Number opts.offset Offset for pagination.
+     * @param Number opts.count Desired count of items in the result set
      * @param String opts.tags Elements tagged with the list of tags. (comma separated)
      * @param {module:api/DeviceTypesApi~getDeviceTypesCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: module:model/DeviceTypesEnvelope
@@ -173,6 +173,60 @@
 
       return this.apiClient.callApi(
         '/devicetypes', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the getDeviceTypesByApplication operation.
+     * @callback module:api/DeviceTypesApi~getDeviceTypesByApplicationCallback
+     * @param {String} error Error message, if any.
+     * @param module:model/DeviceTypesEnvelope data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get Device Types by Application
+     * Get Device Types by Application
+     * @param String appId Application ID.
+     * @param {Object} opts Optional parameters
+     * @param Boolean opts.productInfo Flag to include the associated ProductInfo if present
+     * @param Number opts.count Desired count of items in the result set.
+     * @param Number opts.offset Offset for pagination.
+     * @param {module:api/DeviceTypesApi~getDeviceTypesByApplicationCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: module:model/DeviceTypesEnvelope
+     */
+    this.getDeviceTypesByApplication = function(appId, opts, callback) {
+      opts = opts || {};
+      var postBody = null;
+
+      // verify the required parameter 'appId' is set
+      if (appId == undefined || appId == null) {
+        throw "Missing the required parameter 'appId' when calling getDeviceTypesByApplication";
+      }
+
+
+      var pathParams = {
+        'appId': appId
+      };
+      var queryParams = {
+        'productInfo': opts['productInfo'],
+        'count': opts['count'],
+        'offset': opts['offset']
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = ['artikcloud_oauth'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = DeviceTypesEnvelope;
+
+      return this.apiClient.callApi(
+        '/applications/{appId}/devicetypes', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

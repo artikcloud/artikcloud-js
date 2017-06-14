@@ -18,7 +18,7 @@
   /**
    * The ActionOut model module.
    * @module model/ActionOut
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -57,10 +57,10 @@
         obj['sdtid'] = ApiClient.convertToType(data['sdtid'], 'String');
       }
       if (data.hasOwnProperty('cts')) {
-        obj['cts'] = ApiClient.convertToType(data['cts'], 'Integer');
+        obj['cts'] = ApiClient.convertToType(data['cts'], 'Number');
       }
       if (data.hasOwnProperty('mv')) {
-        obj['mv'] = ApiClient.convertToType(data['mv'], 'Integer');
+        obj['mv'] = ApiClient.convertToType(data['mv'], 'Number');
       }
     }
     return obj;
@@ -87,13 +87,13 @@
 
   /**
    * Created Timestamp (past, present or future). Defaults to current time if not provided.
-   * @member Integer cts
+   * @member Number cts
    */
   exports.prototype['cts'] = undefined;
 
   /**
    * Manifest Version.
-   * @member Integer mv
+   * @member Number mv
    */
   exports.prototype['mv'] = undefined;
 

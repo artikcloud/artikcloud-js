@@ -18,7 +18,7 @@
   /**
    * The TokenInfo model module.
    * @module model/TokenInfo
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -53,7 +53,7 @@
         obj['device_id'] = ApiClient.convertToType(data['device_id'], 'String');
       }
       if (data.hasOwnProperty('expires_in')) {
-        obj['expires_in'] = ApiClient.convertToType(data['expires_in'], 'Integer');
+        obj['expires_in'] = ApiClient.convertToType(data['expires_in'], 'Number');
       }
       if (data.hasOwnProperty('user_id')) {
         obj['user_id'] = ApiClient.convertToType(data['user_id'], 'String');
@@ -74,7 +74,7 @@
   exports.prototype['device_id'] = undefined;
 
   /**
-   * @member Integer expires_in
+   * @member Number expires_in
    */
   exports.prototype['expires_in'] = undefined;
 

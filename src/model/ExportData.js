@@ -18,7 +18,7 @@
   /**
    * The ExportData model module.
    * @module model/ExportData
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -50,13 +50,13 @@
       obj = obj || new exports();
 
       if (data.hasOwnProperty('expirationDate')) {
-        obj['expirationDate'] = ApiClient.convertToType(data['expirationDate'], 'Integer');
+        obj['expirationDate'] = ApiClient.convertToType(data['expirationDate'], 'Number');
       }
       if (data.hasOwnProperty('exportId')) {
         obj['exportId'] = ApiClient.convertToType(data['exportId'], 'String');
       }
       if (data.hasOwnProperty('fileSize')) {
-        obj['fileSize'] = ApiClient.convertToType(data['fileSize'], 'Integer');
+        obj['fileSize'] = ApiClient.convertToType(data['fileSize'], 'Number');
       }
       if (data.hasOwnProperty('md5')) {
         obj['md5'] = ApiClient.convertToType(data['md5'], 'String');
@@ -68,7 +68,7 @@
         obj['status'] = ApiClient.convertToType(data['status'], 'String');
       }
       if (data.hasOwnProperty('totalMessages')) {
-        obj['totalMessages'] = ApiClient.convertToType(data['totalMessages'], 'Integer');
+        obj['totalMessages'] = ApiClient.convertToType(data['totalMessages'], 'Number');
       }
     }
     return obj;
@@ -76,7 +76,7 @@
 
 
   /**
-   * @member Integer expirationDate
+   * @member Number expirationDate
    */
   exports.prototype['expirationDate'] = undefined;
 
@@ -86,7 +86,7 @@
   exports.prototype['exportId'] = undefined;
 
   /**
-   * @member Integer fileSize
+   * @member Number fileSize
    */
   exports.prototype['fileSize'] = undefined;
 
@@ -107,7 +107,7 @@
   exports.prototype['status'] = undefined;
 
   /**
-   * @member Integer totalMessages
+   * @member Number totalMessages
    */
   exports.prototype['totalMessages'] = undefined;
 

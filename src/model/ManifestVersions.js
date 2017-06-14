@@ -18,7 +18,7 @@
   /**
    * The ManifestVersions model module.
    * @module model/ManifestVersions
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -28,7 +28,7 @@
    * @class
    * @param versions([String])
    */
-  var exports = function(versions) {
+  var exports = function(versions([String])) {
 
     this['versions'] = versions;
   };
@@ -41,7 +41,7 @@
    * @return {module:model/ManifestVersions} The populated <code>ManifestVersions</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) {
+    if (data) { 
       obj = obj || new exports();
 
       if (data.hasOwnProperty('versions')) {

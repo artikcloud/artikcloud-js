@@ -18,7 +18,7 @@
   /**
    * The ExportNormalizedMessagesResponse model module.
    * @module model/ExportNormalizedMessagesResponse
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -59,7 +59,7 @@
         obj['csvHeaders'] = ApiClient.convertToType(data['csvHeaders'], 'Boolean');
       }
       if (data.hasOwnProperty('endDate')) {
-        obj['endDate'] = ApiClient.convertToType(data['endDate'], 'Integer');
+        obj['endDate'] = ApiClient.convertToType(data['endDate'], 'Number');
       }
       if (data.hasOwnProperty('exportId')) {
         obj['exportId'] = ApiClient.convertToType(data['exportId'], 'String');
@@ -77,7 +77,7 @@
         obj['sdids'] = ApiClient.convertToType(data['sdids'], 'String');
       }
       if (data.hasOwnProperty('startDate')) {
-        obj['startDate'] = ApiClient.convertToType(data['startDate'], 'Integer');
+        obj['startDate'] = ApiClient.convertToType(data['startDate'], 'Number');
       }
       if (data.hasOwnProperty('stdids')) {
         obj['stdids'] = ApiClient.convertToType(data['stdids'], 'String');
@@ -105,7 +105,7 @@
   exports.prototype['csvHeaders'] = undefined;
 
   /**
-   * @member Integer endDate
+   * @member Number endDate
    */
   exports.prototype['endDate'] = undefined;
 
@@ -135,7 +135,7 @@
   exports.prototype['sdids'] = undefined;
 
   /**
-   * @member Integer startDate
+   * @member Number startDate
    */
   exports.prototype['startDate'] = undefined;
 

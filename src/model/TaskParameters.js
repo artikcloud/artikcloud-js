@@ -1,18 +1,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['../ApiClient'], factory);
+    define(['../ApiClient', './UpdateParameters'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'));
+    module.exports = factory(require('../ApiClient'), require('./UpdateParameters'));
   } else {
     // Browser globals (root is window)
     if (!root.ArtikCloud) {
       root.ArtikCloud = {};
     }
-    root.ArtikCloud.TaskParameters = factory(root.ArtikCloud.ApiClient);
+    root.ArtikCloud.TaskParameters = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.UpdateParameters);
   }
-}(this, function(ApiClient) {
+}(this, function(ApiClient, UpdateParameters) {
   'use strict';
 
   /**
@@ -28,6 +28,8 @@
    * @class
    */
   var exports = function() {
+
+
 
 
 
@@ -47,6 +49,12 @@
       if (data.hasOwnProperty('expiresAfter')) {
         obj['expiresAfter'] = ApiClient.convertToType(data['expiresAfter'], 'Number');
       }
+      if (data.hasOwnProperty('scheduledOn')) {
+        obj['scheduledOn'] = ApiClient.convertToType(data['scheduledOn'], 'Number');
+      }
+      if (data.hasOwnProperty('update')) {
+        obj['update'] = UpdateParameters.constructFromObject(data['update']);
+      }
       if (data.hasOwnProperty('value')) {
         obj['value'] = ApiClient.convertToType(data['value'], 'String');
       }
@@ -60,6 +68,18 @@
    * @member Number expiresAfter
    */
   exports.prototype['expiresAfter'] = undefined;
+
+  /**
+   * Future scheduled time
+   * @member Number scheduledOn
+   */
+  exports.prototype['scheduledOn'] = undefined;
+
+  /**
+   * Update parameters
+   * @member module:model/UpdateParameters update
+   */
+  exports.prototype['update'] = undefined;
 
   /**
    * Value to write

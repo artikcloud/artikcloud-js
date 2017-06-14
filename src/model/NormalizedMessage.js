@@ -18,7 +18,7 @@
   /**
    * The NormalizedMessage model module.
    * @module model/NormalizedMessage
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -26,16 +26,16 @@
    * Normalized Message
    * @alias module:model/NormalizedMessage
    * @class
-   * @param cts(Integer)
-   * @param ts(Integer)
+   * @param cts(Number)
+   * @param ts(Number)
    * @param mid(String)
    * @param sdid(String)
    * @param sdtid(String)
    * @param uid(String)
-   * @param mv(Integer)
+   * @param mv(Number)
    * @param data({String: Object})
    */
-  var exports = function(cts, ts, mid, sdid, sdtid, uid, mv, data) {
+  var exports = function(cts(Number), ts(Number), mid(String), sdid(String), sdtid(String), uid(String), mv(Number), data({String: Object})) {
 
     this['cts'] = cts;
     this['ts'] = ts;
@@ -55,14 +55,14 @@
    * @return {module:model/NormalizedMessage} The populated <code>NormalizedMessage</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) {
+    if (data) { 
       obj = obj || new exports();
 
       if (data.hasOwnProperty('cts')) {
-        obj['cts'] = ApiClient.convertToType(data['cts'], 'Integer');
+        obj['cts'] = ApiClient.convertToType(data['cts'], 'Number');
       }
       if (data.hasOwnProperty('ts')) {
-        obj['ts'] = ApiClient.convertToType(data['ts'], 'Integer');
+        obj['ts'] = ApiClient.convertToType(data['ts'], 'Number');
       }
       if (data.hasOwnProperty('mid')) {
         obj['mid'] = ApiClient.convertToType(data['mid'], 'String');
@@ -77,7 +77,7 @@
         obj['uid'] = ApiClient.convertToType(data['uid'], 'String');
       }
       if (data.hasOwnProperty('mv')) {
-        obj['mv'] = ApiClient.convertToType(data['mv'], 'Integer');
+        obj['mv'] = ApiClient.convertToType(data['mv'], 'Number');
       }
       if (data.hasOwnProperty('data')) {
         obj['data'] = ApiClient.convertToType(data['data'], {'String': Object});
@@ -88,12 +88,12 @@
 
 
   /**
-   * @member Integer cts
+   * @member Number cts
    */
   exports.prototype['cts'] = undefined;
 
   /**
-   * @member Integer ts
+   * @member Number ts
    */
   exports.prototype['ts'] = undefined;
 
@@ -118,7 +118,7 @@
   exports.prototype['uid'] = undefined;
 
   /**
-   * @member Integer mv
+   * @member Number mv
    */
   exports.prototype['mv'] = undefined;
 

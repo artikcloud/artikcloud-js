@@ -18,7 +18,7 @@
   /**
    * The PropertiesEnvelope model module.
    * @module model/PropertiesEnvelope
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -28,7 +28,7 @@
    * @class
    * @param data(AppProperties)
    */
-  var exports = function(data) {
+  var exports = function(data(AppProperties)) {
 
     this['data'] = data;
   };
@@ -41,7 +41,7 @@
    * @return {module:model/PropertiesEnvelope} The populated <code>PropertiesEnvelope</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) {
+    if (data) { 
       obj = obj || new exports();
 
       if (data.hasOwnProperty('data')) {

@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **accessToken** | **String** |  | [optional] 
-**expiresIn** | **Integer** |  | [optional] 
+**expiresIn** | **Number** |  | [optional] 
 **refreshToken** | **String** |  | [optional] 
 **tokenType** | **String** |  | [optional] 
 

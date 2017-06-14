@@ -5,8 +5,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** | Device Type ID. | [optional] 
 **uniqueName** | **String** | Unique Name. | [optional] 
-**latestVersion** | **Integer** | Latest Manifest version. | [optional] 
-**lastUpdated** | **Integer** |  | [optional] 
+**latestVersion** | **Number** | Latest Manifest version. | [optional] 
+**lastUpdated** | **Number** |  | [optional] 
 **name** | **String** | Name. | [optional] 
 **description** | **String** | Description. | [optional] 
 **uid** | **String** | User ID. | [optional] 

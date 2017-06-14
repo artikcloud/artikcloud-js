@@ -18,7 +18,7 @@
   /**
    * The TokenInfoSuccessResponse model module.
    * @module model/TokenInfoSuccessResponse
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**

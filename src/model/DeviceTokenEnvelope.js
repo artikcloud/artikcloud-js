@@ -18,7 +18,7 @@
   /**
    * The DeviceTokenEnvelope model module.
    * @module model/DeviceTokenEnvelope
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -28,7 +28,7 @@
    * @class
    * @param data(DeviceToken)
    */
-  var exports = function(data) {
+  var exports = function(data(DeviceToken)) {
 
     this['data'] = data;
   };
@@ -41,7 +41,7 @@
    * @return {module:model/DeviceTokenEnvelope} The populated <code>DeviceTokenEnvelope</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) {
+    if (data) { 
       obj = obj || new exports();
 
       if (data.hasOwnProperty('data')) {

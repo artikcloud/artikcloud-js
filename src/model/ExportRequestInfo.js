@@ -18,7 +18,7 @@
   /**
    * The ExportRequestInfo model module.
    * @module model/ExportRequestInfo
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -56,7 +56,7 @@
         obj['csvHeaders'] = ApiClient.convertToType(data['csvHeaders'], 'Boolean');
       }
       if (data.hasOwnProperty('endDate')) {
-        obj['endDate'] = ApiClient.convertToType(data['endDate'], 'Integer');
+        obj['endDate'] = ApiClient.convertToType(data['endDate'], 'Number');
       }
       if (data.hasOwnProperty('format')) {
         obj['format'] = ApiClient.convertToType(data['format'], 'String');
@@ -71,7 +71,7 @@
         obj['sdtids'] = ApiClient.convertToType(data['sdtids'], 'String');
       }
       if (data.hasOwnProperty('startDate')) {
-        obj['startDate'] = ApiClient.convertToType(data['startDate'], 'Integer');
+        obj['startDate'] = ApiClient.convertToType(data['startDate'], 'Number');
       }
       if (data.hasOwnProperty('trialId')) {
         obj['trialId'] = ApiClient.convertToType(data['trialId'], 'String');
@@ -95,7 +95,7 @@
 
   /**
    * Timestamp of latest message (in milliseconds since epoch).
-   * @member Integer endDate
+   * @member Number endDate
    */
   exports.prototype['endDate'] = undefined;
 
@@ -125,7 +125,7 @@
 
   /**
    * Timestamp of earliest message (in milliseconds since epoch).
-   * @member Integer startDate
+   * @member Number startDate
    */
   exports.prototype['startDate'] = undefined;
 

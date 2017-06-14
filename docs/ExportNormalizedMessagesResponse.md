@@ -4,13 +4,13 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **csvHeaders** | **Boolean** |  | [optional] 
-**endDate** | **Integer** |  | [optional] 
+**endDate** | **Number** |  | [optional] 
 **exportId** | **String** |  | [optional] 
 **format** | **String** |  | [optional] 
 **order** | **String** |  | [optional] 
 **sdid** | **String** |  | [optional] 
 **sdids** | **String** |  | [optional] 
-**startDate** | **Integer** |  | [optional] 
+**startDate** | **Number** |  | [optional] 
 **stdids** | **String** |  | [optional] 
 **trialId** | **String** |  | [optional] 
 **uid** | **String** |  | [optional] 

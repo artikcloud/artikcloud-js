@@ -26,7 +26,7 @@ Get Histogram on normalized messages.
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -34,9 +34,9 @@ artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
 var apiInstance = new ArtikCloud.MessagesApi()
 
-var startDate = 789; // {Integer} Timestamp of earliest message (in milliseconds since epoch).
+var startDate = 789; // {Number} Timestamp of earliest message (in milliseconds since epoch).
 
-var endDate = 789; // {Integer} Timestamp of latest message (in milliseconds since epoch).
+var endDate = 789; // {Number} Timestamp of latest message (in milliseconds since epoch).
 
 var opts = { 
   'sdid': "sdid_example", // {String} Source device ID of the messages being searched.
@@ -58,8 +58,8 @@ api.getAggregatesHistogram(startDate, endDate, opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **startDate** | **Integer**| Timestamp of earliest message (in milliseconds since epoch). | 
- **endDate** | **Integer**| Timestamp of latest message (in milliseconds since epoch). | 
+ **startDate** | **Number**| Timestamp of earliest message (in milliseconds since epoch). | 
+ **endDate** | **Number**| Timestamp of latest message (in milliseconds since epoch). | 
  **sdid** | **String**| Source device ID of the messages being searched. | [optional] 
  **field** | **String**| Message field being queried for building histogram. | [optional] 
  **interval** | **String**| Interval of time for building histogram blocks. (Valid values: minute, hour, day, month, year) | [optional] 
@@ -88,7 +88,7 @@ Get normalized message presence.
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -96,9 +96,9 @@ artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
 var apiInstance = new ArtikCloud.MessagesApi()
 
-var startDate = 789; // {Integer} startDate
+var startDate = 789; // {Number} startDate
 
-var endDate = 789; // {Integer} endDate
+var endDate = 789; // {Number} endDate
 
 var interval = "interval_example"; // {String} String representing grouping interval. One of: 'minute' (1 hour limit), 'hour' (1 day limit), 'day' (31 days limit), 'month' (1 year limit), or 'year' (10 years limit).
 
@@ -121,8 +121,8 @@ api.getFieldPresence(startDate, endDate, interval, opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **startDate** | **Integer**| startDate | 
- **endDate** | **Integer**| endDate | 
+ **startDate** | **Number**| startDate | 
+ **endDate** | **Number**| endDate | 
  **interval** | **String**| String representing grouping interval. One of: &#39;minute&#39; (1 hour limit), &#39;hour&#39; (1 day limit), &#39;day&#39; (31 days limit), &#39;month&#39; (1 year limit), or &#39;year&#39; (10 years limit). | 
  **sdid** | **String**| Source device ID of the messages being searched. | [optional] 
  **fieldPresence** | **String**| String representing a field from the specified device ID. | [optional] 
@@ -151,7 +151,7 @@ Get last messages normalized.
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -160,7 +160,7 @@ artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 var apiInstance = new ArtikCloud.MessagesApi()
 
 var opts = { 
-  'count': 56, // {Integer} Number of items to return per query.
+  'count': 56, // {Number} Number of items to return per query.
   'sdids': "sdids_example", // {String} Comma separated list of source device IDs (minimum: 1).
   'fieldPresence': "fieldPresence_example" // {String} String representing a field from the specified device ID.
 };
@@ -179,7 +179,7 @@ api.getLastNormalizedMessages(opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **count** | **Integer**| Number of items to return per query. | [optional] 
+ **count** | **Number**| Number of items to return per query. | [optional] 
  **sdids** | **String**| Comma separated list of source device IDs (minimum: 1). | [optional] 
  **fieldPresence** | **String**| String representing a field from the specified device ID. | [optional] 
 
@@ -207,7 +207,7 @@ Get Aggregates on normalized messages.
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -219,9 +219,9 @@ var sdid = "sdid_example"; // {String} Source device ID of the messages being se
 
 var field = "field_example"; // {String} Message field being queried for aggregates.
 
-var startDate = 789; // {Integer} Timestamp of earliest message (in milliseconds since epoch).
+var startDate = 789; // {Number} Timestamp of earliest message (in milliseconds since epoch).
 
-var endDate = 789; // {Integer} Timestamp of latest message (in milliseconds since epoch).
+var endDate = 789; // {Number} Timestamp of latest message (in milliseconds since epoch).
 
 
 var callback = function(error, data, response) {
@@ -240,8 +240,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sdid** | **String**| Source device ID of the messages being searched. | 
  **field** | **String**| Message field being queried for aggregates. | 
- **startDate** | **Integer**| Timestamp of earliest message (in milliseconds since epoch). | 
- **endDate** | **Integer**| Timestamp of latest message (in milliseconds since epoch). | 
+ **startDate** | **Number**| Timestamp of earliest message (in milliseconds since epoch). | 
+ **endDate** | **Number**| Timestamp of latest message (in milliseconds since epoch). | 
 
 ### Return type
 
@@ -267,7 +267,7 @@ Get message snapshots.
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -322,7 +322,7 @@ Get the actions normalized
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -335,9 +335,9 @@ var opts = {
   'ddid': "ddid_example", // {String} Destination device ID of the actions being searched.
   'mid': "mid_example", // {String} The message ID being searched.
   'offset': "offset_example", // {String} A string that represents the starting item, should be the value of 'next' field received in the last response. (required for pagination)
-  'count': 56, // {Integer} count
-  'startDate': 789, // {Integer} startDate
-  'endDate': 789, // {Integer} endDate
+  'count': 56, // {Number} count
+  'startDate': 789, // {Number} startDate
+  'endDate': 789, // {Number} endDate
   'order': "order_example" // {String} Desired sort order: 'asc' or 'desc'
 };
 
@@ -359,9 +359,9 @@ Name | Type | Description  | Notes
  **ddid** | **String**| Destination device ID of the actions being searched. | [optional] 
  **mid** | **String**| The message ID being searched. | [optional] 
  **offset** | **String**| A string that represents the starting item, should be the value of &#39;next&#39; field received in the last response. (required for pagination) | [optional] 
- **count** | **Integer**| count | [optional] 
- **startDate** | **Integer**| startDate | [optional] 
- **endDate** | **Integer**| endDate | [optional] 
+ **count** | **Number**| count | [optional] 
+ **startDate** | **Number**| startDate | [optional] 
+ **endDate** | **Number**| endDate | [optional] 
  **order** | **String**| Desired sort order: &#39;asc&#39; or &#39;desc&#39; | [optional] 
 
 ### Return type
@@ -388,7 +388,7 @@ Get the messages normalized
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -403,9 +403,9 @@ var opts = {
   'fieldPresence': "fieldPresence_example", // {String} String representing a field from the specified device ID.
   'filter': "filter_example", // {String} Filter.
   'offset': "offset_example", // {String} A string that represents the starting item, should be the value of 'next' field received in the last response. (required for pagination)
-  'count': 56, // {Integer} count
-  'startDate': 789, // {Integer} startDate
-  'endDate': 789, // {Integer} endDate
+  'count': 56, // {Number} count
+  'startDate': 789, // {Number} startDate
+  'endDate': 789, // {Number} endDate
   'order': "order_example" // {String} Desired sort order: 'asc' or 'desc'
 };
 
@@ -429,9 +429,9 @@ Name | Type | Description  | Notes
  **fieldPresence** | **String**| String representing a field from the specified device ID. | [optional] 
  **filter** | **String**| Filter. | [optional] 
  **offset** | **String**| A string that represents the starting item, should be the value of &#39;next&#39; field received in the last response. (required for pagination) | [optional] 
- **count** | **Integer**| count | [optional] 
- **startDate** | **Integer**| startDate | [optional] 
- **endDate** | **Integer**| endDate | [optional] 
+ **count** | **Number**| count | [optional] 
+ **startDate** | **Number**| startDate | [optional] 
+ **endDate** | **Number**| endDate | [optional] 
  **order** | **String**| Desired sort order: &#39;asc&#39; or &#39;desc&#39; | [optional] 
 
 ### Return type
@@ -458,7 +458,7 @@ Send Actions
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -509,7 +509,7 @@ Send a message
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];

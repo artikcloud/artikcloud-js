@@ -18,7 +18,7 @@
   /**
    * The AppProperties model module.
    * @module model/AppProperties
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -28,7 +28,7 @@
    * @class
    * @param properties(String)
    */
-  var exports = function(properties) {
+  var exports = function(properties(String)) {
 
 
 
@@ -43,7 +43,7 @@
    * @return {module:model/AppProperties} The populated <code>AppProperties</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) {
+    if (data) { 
       obj = obj || new exports();
 
       if (data.hasOwnProperty('uid')) {

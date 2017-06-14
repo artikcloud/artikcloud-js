@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **email** | **String** |  | 
 **fullName** | **String** |  | 
 **saIdentity** | **String** |  | [optional] 
-**createdOn** | **Integer** |  | 
-**modifiedOn** | **Integer** |  | 
+**createdOn** | **Number** |  | 
+**modifiedOn** | **Number** |  | 
 
 

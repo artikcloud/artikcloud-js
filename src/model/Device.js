@@ -18,7 +18,7 @@
   /**
    * The Device model module.
    * @module model/Device
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -28,6 +28,8 @@
    * @class
    */
   var exports = function() {
+
+
 
 
 
@@ -69,7 +71,7 @@
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
       }
       if (data.hasOwnProperty('manifestVersion')) {
-        obj['manifestVersion'] = ApiClient.convertToType(data['manifestVersion'], 'Integer');
+        obj['manifestVersion'] = ApiClient.convertToType(data['manifestVersion'], 'Number');
       }
       if (data.hasOwnProperty('manifestVersionPolicy')) {
         obj['manifestVersionPolicy'] = ApiClient.convertToType(data['manifestVersionPolicy'], 'String');
@@ -81,7 +83,7 @@
         obj['properties'] = ApiClient.convertToType(data['properties'], {'String': Object});
       }
       if (data.hasOwnProperty('createdOn')) {
-        obj['createdOn'] = ApiClient.convertToType(data['createdOn'], 'Integer');
+        obj['createdOn'] = ApiClient.convertToType(data['createdOn'], 'Number');
       }
       if (data.hasOwnProperty('connected')) {
         obj['connected'] = ApiClient.convertToType(data['connected'], 'Boolean');
@@ -97,6 +99,12 @@
       }
       if (data.hasOwnProperty('providerCredentials')) {
         obj['providerCredentials'] = ApiClient.convertToType(data['providerCredentials'], {'String': Object});
+      }
+      if (data.hasOwnProperty('sharedWithOthers')) {
+        obj['sharedWithOthers'] = ApiClient.convertToType(data['sharedWithOthers'], 'Boolean');
+      }
+      if (data.hasOwnProperty('sharedWithMe')) {
+        obj['sharedWithMe'] = ApiClient.convertToType(data['sharedWithMe'], 'String');
       }
     }
     return obj;
@@ -129,7 +137,7 @@
 
   /**
    * Manifest Version
-   * @member Integer manifestVersion
+   * @member Number manifestVersion
    */
   exports.prototype['manifestVersion'] = undefined;
 
@@ -152,7 +160,7 @@
 
   /**
    * Created On (milliseconds since epoch)
-   * @member Integer createdOn
+   * @member Number createdOn
    */
   exports.prototype['createdOn'] = undefined;
 
@@ -184,6 +192,18 @@
    * @member Object.<String, Object> providerCredentials
    */
   exports.prototype['providerCredentials'] = undefined;
+
+  /**
+   * Is shared with other users
+   * @member Boolean sharedWithOthers
+   */
+  exports.prototype['sharedWithOthers'] = undefined;
+
+  /**
+   * Share id (if shared with me)
+   * @member String sharedWithMe
+   */
+  exports.prototype['sharedWithMe'] = undefined;
 
 
 

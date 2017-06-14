@@ -18,7 +18,7 @@
   /**
    * The ManifestVersionsEnvelope model module.
    * @module model/ManifestVersionsEnvelope
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -28,7 +28,7 @@
    * @class
    * @param data(ManifestVersions)
    */
-  var exports = function(data) {
+  var exports = function(data(ManifestVersions)) {
 
     this['data'] = data;
   };
@@ -41,7 +41,7 @@
    * @return {module:model/ManifestVersionsEnvelope} The populated <code>ManifestVersionsEnvelope</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) {
+    if (data) { 
       obj = obj || new exports();
 
       if (data.hasOwnProperty('data')) {

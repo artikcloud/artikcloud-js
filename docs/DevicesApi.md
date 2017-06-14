@@ -25,7 +25,7 @@ Create a device
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -76,7 +76,7 @@ Deletes a device
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -127,7 +127,7 @@ Deletes a device&#39;s token
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -178,7 +178,7 @@ Retrieves a device
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -229,7 +229,7 @@ Return the presence status of the given device along with the time it was last s
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -280,7 +280,7 @@ Retrieves a device&#39;s token
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -331,7 +331,7 @@ Updates a device
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -385,7 +385,7 @@ Updates a device&#39;s token
 ### Example
 ```javascript
 var ArtikCloud = require('artikcloud-js');
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];

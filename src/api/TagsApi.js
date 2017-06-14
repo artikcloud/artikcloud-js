@@ -18,7 +18,7 @@
   /**
    * Tags service.
    * @module api/TagsApi
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -86,7 +86,7 @@
      * @param module:model/String opts.entityType Entity type name.
      * @param String opts.tags Comma separated list of tags.
      * @param String opts.name Name of tags used for type ahead.
-     * @param Integer opts.count Number of results to return. Max 10.
+     * @param Number opts.count Number of results to return. Max 10.
      * @param {module:api/TagsApi~getTagSuggestionsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: module:model/TagsEnvelope
      */

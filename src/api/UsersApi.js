@@ -1,24 +1,24 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['../ApiClient', '../model/PropertiesEnvelope', '../model/AppProperties', '../model/UserEnvelope', '../model/DeviceTypesEnvelope', '../model/DevicesEnvelope', '../model/RulesEnvelope'], factory);
+    define(['../ApiClient', '../model/AppProperties', '../model/DeviceSharingEnvelope', '../model/DeviceTypesEnvelope', '../model/DevicesEnvelope', '../model/PropertiesEnvelope', '../model/RulesEnvelope', '../model/UserEnvelope'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/PropertiesEnvelope'), require('../model/AppProperties'), require('../model/UserEnvelope'), require('../model/DeviceTypesEnvelope'), require('../model/DevicesEnvelope'), require('../model/RulesEnvelope'));
+    module.exports = factory(require('../ApiClient'), require('../model/AppProperties'), require('../model/DeviceSharingEnvelope'), require('../model/DeviceTypesEnvelope'), require('../model/DevicesEnvelope'), require('../model/PropertiesEnvelope'), require('../model/RulesEnvelope'), require('../model/UserEnvelope'));
   } else {
     // Browser globals (root is window)
     if (!root.ArtikCloud) {
       root.ArtikCloud = {};
     }
-    root.ArtikCloud.UsersApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.PropertiesEnvelope, root.ArtikCloud.AppProperties, root.ArtikCloud.UserEnvelope, root.ArtikCloud.DeviceTypesEnvelope, root.ArtikCloud.DevicesEnvelope, root.ArtikCloud.RulesEnvelope);
+    root.ArtikCloud.UsersApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.AppProperties, root.ArtikCloud.DeviceSharingEnvelope, root.ArtikCloud.DeviceTypesEnvelope, root.ArtikCloud.DevicesEnvelope, root.ArtikCloud.PropertiesEnvelope, root.ArtikCloud.RulesEnvelope, root.ArtikCloud.UserEnvelope);
   }
-}(this, function(ApiClient, PropertiesEnvelope, AppProperties, UserEnvelope, DeviceTypesEnvelope, DevicesEnvelope, RulesEnvelope) {
+}(this, function(ApiClient, AppProperties, DeviceSharingEnvelope, DeviceTypesEnvelope, DevicesEnvelope, PropertiesEnvelope, RulesEnvelope, UserEnvelope) {
   'use strict';
 
   /**
    * Users service.
    * @module api/UsersApi
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -190,8 +190,8 @@
      * Retrieve User&#39;s Device Types
      * @param String userId User ID.
      * @param {Object} opts Optional parameters
-     * @param Integer opts.offset Offset for pagination.
-     * @param Integer opts.count Desired count of items in the result set
+     * @param Number opts.offset Offset for pagination.
+     * @param Number opts.count Desired count of items in the result set
      * @param Boolean opts.includeShared Optional. Boolean (true/false) - If false, only return the user&#39;s device types. If true, also return device types shared by other users.
      * @param {module:api/UsersApi~getUserDeviceTypesCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: module:model/DeviceTypesEnvelope
@@ -244,9 +244,11 @@
      * Retrieve User&#39;s Devices
      * @param String userId User ID
      * @param {Object} opts Optional parameters
-     * @param Integer opts.offset Offset for pagination.
-     * @param Integer opts.count Desired count of items in the result set
+     * @param Number opts.offset Offset for pagination.
+     * @param Number opts.count Desired count of items in the result set
      * @param Boolean opts.includeProperties Optional. Boolean (true/false) - If false, only return the user&#39;s device types. If true, also return device types shared by other users.
+     * @param String opts.owner Return owned and/or shared devices. Default to ALL.
+     * @param Boolean opts.includeShareInfo Include share info
      * @param {module:api/UsersApi~getUserDevicesCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: module:model/DevicesEnvelope
      */
@@ -266,7 +268,9 @@
       var queryParams = {
         'offset': opts['offset'],
         'count': opts['count'],
-        'includeProperties': opts['includeProperties']
+        'includeProperties': opts['includeProperties'],
+        'owner': opts['owner'],
+        'includeShareInfo': opts['includeShareInfo']
       };
       var headerParams = {
       };
@@ -349,8 +353,8 @@
      * @param String userId User ID.
      * @param {Object} opts Optional parameters
      * @param Boolean opts.excludeDisabled Exclude disabled rules in the result.
-     * @param Integer opts.count Desired count of items in the result set.
-     * @param Integer opts.offset Offset for pagination.
+     * @param Number opts.count Desired count of items in the result set.
+     * @param Number opts.offset Offset for pagination.
      * @param {module:api/UsersApi~getUserRulesCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: module:model/RulesEnvelope
      */
@@ -384,6 +388,65 @@
 
       return this.apiClient.callApi(
         '/users/{userId}/rules', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the listAllSharesForUser operation.
+     * @callback module:api/UsersApi~listAllSharesForUserCallback
+     * @param {String} error Error message, if any.
+     * @param module:model/DeviceSharingEnvelope data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get User shares
+     * Get User shares
+     * @param String userId User ID.
+     * @param String filter filter
+     * @param {Object} opts Optional parameters
+     * @param Number opts.count Desired count of items in the result set.
+     * @param Number opts.offset Offset for pagination.
+     * @param {module:api/UsersApi~listAllSharesForUserCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: module:model/DeviceSharingEnvelope
+     */
+    this.listAllSharesForUser = function(userId, filter, opts, callback) {
+      opts = opts || {};
+      var postBody = null;
+
+      // verify the required parameter 'userId' is set
+      if (userId == undefined || userId == null) {
+        throw "Missing the required parameter 'userId' when calling listAllSharesForUser";
+      }
+
+      // verify the required parameter 'filter' is set
+      if (filter == undefined || filter == null) {
+        throw "Missing the required parameter 'filter' when calling listAllSharesForUser";
+      }
+
+
+      var pathParams = {
+        'userId': userId
+      };
+      var queryParams = {
+        'filter': filter,
+        'count': opts['count'],
+        'offset': opts['offset']
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = ['artikcloud_oauth'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = DeviceSharingEnvelope;
+
+      return this.apiClient.callApi(
+        'in/api/users/{userId}/shares', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

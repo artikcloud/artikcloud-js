@@ -1,24 +1,24 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['../ApiClient', '../model/RuleEnvelope', '../model/RuleCreationInfo', '../model/RuleUpdateInfo'], factory);
+    define(['../ApiClient', '../model/RuleCreationInfo', '../model/RuleEnvelope', '../model/RuleUpdateInfo'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/RuleEnvelope'), require('../model/RuleCreationInfo'), require('../model/RuleUpdateInfo'));
+    module.exports = factory(require('../ApiClient'), require('../model/RuleCreationInfo'), require('../model/RuleEnvelope'), require('../model/RuleUpdateInfo'));
   } else {
     // Browser globals (root is window)
     if (!root.ArtikCloud) {
       root.ArtikCloud = {};
     }
-    root.ArtikCloud.RulesApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.RuleEnvelope, root.ArtikCloud.RuleCreationInfo, root.ArtikCloud.RuleUpdateInfo);
+    root.ArtikCloud.RulesApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.RuleCreationInfo, root.ArtikCloud.RuleEnvelope, root.ArtikCloud.RuleUpdateInfo);
   }
-}(this, function(ApiClient, RuleEnvelope, RuleCreationInfo, RuleUpdateInfo) {
+}(this, function(ApiClient, RuleCreationInfo, RuleEnvelope, RuleUpdateInfo) {
   'use strict';
 
   /**
    * Rules service.
    * @module api/RulesApi
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**

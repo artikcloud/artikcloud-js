@@ -106,6 +106,13 @@ Class | Method | HTTP request | Description
 *ArtikCloud.DevicesManagementApi* | [**updateServerProperties**](docs/DevicesManagementApi.md#updateServerProperties) | **POST** /devicemgmt/devices/{did}/serverproperties | Updates a device&#39;s server properties.
 *ArtikCloud.DevicesManagementApi* | [**updateTask**](docs/DevicesManagementApi.md#updateTask) | **PUT** /devicemgmt/tasks/{tid} | Updates a task for all devices - For now just allows changing the state to cancelled.
 *ArtikCloud.DevicesManagementApi* | [**updateTaskForDevice**](docs/DevicesManagementApi.md#updateTaskForDevice) | **PUT** /devicemgmt/tasks/{tid}/devices/{did} | Updates a task for a specific device - For now just allows changing the state to cancelled.
+*ArtikCloud.DevicessharesApi* | [**createShareForDevice**](docs/DevicessharesApi.md#createShareForDevice) | **POST** in/api/devices/{deviceId}/shares | Share a device 
+*ArtikCloud.DevicessharesApi* | [**deleteSharingForDevice**](docs/DevicessharesApi.md#deleteSharingForDevice) | **DELETE** in/api/devices/{deviceId}/shares/{shareId} | Delete specific share of the given device id
+*ArtikCloud.DevicessharesApi* | [**getAllSharesForDevice**](docs/DevicessharesApi.md#getAllSharesForDevice) | **GET** in/api/devices/{deviceId}/shares | List all shares for the given device id
+*ArtikCloud.DevicessharesApi* | [**getSharingForDevice**](docs/DevicessharesApi.md#getSharingForDevice) | **GET** in/api/devices/{deviceId}/shares/{shareId} | Get specific share of the given device id
+*ArtikCloud.DevicestatusApi* | [**getDeviceStatus**](docs/DevicestatusApi.md#getDeviceStatus) | **GET** /devices/{deviceId}/status | Get Device Status
+*ArtikCloud.DevicestatusApi* | [**getDevicesStatus**](docs/DevicestatusApi.md#getDevicesStatus) | **GET** /devices/status | Get Devices Status
+*ArtikCloud.DevicestatusApi* | [**putDeviceStatus**](docs/DevicestatusApi.md#putDeviceStatus) | **PUT** /devices/{deviceId}/status | Update Device Status
 *ArtikCloud.ExportApi* | [**exportRequest**](docs/ExportApi.md#exportRequest) | **POST** /messages/export | Create Export Request
 *ArtikCloud.ExportApi* | [**getExportHistory**](docs/ExportApi.md#getExportHistory) | **GET** /messages/export/history | Get Export History
 *ArtikCloud.ExportApi* | [**getExportResult**](docs/ExportApi.md#getExportResult) | **GET** /messages/export/{exportId}/result | Get Export Result
@@ -126,6 +133,12 @@ Class | Method | HTTP request | Description
 *ArtikCloud.RulesApi* | [**deleteRule**](docs/RulesApi.md#deleteRule) | **DELETE** /rules/{ruleId} | Delete Rule
 *ArtikCloud.RulesApi* | [**getRule**](docs/RulesApi.md#getRule) | **GET** /rules/{ruleId} | Get Rule
 *ArtikCloud.RulesApi* | [**updateRule**](docs/RulesApi.md#updateRule) | **PUT** /rules/{ruleId} | Update Rule
+*ArtikCloud.SubscriptionsApi* | [**createSubscription**](docs/SubscriptionsApi.md#createSubscription) | **POST** /subscriptions | Create Subscription
+*ArtikCloud.SubscriptionsApi* | [**deleteSubscription**](docs/SubscriptionsApi.md#deleteSubscription) | **DELETE** /subscriptions/{subId} | Delete Subscription
+*ArtikCloud.SubscriptionsApi* | [**getAllSubscriptions**](docs/SubscriptionsApi.md#getAllSubscriptions) | **GET** /subscriptions | Get All Subscriptions
+*ArtikCloud.SubscriptionsApi* | [**getMessages**](docs/SubscriptionsApi.md#getMessages) | **GET** /notifications/{notifId}/messages | Get Messages
+*ArtikCloud.SubscriptionsApi* | [**getSubscription**](docs/SubscriptionsApi.md#getSubscription) | **GET** /subscriptions/{subId} | Get Subscription
+*ArtikCloud.SubscriptionsApi* | [**validateSubscription**](docs/SubscriptionsApi.md#validateSubscription) | **POST** /subscriptions/{subId}/validate | Validate Subscription
 *ArtikCloud.TagsApi* | [**getTagCategories**](docs/TagsApi.md#getTagCategories) | **GET** /tags/categories | Get all categories
 *ArtikCloud.TagsApi* | [**getTagSuggestions**](docs/TagsApi.md#getTagSuggestions) | **GET** /tags/suggestions | Get tag suggestions
 *ArtikCloud.TagsApi* | [**getTagsByCategories**](docs/TagsApi.md#getTagsByCategories) | **GET** /tags | Get all tags of categories
@@ -139,6 +152,7 @@ Class | Method | HTTP request | Description
 *ArtikCloud.UsersApi* | [**getUserDevices**](docs/UsersApi.md#getUserDevices) | **GET** /users/{userId}/devices | Get User Devices
 *ArtikCloud.UsersApi* | [**getUserProperties**](docs/UsersApi.md#getUserProperties) | **GET** /users/{userId}/properties | Get User application properties
 *ArtikCloud.UsersApi* | [**getUserRules**](docs/UsersApi.md#getUserRules) | **GET** /users/{userId}/rules | Get User Rules
+*ArtikCloud.UsersApi* | [**listAllSharesForUser**](docs/UsersApi.md#listAllSharesForUser) | **GET** in/api/users/{userId}/shares | Get User shares
 *ArtikCloud.UsersApi* | [**updateUserProperties**](docs/UsersApi.md#updateUserProperties) | **PUT** /users/{userId}/properties | Update User Application Properties
 
 
@@ -169,6 +183,16 @@ Class | Method | HTTP request | Description
  - [ArtikCloud.DeviceRegConfirmUserResponseEnvelope](docs/DeviceRegConfirmUserResponseEnvelope.md)
  - [ArtikCloud.DeviceRegStatusResponse](docs/DeviceRegStatusResponse.md)
  - [ArtikCloud.DeviceRegStatusResponseEnvelope](docs/DeviceRegStatusResponseEnvelope.md)
+ - [ArtikCloud.DeviceShareInfo](docs/DeviceShareInfo.md)
+ - [ArtikCloud.DeviceSharing](docs/DeviceSharing.md)
+ - [ArtikCloud.DeviceSharingArray](docs/DeviceSharingArray.md)
+ - [ArtikCloud.DeviceSharingEnvelope](docs/DeviceSharingEnvelope.md)
+ - [ArtikCloud.DeviceSharingId](docs/DeviceSharingId.md)
+ - [ArtikCloud.DeviceStatus](docs/DeviceStatus.md)
+ - [ArtikCloud.DeviceStatusBatch](docs/DeviceStatusBatch.md)
+ - [ArtikCloud.DeviceStatusData](docs/DeviceStatusData.md)
+ - [ArtikCloud.DeviceStatusPut](docs/DeviceStatusPut.md)
+ - [ArtikCloud.DeviceStatusPutData](docs/DeviceStatusPutData.md)
  - [ArtikCloud.DeviceTask](docs/DeviceTask.md)
  - [ArtikCloud.DeviceTaskUpdateRequest](docs/DeviceTaskUpdateRequest.md)
  - [ArtikCloud.DeviceTaskUpdateResponse](docs/DeviceTaskUpdateResponse.md)
@@ -217,6 +241,9 @@ Class | Method | HTTP request | Description
  - [ArtikCloud.NormalizedActionsEnvelope](docs/NormalizedActionsEnvelope.md)
  - [ArtikCloud.NormalizedMessage](docs/NormalizedMessage.md)
  - [ArtikCloud.NormalizedMessagesEnvelope](docs/NormalizedMessagesEnvelope.md)
+ - [ArtikCloud.NotifMessage](docs/NotifMessage.md)
+ - [ArtikCloud.NotifMessageArray](docs/NotifMessageArray.md)
+ - [ArtikCloud.NotifMessagesResponse](docs/NotifMessagesResponse.md)
  - [ArtikCloud.OutputRule](docs/OutputRule.md)
  - [ArtikCloud.PresenceEnvelope](docs/PresenceEnvelope.md)
  - [ArtikCloud.PresenceModel](docs/PresenceModel.md)
@@ -233,6 +260,11 @@ Class | Method | HTTP request | Description
  - [ArtikCloud.SnapshotResponse](docs/SnapshotResponse.md)
  - [ArtikCloud.SnapshotResponses](docs/SnapshotResponses.md)
  - [ArtikCloud.SnapshotsResponseEnvelope](docs/SnapshotsResponseEnvelope.md)
+ - [ArtikCloud.Subscription](docs/Subscription.md)
+ - [ArtikCloud.SubscriptionArray](docs/SubscriptionArray.md)
+ - [ArtikCloud.SubscriptionEnvelope](docs/SubscriptionEnvelope.md)
+ - [ArtikCloud.SubscriptionInfo](docs/SubscriptionInfo.md)
+ - [ArtikCloud.SubscriptionsEnvelope](docs/SubscriptionsEnvelope.md)
  - [ArtikCloud.Tag](docs/Tag.md)
  - [ArtikCloud.TagArray](docs/TagArray.md)
  - [ArtikCloud.TagsEnvelope](docs/TagsEnvelope.md)
@@ -262,8 +294,10 @@ Class | Method | HTTP request | Description
  - [ArtikCloud.TokenResponse](docs/TokenResponse.md)
  - [ArtikCloud.UnregisterDeviceResponse](docs/UnregisterDeviceResponse.md)
  - [ArtikCloud.UnregisterDeviceResponseEnvelope](docs/UnregisterDeviceResponseEnvelope.md)
+ - [ArtikCloud.UpdateParameters](docs/UpdateParameters.md)
  - [ArtikCloud.User](docs/User.md)
  - [ArtikCloud.UserEnvelope](docs/UserEnvelope.md)
+ - [ArtikCloud.ValidationCallbackInfo](docs/ValidationCallbackInfo.md)
  - [ArtikCloud.WebSocketError](docs/WebSocketError.md)
 
 
@@ -274,10 +308,12 @@ Class | Method | HTTP request | Description
 
 - **Type**: OAuth
 - **Flow**: implicit
-- **Authorization URL**: https://accounts.artik.cloud/authorize
+- **Authorizatoin URL**: https://accounts.artik.cloud/authorize
 - **Scopes**: 
   - read:artikcloud: Read from ARTIK Cloud
   - write:artikcloud: Write from ARTIK Cloud
+
+
 
 More about ARTIK Cloud
 -------------------------
@@ -297,4 +333,4 @@ Licence and Copyright
 
 Licensed under the Apache License. See [LICENSE](https://github.com/artikcloud/artikcloud-js/blob/master/LICENSE).
 
-Copyright (c) 2016 Samsung Electronics Co., Ltd.
+Copyright (c) 2017 Samsung Electronics Co., Ltd.

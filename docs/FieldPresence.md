@@ -3,6 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**startDate** | **Integer** |  | 
+**startDate** | **Number** |  | 
 
 

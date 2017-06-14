@@ -18,7 +18,7 @@
   /**
    * The PresenceModel model module.
    * @module model/PresenceModel
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -48,7 +48,7 @@
         obj['connected'] = ApiClient.convertToType(data['connected'], 'Boolean');
       }
       if (data.hasOwnProperty('lastSeenOn')) {
-        obj['lastSeenOn'] = ApiClient.convertToType(data['lastSeenOn'], 'Integer');
+        obj['lastSeenOn'] = ApiClient.convertToType(data['lastSeenOn'], 'Number');
       }
     }
     return obj;
@@ -61,7 +61,7 @@
   exports.prototype['connected'] = undefined;
 
   /**
-   * @member Integer lastSeenOn
+   * @member Number lastSeenOn
    */
   exports.prototype['lastSeenOn'] = undefined;
 

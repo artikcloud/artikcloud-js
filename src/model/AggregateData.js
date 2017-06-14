@@ -18,7 +18,7 @@
   /**
    * The AggregateData model module.
    * @module model/AggregateData
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -49,7 +49,7 @@
       obj = obj || new exports();
 
       if (data.hasOwnProperty('count')) {
-        obj['count'] = ApiClient.convertToType(data['count'], 'Integer');
+        obj['count'] = ApiClient.convertToType(data['count'], 'Number');
       }
       if (data.hasOwnProperty('max')) {
         obj['max'] = ApiClient.convertToType(data['max'], 'Number');
@@ -72,7 +72,7 @@
 
 
   /**
-   * @member Integer count
+   * @member Number count
    */
   exports.prototype['count'] = undefined;
 

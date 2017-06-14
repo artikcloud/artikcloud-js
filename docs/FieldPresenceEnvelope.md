@@ -5,10 +5,10 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **sdid** | **String** |  | 
 **fieldPresence** | **String** |  | 
-**startDate** | **Integer** |  | 
-**endDate** | **Integer** |  | 
+**startDate** | **Number** |  | 
+**endDate** | **Number** |  | 
 **interval** | **String** |  | 
-**size** | **Integer** |  | 
+**size** | **Number** |  | 
 **data** | [**[FieldPresence]**](FieldPresence.md) |  | 
 
 

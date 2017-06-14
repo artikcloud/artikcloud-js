@@ -18,7 +18,7 @@
   /**
    * The DeviceEnvelope model module.
    * @module model/DeviceEnvelope
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -28,7 +28,7 @@
    * @class
    * @param data(Device)
    */
-  var exports = function(data) {
+  var exports = function(data(Device)) {
 
     this['data'] = data;
   };
@@ -41,7 +41,7 @@
    * @return {module:model/DeviceEnvelope} The populated <code>DeviceEnvelope</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) {
+    if (data) { 
       obj = obj || new exports();
 
       if (data.hasOwnProperty('data')) {

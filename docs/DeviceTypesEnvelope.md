@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**total** | **Integer** |  | 
-**count** | **Integer** |  | 
-**offset** | **Integer** |  | 
+**total** | **Number** |  | 
+**count** | **Number** |  | 
+**offset** | **Number** |  | 
 **data** | [**DeviceTypeArray**](DeviceTypeArray.md) |  | [optional] 
 
 

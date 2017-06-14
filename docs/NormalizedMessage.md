@@ -3,13 +3,13 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**cts** | **Integer** |  | 
-**ts** | **Integer** |  | 
+**cts** | **Number** |  | 
+**ts** | **Number** |  | 
 **mid** | **String** |  | 
 **sdid** | **String** |  | 
 **sdtid** | **String** |  | 
 **uid** | **String** |  | 
-**mv** | **Integer** |  | 
+**mv** | **Number** |  | 
 **data** | **{String: Object}** |  | 
 
 

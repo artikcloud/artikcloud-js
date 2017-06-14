@@ -18,7 +18,7 @@
   /**
    * The AggregatesHistogramData model module.
    * @module model/AggregatesHistogramData
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -50,7 +50,7 @@
       obj = obj || new exports();
 
       if (data.hasOwnProperty('count')) {
-        obj['count'] = ApiClient.convertToType(data['count'], 'Integer');
+        obj['count'] = ApiClient.convertToType(data['count'], 'Number');
       }
       if (data.hasOwnProperty('max')) {
         obj['max'] = ApiClient.convertToType(data['max'], 'Number');
@@ -65,7 +65,7 @@
         obj['sum'] = ApiClient.convertToType(data['sum'], 'Number');
       }
       if (data.hasOwnProperty('ts')) {
-        obj['ts'] = ApiClient.convertToType(data['ts'], 'Integer');
+        obj['ts'] = ApiClient.convertToType(data['ts'], 'Number');
       }
       if (data.hasOwnProperty('variance')) {
         obj['variance'] = ApiClient.convertToType(data['variance'], 'Number');
@@ -76,7 +76,7 @@
 
 
   /**
-   * @member Integer count
+   * @member Number count
    */
   exports.prototype['count'] = undefined;
 
@@ -101,7 +101,7 @@
   exports.prototype['sum'] = undefined;
 
   /**
-   * @member Integer ts
+   * @member Number ts
    */
   exports.prototype['ts'] = undefined;
 

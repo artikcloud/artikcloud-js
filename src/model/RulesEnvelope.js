@@ -18,7 +18,7 @@
   /**
    * The RulesEnvelope model module.
    * @module model/RulesEnvelope
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -47,16 +47,16 @@
       obj = obj || new exports();
 
       if (data.hasOwnProperty('count')) {
-        obj['count'] = ApiClient.convertToType(data['count'], 'Integer');
+        obj['count'] = ApiClient.convertToType(data['count'], 'Number');
       }
       if (data.hasOwnProperty('data')) {
         obj['data'] = ApiClient.convertToType(data['data'], [OutputRule]);
       }
       if (data.hasOwnProperty('offset')) {
-        obj['offset'] = ApiClient.convertToType(data['offset'], 'Integer');
+        obj['offset'] = ApiClient.convertToType(data['offset'], 'Number');
       }
       if (data.hasOwnProperty('total')) {
-        obj['total'] = ApiClient.convertToType(data['total'], 'Integer');
+        obj['total'] = ApiClient.convertToType(data['total'], 'Number');
       }
     }
     return obj;
@@ -64,7 +64,7 @@
 
 
   /**
-   * @member Integer count
+   * @member Number count
    */
   exports.prototype['count'] = undefined;
 
@@ -74,12 +74,12 @@
   exports.prototype['data'] = undefined;
 
   /**
-   * @member Integer offset
+   * @member Number offset
    */
   exports.prototype['offset'] = undefined;
 
   /**
-   * @member Integer total
+   * @member Number total
    */
   exports.prototype['total'] = undefined;
 

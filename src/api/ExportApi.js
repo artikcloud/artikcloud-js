@@ -1,24 +1,24 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['../ApiClient', '../model/ExportRequestInfo', '../model/ExportRequestResponse', '../model/ExportHistoryResponse', '../model/ExportStatusResponse'], factory);
+    define(['../ApiClient', '../model/ExportHistoryResponse', '../model/ExportRequestInfo', '../model/ExportRequestResponse', '../model/ExportStatusResponse'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/ExportRequestInfo'), require('../model/ExportRequestResponse'), require('../model/ExportHistoryResponse'), require('../model/ExportStatusResponse'));
+    module.exports = factory(require('../ApiClient'), require('../model/ExportHistoryResponse'), require('../model/ExportRequestInfo'), require('../model/ExportRequestResponse'), require('../model/ExportStatusResponse'));
   } else {
     // Browser globals (root is window)
     if (!root.ArtikCloud) {
       root.ArtikCloud = {};
     }
-    root.ArtikCloud.ExportApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.ExportRequestInfo, root.ArtikCloud.ExportRequestResponse, root.ArtikCloud.ExportHistoryResponse, root.ArtikCloud.ExportStatusResponse);
+    root.ArtikCloud.ExportApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.ExportHistoryResponse, root.ArtikCloud.ExportRequestInfo, root.ArtikCloud.ExportRequestResponse, root.ArtikCloud.ExportStatusResponse);
   }
-}(this, function(ApiClient, ExportRequestInfo, ExportRequestResponse, ExportHistoryResponse, ExportStatusResponse) {
+}(this, function(ApiClient, ExportHistoryResponse, ExportRequestInfo, ExportRequestResponse, ExportStatusResponse) {
   'use strict';
 
   /**
    * Export service.
    * @module api/ExportApi
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -90,8 +90,8 @@
      * Get the history of export requests.
      * @param {Object} opts Optional parameters
      * @param String opts.trialId Filter by trialId.
-     * @param Integer opts.count Pagination count.
-     * @param Integer opts.offset Pagination offset.
+     * @param Number opts.count Pagination count.
+     * @param Number opts.offset Pagination offset.
      * @param {module:api/ExportApi~getExportHistoryCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: module:model/ExportHistoryResponse
      */

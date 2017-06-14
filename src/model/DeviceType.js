@@ -18,7 +18,7 @@
   /**
    * The DeviceType model module.
    * @module model/DeviceType
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -67,10 +67,10 @@
         obj['uniqueName'] = ApiClient.convertToType(data['uniqueName'], 'String');
       }
       if (data.hasOwnProperty('latestVersion')) {
-        obj['latestVersion'] = ApiClient.convertToType(data['latestVersion'], 'Integer');
+        obj['latestVersion'] = ApiClient.convertToType(data['latestVersion'], 'Number');
       }
       if (data.hasOwnProperty('lastUpdated')) {
-        obj['lastUpdated'] = ApiClient.convertToType(data['lastUpdated'], 'Integer');
+        obj['lastUpdated'] = ApiClient.convertToType(data['lastUpdated'], 'Number');
       }
       if (data.hasOwnProperty('name')) {
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
@@ -133,12 +133,12 @@
 
   /**
    * Latest Manifest version.
-   * @member Integer latestVersion
+   * @member Number latestVersion
    */
   exports.prototype['latestVersion'] = undefined;
 
   /**
-   * @member Integer lastUpdated
+   * @member Number lastUpdated
    */
   exports.prototype['lastUpdated'] = undefined;
 

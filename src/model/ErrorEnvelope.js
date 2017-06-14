@@ -18,7 +18,7 @@
   /**
    * The ErrorEnvelope model module.
    * @module model/ErrorEnvelope
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**

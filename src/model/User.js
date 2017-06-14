@@ -18,7 +18,7 @@
   /**
    * The User model module.
    * @module model/User
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -30,10 +30,10 @@
    * @param name(String)
    * @param email(String)
    * @param fullName(String)
-   * @param createdOn(Integer)
-   * @param modifiedOn(Integer)
+   * @param createdOn(Number)
+   * @param modifiedOn(Number)
    */
-  var exports = function(id, name, email, fullName, createdOn, modifiedOn) {
+  var exports = function(id(String), name(String), email(String), fullName(String), createdOn(Number), modifiedOn(Number)) {
 
     this['id'] = id;
     this['name'] = name;
@@ -52,7 +52,7 @@
    * @return {module:model/User} The populated <code>User</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) {
+    if (data) { 
       obj = obj || new exports();
 
       if (data.hasOwnProperty('id')) {
@@ -71,10 +71,10 @@
         obj['saIdentity'] = ApiClient.convertToType(data['saIdentity'], 'String');
       }
       if (data.hasOwnProperty('createdOn')) {
-        obj['createdOn'] = ApiClient.convertToType(data['createdOn'], 'Integer');
+        obj['createdOn'] = ApiClient.convertToType(data['createdOn'], 'Number');
       }
       if (data.hasOwnProperty('modifiedOn')) {
-        obj['modifiedOn'] = ApiClient.convertToType(data['modifiedOn'], 'Integer');
+        obj['modifiedOn'] = ApiClient.convertToType(data['modifiedOn'], 'Number');
       }
     }
     return obj;
@@ -107,12 +107,12 @@
   exports.prototype['saIdentity'] = undefined;
 
   /**
-   * @member Integer createdOn
+   * @member Number createdOn
    */
   exports.prototype['createdOn'] = undefined;
 
   /**
-   * @member Integer modifiedOn
+   * @member Number modifiedOn
    */
   exports.prototype['modifiedOn'] = undefined;
 

@@ -18,7 +18,7 @@
   /**
    * The ManifestPropertiesEnvelope model module.
    * @module model/ManifestPropertiesEnvelope
-   * @version 2.0.5
+   * @version 2.0.6
    */
 
   /**
@@ -28,7 +28,7 @@
    * @class
    * @param data(ManifestProperties)
    */
-  var exports = function(data) {
+  var exports = function(data(ManifestProperties)) {
 
     this['data'] = data;
   };
@@ -41,7 +41,7 @@
    * @return {module:model/ManifestPropertiesEnvelope} The populated <code>ManifestPropertiesEnvelope</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
-    if (data) {
+    if (data) { 
       obj = obj || new exports();
 
       if (data.hasOwnProperty('data')) {
