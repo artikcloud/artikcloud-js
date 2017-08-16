@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new ArtikCloud.TaskParameters();
+    instance = new ArtikCloud.DeviceSharing();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,34 +47,34 @@
       object[property] = value;
   }
 
-  describe('TaskParameters', function() {
-    it('should create an instance of TaskParameters', function() {
-      // uncomment below and update the code to test TaskParameters
-      //var instane = new ArtikCloud.TaskParameters();
-      //expect(instance).to.be.a(ArtikCloud.TaskParameters);
+  describe('DeviceSharing', function() {
+    it('should create an instance of DeviceSharing', function() {
+      // uncomment below and update the code to test DeviceSharing
+      //var instane = new ArtikCloud.DeviceSharing();
+      //expect(instance).to.be.a(ArtikCloud.DeviceSharing);
     });
 
-    it('should have the property expiresAfter (base name: "expiresAfter")', function() {
-      // uncomment below and update the code to test the property expiresAfter
-      //var instane = new ArtikCloud.TaskParameters();
+    it('should have the property id (base name: "id")', function() {
+      // uncomment below and update the code to test the property id
+      //var instane = new ArtikCloud.DeviceSharing();
       //expect(instance).to.be();
     });
 
-    it('should have the property scheduledOn (base name: "scheduledOn")', function() {
-      // uncomment below and update the code to test the property scheduledOn
-      //var instane = new ArtikCloud.TaskParameters();
+    it('should have the property email (base name: "email")', function() {
+      // uncomment below and update the code to test the property email
+      //var instane = new ArtikCloud.DeviceSharing();
       //expect(instance).to.be();
     });
 
-    it('should have the property update (base name: "update")', function() {
-      // uncomment below and update the code to test the property update
-      //var instane = new ArtikCloud.TaskParameters();
+    it('should have the property status (base name: "status")', function() {
+      // uncomment below and update the code to test the property status
+      //var instane = new ArtikCloud.DeviceSharing();
       //expect(instance).to.be();
     });
 
-    it('should have the property value (base name: "value")', function() {
-      // uncomment below and update the code to test the property value
-      //var instane = new ArtikCloud.TaskParameters();
+    it('should have the property sharedOn (base name: "sharedOn")', function() {
+      // uncomment below and update the code to test the property sharedOn
+      //var instane = new ArtikCloud.DeviceSharing();
       //expect(instance).to.be();
     });
 

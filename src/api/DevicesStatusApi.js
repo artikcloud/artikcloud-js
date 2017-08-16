@@ -10,20 +10,20 @@
     if (!root.ArtikCloud) {
       root.ArtikCloud = {};
     }
-    root.ArtikCloud.DevicestatusApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.DeviceStatus, root.ArtikCloud.DeviceStatusBatch, root.ArtikCloud.DeviceStatusPut);
+    root.ArtikCloud.DevicesStatusApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.DeviceStatus, root.ArtikCloud.DeviceStatusBatch, root.ArtikCloud.DeviceStatusPut);
   }
 }(this, function(ApiClient, DeviceStatus, DeviceStatusBatch, DeviceStatusPut) {
   'use strict';
 
   /**
-   * Devicestatus service.
-   * @module api/DevicestatusApi
+   * DevicesStatus service.
+   * @module api/DevicesStatusApi
    * @version 2.0.6
    */
 
   /**
-   * Constructs a new DevicestatusApi. 
-   * @alias module:api/DevicestatusApi
+   * Constructs a new DevicesStatusApi. 
+   * @alias module:api/DevicesStatusApi
    * @class
    * @param {module:ApiClient} apiClient Optional API client implementation to use, default to {@link module:ApiClient#instance}
    * if unspecified.
@@ -34,7 +34,7 @@
 
     /**
      * Callback function to receive the result of the getDeviceStatus operation.
-     * @callback module:api/DevicestatusApi~getDeviceStatusCallback
+     * @callback module:api/DevicesStatusApi~getDeviceStatusCallback
      * @param {String} error Error message, if any.
      * @param module:model/DeviceStatus data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -47,7 +47,7 @@
      * @param {Object} opts Optional parameters
      * @param Boolean opts.includeSnapshot Include device snapshot into the response
      * @param Boolean opts.includeSnapshotTimestamp Include device snapshot timestamp into the response
-     * @param {module:api/DevicestatusApi~getDeviceStatusCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/DevicesStatusApi~getDeviceStatusCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: module:model/DeviceStatus
      */
     this.getDeviceStatus = function(deviceId, opts, callback) {
@@ -86,7 +86,7 @@
 
     /**
      * Callback function to receive the result of the getDevicesStatus operation.
-     * @callback module:api/DevicestatusApi~getDevicesStatusCallback
+     * @callback module:api/DevicesStatusApi~getDevicesStatusCallback
      * @param {String} error Error message, if any.
      * @param module:model/DeviceStatusBatch data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -99,7 +99,7 @@
      * @param {Object} opts Optional parameters
      * @param Boolean opts.includeSnapshot Include device snapshot into the response
      * @param Boolean opts.includeSnapshotTimestamp Include device snapshot timestamp into the response
-     * @param {module:api/DevicestatusApi~getDevicesStatusCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/DevicesStatusApi~getDevicesStatusCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: module:model/DeviceStatusBatch
      */
     this.getDevicesStatus = function(dids, opts, callback) {
@@ -138,7 +138,7 @@
 
     /**
      * Callback function to receive the result of the putDeviceStatus operation.
-     * @callback module:api/DevicestatusApi~putDeviceStatusCallback
+     * @callback module:api/DevicesStatusApi~putDeviceStatusCallback
      * @param {String} error Error message, if any.
      * @param module:model/DeviceStatus data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -150,7 +150,7 @@
      * @param String deviceId Device ID.
      * @param {Object} opts Optional parameters
      * @param module:model/DeviceStatusPut opts.body Body
-     * @param {module:api/DevicestatusApi~putDeviceStatusCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/DevicesStatusApi~putDeviceStatusCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: module:model/DeviceStatus
      */
     this.putDeviceStatus = function(deviceId, opts, callback) {

@@ -138,6 +138,18 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property sharedWithOthers (base name: "sharedWithOthers")', function() {
+      // uncomment below and update the code to test the property sharedWithOthers
+      //var instane = new ArtikCloud.Device();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property sharedWithMe (base name: "sharedWithMe")', function() {
+      // uncomment below and update the code to test the property sharedWithMe
+      //var instane = new ArtikCloud.Device();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**getUserDevices**](UsersApi.md#getUserDevices) | **GET** /users/{userId}/devices | Get User Devices
 [**getUserProperties**](UsersApi.md#getUserProperties) | **GET** /users/{userId}/properties | Get User application properties
 [**getUserRules**](UsersApi.md#getUserRules) | **GET** /users/{userId}/rules | Get User Rules
-[**listAllSharesForUser**](UsersApi.md#listAllSharesForUser) | **GET** in/api/users/{userId}/shares | Get User shares
+[**listAllSharesForUser**](UsersApi.md#listAllSharesForUser) | **GET** /users/{userId}/shares | Get User shares
 [**updateUserProperties**](UsersApi.md#updateUserProperties) | **PUT** /users/{userId}/properties | Update User Application Properties
 
 

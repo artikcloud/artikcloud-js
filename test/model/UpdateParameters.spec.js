@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new ArtikCloud.TaskParameters();
+    instance = new ArtikCloud.UpdateParameters();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,34 +47,16 @@
       object[property] = value;
   }
 
-  describe('TaskParameters', function() {
-    it('should create an instance of TaskParameters', function() {
-      // uncomment below and update the code to test TaskParameters
-      //var instane = new ArtikCloud.TaskParameters();
-      //expect(instance).to.be.a(ArtikCloud.TaskParameters);
+  describe('UpdateParameters', function() {
+    it('should create an instance of UpdateParameters', function() {
+      // uncomment below and update the code to test UpdateParameters
+      //var instane = new ArtikCloud.UpdateParameters();
+      //expect(instance).to.be.a(ArtikCloud.UpdateParameters);
     });
 
-    it('should have the property expiresAfter (base name: "expiresAfter")', function() {
-      // uncomment below and update the code to test the property expiresAfter
-      //var instane = new ArtikCloud.TaskParameters();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property scheduledOn (base name: "scheduledOn")', function() {
-      // uncomment below and update the code to test the property scheduledOn
-      //var instane = new ArtikCloud.TaskParameters();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property update (base name: "update")', function() {
-      // uncomment below and update the code to test the property update
-      //var instane = new ArtikCloud.TaskParameters();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property value (base name: "value")', function() {
-      // uncomment below and update the code to test the property value
-      //var instane = new ArtikCloud.TaskParameters();
+    it('should have the property updateId (base name: "updateId")', function() {
+      // uncomment below and update the code to test the property updateId
+      //var instane = new ArtikCloud.UpdateParameters();
       //expect(instance).to.be();
     });
 

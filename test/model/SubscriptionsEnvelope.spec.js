@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new ArtikCloud.TaskParameters();
+    instance = new ArtikCloud.SubscriptionsEnvelope();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,34 +47,34 @@
       object[property] = value;
   }
 
-  describe('TaskParameters', function() {
-    it('should create an instance of TaskParameters', function() {
-      // uncomment below and update the code to test TaskParameters
-      //var instane = new ArtikCloud.TaskParameters();
-      //expect(instance).to.be.a(ArtikCloud.TaskParameters);
+  describe('SubscriptionsEnvelope', function() {
+    it('should create an instance of SubscriptionsEnvelope', function() {
+      // uncomment below and update the code to test SubscriptionsEnvelope
+      //var instane = new ArtikCloud.SubscriptionsEnvelope();
+      //expect(instance).to.be.a(ArtikCloud.SubscriptionsEnvelope);
     });
 
-    it('should have the property expiresAfter (base name: "expiresAfter")', function() {
-      // uncomment below and update the code to test the property expiresAfter
-      //var instane = new ArtikCloud.TaskParameters();
+    it('should have the property total (base name: "total")', function() {
+      // uncomment below and update the code to test the property total
+      //var instane = new ArtikCloud.SubscriptionsEnvelope();
       //expect(instance).to.be();
     });
 
-    it('should have the property scheduledOn (base name: "scheduledOn")', function() {
-      // uncomment below and update the code to test the property scheduledOn
-      //var instane = new ArtikCloud.TaskParameters();
+    it('should have the property offset (base name: "offset")', function() {
+      // uncomment below and update the code to test the property offset
+      //var instane = new ArtikCloud.SubscriptionsEnvelope();
       //expect(instance).to.be();
     });
 
-    it('should have the property update (base name: "update")', function() {
-      // uncomment below and update the code to test the property update
-      //var instane = new ArtikCloud.TaskParameters();
+    it('should have the property data (base name: "data")', function() {
+      // uncomment below and update the code to test the property data
+      //var instane = new ArtikCloud.SubscriptionsEnvelope();
       //expect(instance).to.be();
     });
 
-    it('should have the property value (base name: "value")', function() {
-      // uncomment below and update the code to test the property value
-      //var instane = new ArtikCloud.TaskParameters();
+    it('should have the property count (base name: "count")', function() {
+      // uncomment below and update the code to test the property count
+      //var instane = new ArtikCloud.SubscriptionsEnvelope();
       //expect(instance).to.be();
     });
 

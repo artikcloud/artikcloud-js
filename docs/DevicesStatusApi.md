@@ -1,12 +1,12 @@
-# ArtikCloud.DevicestatusApi
+# ArtikCloud.DevicesStatusApi
 
 All URIs are relative to *https://api.artik.cloud/v1.1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getDeviceStatus**](DevicestatusApi.md#getDeviceStatus) | **GET** /devices/{deviceId}/status | Get Device Status
-[**getDevicesStatus**](DevicestatusApi.md#getDevicesStatus) | **GET** /devices/status | Get Devices Status
-[**putDeviceStatus**](DevicestatusApi.md#putDeviceStatus) | **PUT** /devices/{deviceId}/status | Update Device Status
+[**getDeviceStatus**](DevicesStatusApi.md#getDeviceStatus) | **GET** /devices/{deviceId}/status | Get Device Status
+[**getDevicesStatus**](DevicesStatusApi.md#getDevicesStatus) | **GET** /devices/status | Get Devices Status
+[**putDeviceStatus**](DevicesStatusApi.md#putDeviceStatus) | **PUT** /devices/{deviceId}/status | Update Device Status
 
 
 <a name="getDeviceStatus"></a>
@@ -26,7 +26,7 @@ var defaultClient = ArtikCloud.ApiClient.default;
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloud.DevicestatusApi()
+var apiInstance = new ArtikCloud.DevicesStatusApi()
 
 var deviceId = "deviceId_example"; // {String} Device ID.
 
@@ -83,7 +83,7 @@ var defaultClient = ArtikCloud.ApiClient.default;
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloud.DevicestatusApi()
+var apiInstance = new ArtikCloud.DevicesStatusApi()
 
 var dids = "dids_example"; // {String} List of device ids (comma-separated) for which the statuses are requested.
 
@@ -140,7 +140,7 @@ var defaultClient = ArtikCloud.ApiClient.default;
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloud.DevicestatusApi()
+var apiInstance = new ArtikCloud.DevicesStatusApi()
 
 var deviceId = "deviceId_example"; // {String} Device ID.
 

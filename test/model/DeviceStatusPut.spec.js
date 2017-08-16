@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new ArtikCloud.DevicestatusApi();
+    instance = new ArtikCloud.DeviceStatusPut();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,37 +47,19 @@
       object[property] = value;
   }
 
-  describe('DevicestatusApi', function() {
-    describe('getDeviceStatus', function() {
-      it('should call getDeviceStatus successfully', function(done) {
-        //uncomment below and update the code to test getDeviceStatus
-        //instance.getDeviceStatus(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+  describe('DeviceStatusPut', function() {
+    it('should create an instance of DeviceStatusPut', function() {
+      // uncomment below and update the code to test DeviceStatusPut
+      //var instane = new ArtikCloud.DeviceStatusPut();
+      //expect(instance).to.be.a(ArtikCloud.DeviceStatusPut);
     });
-    describe('getDevicesStatus', function() {
-      it('should call getDevicesStatus successfully', function(done) {
-        //uncomment below and update the code to test getDevicesStatus
-        //instance.getDevicesStatus(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property data (base name: "data")', function() {
+      // uncomment below and update the code to test the property data
+      //var instane = new ArtikCloud.DeviceStatusPut();
+      //expect(instance).to.be();
     });
-    describe('putDeviceStatus', function() {
-      it('should call putDeviceStatus successfully', function(done) {
-        //uncomment below and update the code to test putDeviceStatus
-        //instance.putDeviceStatus(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
+
   });
 
 }));

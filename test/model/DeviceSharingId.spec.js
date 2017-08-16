@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new ArtikCloud.TaskParameters();
+    instance = new ArtikCloud.DeviceSharingId();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,34 +47,16 @@
       object[property] = value;
   }
 
-  describe('TaskParameters', function() {
-    it('should create an instance of TaskParameters', function() {
-      // uncomment below and update the code to test TaskParameters
-      //var instane = new ArtikCloud.TaskParameters();
-      //expect(instance).to.be.a(ArtikCloud.TaskParameters);
+  describe('DeviceSharingId', function() {
+    it('should create an instance of DeviceSharingId', function() {
+      // uncomment below and update the code to test DeviceSharingId
+      //var instane = new ArtikCloud.DeviceSharingId();
+      //expect(instance).to.be.a(ArtikCloud.DeviceSharingId);
     });
 
-    it('should have the property expiresAfter (base name: "expiresAfter")', function() {
-      // uncomment below and update the code to test the property expiresAfter
-      //var instane = new ArtikCloud.TaskParameters();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property scheduledOn (base name: "scheduledOn")', function() {
-      // uncomment below and update the code to test the property scheduledOn
-      //var instane = new ArtikCloud.TaskParameters();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property update (base name: "update")', function() {
-      // uncomment below and update the code to test the property update
-      //var instane = new ArtikCloud.TaskParameters();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property value (base name: "value")', function() {
-      // uncomment below and update the code to test the property value
-      //var instane = new ArtikCloud.TaskParameters();
+    it('should have the property shareId (base name: "shareId")', function() {
+      // uncomment below and update the code to test the property shareId
+      //var instane = new ArtikCloud.DeviceSharingId();
       //expect(instance).to.be();
     });
 

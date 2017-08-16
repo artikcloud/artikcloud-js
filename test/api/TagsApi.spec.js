@@ -62,7 +62,7 @@
     describe('getTagCategories', function() {
       it('should call getTagCategories successfully', function(done) {
         //uncomment below and update the code to test getTagCategories
-        //instance.getTagCategories(pet, function(error) {
+        //instance.getTagCategories(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -72,7 +72,7 @@
     describe('getTagSuggestions', function() {
       it('should call getTagSuggestions successfully', function(done) {
         //uncomment below and update the code to test getTagSuggestions
-        //instance.getTagSuggestions(pet, function(error) {
+        //instance.getTagSuggestions(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -82,7 +82,7 @@
     describe('getTagsByCategories', function() {
       it('should call getTagsByCategories successfully', function(done) {
         //uncomment below and update the code to test getTagsByCategories
-        //instance.getTagsByCategories(pet, function(error) {
+        //instance.getTagsByCategories(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
