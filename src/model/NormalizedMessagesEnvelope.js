@@ -30,7 +30,7 @@
    * @param size(Number)
    * @param data([NormalizedMessage])
    */
-  var exports = function(count(Number), size(Number), data([NormalizedMessage])) {
+  var exports = function(count, size, data) {
 
 
 
