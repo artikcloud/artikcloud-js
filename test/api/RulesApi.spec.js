@@ -62,7 +62,7 @@
     describe('createRule', function() {
       it('should call createRule successfully', function(done) {
         //uncomment below and update the code to test createRule
-        //instance.createRule(pet, function(error) {
+        //instance.createRule(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -72,7 +72,7 @@
     describe('deleteRule', function() {
       it('should call deleteRule successfully', function(done) {
         //uncomment below and update the code to test deleteRule
-        //instance.deleteRule(pet, function(error) {
+        //instance.deleteRule(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -82,7 +82,7 @@
     describe('getRule', function() {
       it('should call getRule successfully', function(done) {
         //uncomment below and update the code to test getRule
-        //instance.getRule(pet, function(error) {
+        //instance.getRule(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -92,7 +92,7 @@
     describe('updateRule', function() {
       it('should call updateRule successfully', function(done) {
         //uncomment below and update the code to test updateRule
-        //instance.updateRule(pet, function(error) {
+        //instance.updateRule(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

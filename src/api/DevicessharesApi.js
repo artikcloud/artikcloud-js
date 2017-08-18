@@ -10,20 +10,20 @@
     if (!root.ArtikCloud) {
       root.ArtikCloud = {};
     }
-    root.ArtikCloud.DevicessharesApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.DeviceShareInfo, root.ArtikCloud.DeviceSharing, root.ArtikCloud.DeviceSharingEnvelope, root.ArtikCloud.DeviceSharingId);
+    root.ArtikCloud.DevicesSharesApi = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.DeviceShareInfo, root.ArtikCloud.DeviceSharing, root.ArtikCloud.DeviceSharingEnvelope, root.ArtikCloud.DeviceSharingId);
   }
 }(this, function(ApiClient, DeviceShareInfo, DeviceSharing, DeviceSharingEnvelope, DeviceSharingId) {
   'use strict';
 
   /**
-   * Devicesshares service.
-   * @module api/DevicessharesApi
+   * DevicesShares service.
+   * @module api/DevicesSharesApi
    * @version 2.0.6
    */
 
   /**
-   * Constructs a new DevicessharesApi. 
-   * @alias module:api/DevicessharesApi
+   * Constructs a new DevicesSharesApi. 
+   * @alias module:api/DevicesSharesApi
    * @class
    * @param {module:ApiClient} apiClient Optional API client implementation to use, default to {@link module:ApiClient#instance}
    * if unspecified.
@@ -34,7 +34,7 @@
 
     /**
      * Callback function to receive the result of the createShareForDevice operation.
-     * @callback module:api/DevicessharesApi~createShareForDeviceCallback
+     * @callback module:api/DevicesSharesApi~createShareForDeviceCallback
      * @param {String} error Error message, if any.
      * @param module:model/DeviceSharingId data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -45,7 +45,7 @@
      * Share a device 
      * @param String deviceId Device ID.
      * @param module:model/DeviceShareInfo deviceShareInfo Device object that needs to be added
-     * @param {module:api/DevicessharesApi~createShareForDeviceCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/DevicesSharesApi~createShareForDeviceCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: module:model/DeviceSharingId
      */
     this.createShareForDevice = function(deviceId, deviceShareInfo, callback) {
@@ -78,7 +78,7 @@
       var returnType = DeviceSharingId;
 
       return this.apiClient.callApi(
-        'in/api/devices/{deviceId}/shares', 'POST',
+        '/devices/{deviceId}/shares', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -86,7 +86,7 @@
 
     /**
      * Callback function to receive the result of the deleteSharingForDevice operation.
-     * @callback module:api/DevicessharesApi~deleteSharingForDeviceCallback
+     * @callback module:api/DevicesSharesApi~deleteSharingForDeviceCallback
      * @param {String} error Error message, if any.
      * @param module:model/DeviceSharingId data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -97,7 +97,7 @@
      * Delete specific share of the given device id
      * @param String deviceId Device ID.
      * @param String shareId Share ID.
-     * @param {module:api/DevicessharesApi~deleteSharingForDeviceCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/DevicesSharesApi~deleteSharingForDeviceCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: module:model/DeviceSharingId
      */
     this.deleteSharingForDevice = function(deviceId, shareId, callback) {
@@ -131,7 +131,7 @@
       var returnType = DeviceSharingId;
 
       return this.apiClient.callApi(
-        'in/api/devices/{deviceId}/shares/{shareId}', 'DELETE',
+        '/devices/{deviceId}/shares/{shareId}', 'DELETE',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -139,7 +139,7 @@
 
     /**
      * Callback function to receive the result of the getAllSharesForDevice operation.
-     * @callback module:api/DevicessharesApi~getAllSharesForDeviceCallback
+     * @callback module:api/DevicesSharesApi~getAllSharesForDeviceCallback
      * @param {String} error Error message, if any.
      * @param module:model/DeviceSharingEnvelope data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -152,7 +152,7 @@
      * @param {Object} opts Optional parameters
      * @param Number opts.count Desired count of items in the result set.
      * @param Number opts.offset Offset for pagination.
-     * @param {module:api/DevicessharesApi~getAllSharesForDeviceCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/DevicesSharesApi~getAllSharesForDeviceCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: module:model/DeviceSharingEnvelope
      */
     this.getAllSharesForDevice = function(deviceId, opts, callback) {
@@ -183,7 +183,7 @@
       var returnType = DeviceSharingEnvelope;
 
       return this.apiClient.callApi(
-        'in/api/devices/{deviceId}/shares', 'GET',
+        '/devices/{deviceId}/shares', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -191,7 +191,7 @@
 
     /**
      * Callback function to receive the result of the getSharingForDevice operation.
-     * @callback module:api/DevicessharesApi~getSharingForDeviceCallback
+     * @callback module:api/DevicesSharesApi~getSharingForDeviceCallback
      * @param {String} error Error message, if any.
      * @param module:model/DeviceSharing data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -202,7 +202,7 @@
      * Get specific share of the given device id
      * @param String deviceId Device ID.
      * @param String shareId Share ID.
-     * @param {module:api/DevicessharesApi~getSharingForDeviceCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/DevicesSharesApi~getSharingForDeviceCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: module:model/DeviceSharing
      */
     this.getSharingForDevice = function(deviceId, shareId, callback) {
@@ -236,7 +236,7 @@
       var returnType = DeviceSharing;
 
       return this.apiClient.callApi(
-        'in/api/devices/{deviceId}/shares/{shareId}', 'GET',
+        '/devices/{deviceId}/shares/{shareId}', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

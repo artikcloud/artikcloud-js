@@ -30,7 +30,7 @@
    * @param count(Number)
    * @param offset(Number)
    */
-  var exports = function(total(Number), count(Number), offset(Number)) {
+  var exports = function(total, count, offset) {
 
     this['total'] = total;
     this['count'] = count;

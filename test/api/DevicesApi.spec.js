@@ -36,7 +36,7 @@
 }(this, function(expect, ArtikCloud) {
   'use strict';
 
-  var api;
+  var instance;
 
   beforeEach(function() {
     var newClient = new ArtikCloud.ApiClient();
@@ -45,7 +45,7 @@
     var artikcloud_oauth = newClient.authentications['artikcloud_oauth'];
     artikcloud_oauth.accessToken = "f3765b72139742c2b2ec4a93d32d1703"
 
-    api = new ArtikCloud.DevicesApi(newClient);
+    instance = new ArtikCloud.DevicesApi();
     api.getApiClient
   });
 
@@ -69,7 +69,7 @@
     describe('addDevice', function() {
       it('should call addDevice successfully', function(done) {
         //uncomment below and update the code to test addDevice
-        //instance.addDevice(pet, function(error) {
+        //instance.addDevice(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -79,7 +79,7 @@
     describe('deleteDevice', function() {
       it('should call deleteDevice successfully', function(done) {
         //uncomment below and update the code to test deleteDevice
-        //instance.deleteDevice(pet, function(error) {
+        //instance.deleteDevice(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -89,7 +89,7 @@
     describe('deleteDeviceToken', function() {
       it('should call deleteDeviceToken successfully', function(done) {
         //uncomment below and update the code to test deleteDeviceToken
-        //instance.deleteDeviceToken(pet, function(error) {
+        //instance.deleteDeviceToken(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -99,7 +99,7 @@
     describe('getDevice', function() {
       it('should call getDevice successfully', function(done) {
         //uncomment below and update the code to test getDevice
-        //instance.getDevice(pet, function(error) {
+        //instance.getDevice(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -109,7 +109,7 @@
     describe('getDevicePresence', function() {
       it('should call getDevicePresence successfully', function(done) {
         //uncomment below and update the code to test getDevicePresence
-        //instance.getDevicePresence(pet, function(error) {
+        //instance.getDevicePresence(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -119,7 +119,7 @@
     describe('getDeviceToken', function() {
       it('should call getDeviceToken successfully', function(done) {
         //uncomment below and update the code to test getDeviceToken
-        //instance.getDeviceToken(pet, function(error) {
+        //instance.getDeviceToken(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -129,7 +129,7 @@
     describe('updateDevice', function() {
       it('should call updateDevice successfully', function(done) {
         //uncomment below and update the code to test updateDevice
-        //instance.updateDevice(pet, function(error) {
+        //instance.updateDevice(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -138,16 +138,16 @@
     });
     describe('updateDeviceToken', function() {
       it('should call updateDeviceToken successfully', function(done) {
-        var deviceId = '5f1d6d85ad0141f3b9a07f0107dbd704';
+        //uncomment below and update the code to test updateDeviceToken
         ///var opts = {};
 
-        api.updateDeviceToken(deviceId, function(error, data, response) {
-          if (error) throw error;
+        //instance.updateDeviceToken(function(error) {
+        //  if (error) throw error;
 
-          console.log(response);
+        //expect().to.be();
 
-          done();
-        });
+        //});
+        done();
       });
     });
   });

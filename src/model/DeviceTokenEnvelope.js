@@ -28,7 +28,7 @@
    * @class
    * @param data(DeviceToken)
    */
-  var exports = function(data(DeviceToken)) {
+  var exports = function(data) {
 
     this['data'] = data;
   };

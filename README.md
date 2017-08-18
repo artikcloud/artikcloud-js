@@ -49,7 +49,7 @@ Please follow the [installation](#installation) instruction and execute the foll
 ```javascript
 var ArtikCloud = require('artikcloud-js');
 
-var defaultClient = ArtikCloud.ApiClient.instance;
+var defaultClient = ArtikCloud.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
@@ -106,13 +106,13 @@ Class | Method | HTTP request | Description
 *ArtikCloud.DevicesManagementApi* | [**updateServerProperties**](docs/DevicesManagementApi.md#updateServerProperties) | **POST** /devicemgmt/devices/{did}/serverproperties | Updates a device&#39;s server properties.
 *ArtikCloud.DevicesManagementApi* | [**updateTask**](docs/DevicesManagementApi.md#updateTask) | **PUT** /devicemgmt/tasks/{tid} | Updates a task for all devices - For now just allows changing the state to cancelled.
 *ArtikCloud.DevicesManagementApi* | [**updateTaskForDevice**](docs/DevicesManagementApi.md#updateTaskForDevice) | **PUT** /devicemgmt/tasks/{tid}/devices/{did} | Updates a task for a specific device - For now just allows changing the state to cancelled.
-*ArtikCloud.DevicessharesApi* | [**createShareForDevice**](docs/DevicessharesApi.md#createShareForDevice) | **POST** in/api/devices/{deviceId}/shares | Share a device 
-*ArtikCloud.DevicessharesApi* | [**deleteSharingForDevice**](docs/DevicessharesApi.md#deleteSharingForDevice) | **DELETE** in/api/devices/{deviceId}/shares/{shareId} | Delete specific share of the given device id
-*ArtikCloud.DevicessharesApi* | [**getAllSharesForDevice**](docs/DevicessharesApi.md#getAllSharesForDevice) | **GET** in/api/devices/{deviceId}/shares | List all shares for the given device id
-*ArtikCloud.DevicessharesApi* | [**getSharingForDevice**](docs/DevicessharesApi.md#getSharingForDevice) | **GET** in/api/devices/{deviceId}/shares/{shareId} | Get specific share of the given device id
-*ArtikCloud.DevicestatusApi* | [**getDeviceStatus**](docs/DevicestatusApi.md#getDeviceStatus) | **GET** /devices/{deviceId}/status | Get Device Status
-*ArtikCloud.DevicestatusApi* | [**getDevicesStatus**](docs/DevicestatusApi.md#getDevicesStatus) | **GET** /devices/status | Get Devices Status
-*ArtikCloud.DevicestatusApi* | [**putDeviceStatus**](docs/DevicestatusApi.md#putDeviceStatus) | **PUT** /devices/{deviceId}/status | Update Device Status
+*ArtikCloud.DevicesSharesApi* | [**createShareForDevice**](docs/DevicesSharesApi.md#createShareForDevice) | **POST** /devices/{deviceId}/shares | Share a device 
+*ArtikCloud.DevicesSharesApi* | [**deleteSharingForDevice**](docs/DevicesSharesApi.md#deleteSharingForDevice) | **DELETE** /devices/{deviceId}/shares/{shareId} | Delete specific share of the given device id
+*ArtikCloud.DevicesSharesApi* | [**getAllSharesForDevice**](docs/DevicesSharesApi.md#getAllSharesForDevice) | **GET** /devices/{deviceId}/shares | List all shares for the given device id
+*ArtikCloud.DevicesSharesApi* | [**getSharingForDevice**](docs/DevicesSharesApi.md#getSharingForDevice) | **GET** /devices/{deviceId}/shares/{shareId} | Get specific share of the given device id
+*ArtikCloud.DevicesStatusApi* | [**getDeviceStatus**](docs/DevicesStatusApi.md#getDeviceStatus) | **GET** /devices/{deviceId}/status | Get Device Status
+*ArtikCloud.DevicesStatusApi* | [**getDevicesStatus**](docs/DevicesStatusApi.md#getDevicesStatus) | **GET** /devices/status | Get Devices Status
+*ArtikCloud.DevicesStatusApi* | [**putDeviceStatus**](docs/DevicesStatusApi.md#putDeviceStatus) | **PUT** /devices/{deviceId}/status | Update Device Status
 *ArtikCloud.ExportApi* | [**exportRequest**](docs/ExportApi.md#exportRequest) | **POST** /messages/export | Create Export Request
 *ArtikCloud.ExportApi* | [**getExportHistory**](docs/ExportApi.md#getExportHistory) | **GET** /messages/export/history | Get Export History
 *ArtikCloud.ExportApi* | [**getExportResult**](docs/ExportApi.md#getExportResult) | **GET** /messages/export/{exportId}/result | Get Export Result
@@ -152,7 +152,7 @@ Class | Method | HTTP request | Description
 *ArtikCloud.UsersApi* | [**getUserDevices**](docs/UsersApi.md#getUserDevices) | **GET** /users/{userId}/devices | Get User Devices
 *ArtikCloud.UsersApi* | [**getUserProperties**](docs/UsersApi.md#getUserProperties) | **GET** /users/{userId}/properties | Get User application properties
 *ArtikCloud.UsersApi* | [**getUserRules**](docs/UsersApi.md#getUserRules) | **GET** /users/{userId}/rules | Get User Rules
-*ArtikCloud.UsersApi* | [**listAllSharesForUser**](docs/UsersApi.md#listAllSharesForUser) | **GET** in/api/users/{userId}/shares | Get User shares
+*ArtikCloud.UsersApi* | [**listAllSharesForUser**](docs/UsersApi.md#listAllSharesForUser) | **GET** /users/{userId}/shares | Get User shares
 *ArtikCloud.UsersApi* | [**updateUserProperties**](docs/UsersApi.md#updateUserProperties) | **PUT** /users/{userId}/properties | Update User Application Properties
 
 

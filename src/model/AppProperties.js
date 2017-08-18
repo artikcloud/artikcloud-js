@@ -28,7 +28,7 @@
    * @class
    * @param properties(String)
    */
-  var exports = function(properties(String)) {
+  var exports = function(properties) {
 
 
 

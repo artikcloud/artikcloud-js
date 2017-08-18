@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new ArtikCloud.TaskParameters();
+    instance = new ArtikCloud.DeviceStatusData();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,34 +47,40 @@
       object[property] = value;
   }
 
-  describe('TaskParameters', function() {
-    it('should create an instance of TaskParameters', function() {
-      // uncomment below and update the code to test TaskParameters
-      //var instane = new ArtikCloud.TaskParameters();
-      //expect(instance).to.be.a(ArtikCloud.TaskParameters);
+  describe('DeviceStatusData', function() {
+    it('should create an instance of DeviceStatusData', function() {
+      // uncomment below and update the code to test DeviceStatusData
+      //var instane = new ArtikCloud.DeviceStatusData();
+      //expect(instance).to.be.a(ArtikCloud.DeviceStatusData);
     });
 
-    it('should have the property expiresAfter (base name: "expiresAfter")', function() {
-      // uncomment below and update the code to test the property expiresAfter
-      //var instane = new ArtikCloud.TaskParameters();
+    it('should have the property lastTimeOnline (base name: "lastTimeOnline")', function() {
+      // uncomment below and update the code to test the property lastTimeOnline
+      //var instane = new ArtikCloud.DeviceStatusData();
       //expect(instance).to.be();
     });
 
-    it('should have the property scheduledOn (base name: "scheduledOn")', function() {
-      // uncomment below and update the code to test the property scheduledOn
-      //var instane = new ArtikCloud.TaskParameters();
+    it('should have the property lastActionTs (base name: "lastActionTs")', function() {
+      // uncomment below and update the code to test the property lastActionTs
+      //var instane = new ArtikCloud.DeviceStatusData();
       //expect(instance).to.be();
     });
 
-    it('should have the property update (base name: "update")', function() {
-      // uncomment below and update the code to test the property update
-      //var instane = new ArtikCloud.TaskParameters();
+    it('should have the property lastMessageTs (base name: "lastMessageTs")', function() {
+      // uncomment below and update the code to test the property lastMessageTs
+      //var instane = new ArtikCloud.DeviceStatusData();
       //expect(instance).to.be();
     });
 
-    it('should have the property value (base name: "value")', function() {
-      // uncomment below and update the code to test the property value
-      //var instane = new ArtikCloud.TaskParameters();
+    it('should have the property availability (base name: "availability")', function() {
+      // uncomment below and update the code to test the property availability
+      //var instane = new ArtikCloud.DeviceStatusData();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property snapshot (base name: "snapshot")', function() {
+      // uncomment below and update the code to test the property snapshot
+      //var instane = new ArtikCloud.DeviceStatusData();
       //expect(instance).to.be();
     });
 

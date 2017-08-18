@@ -28,7 +28,7 @@
    * @class
    * @param data(User)
    */
-  var exports = function(data(User)) {
+  var exports = function(data) {
 
     this['data'] = data;
   };

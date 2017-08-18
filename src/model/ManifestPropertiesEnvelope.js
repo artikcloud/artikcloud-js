@@ -28,7 +28,7 @@
    * @class
    * @param data(ManifestProperties)
    */
-  var exports = function(data(ManifestProperties)) {
+  var exports = function(data) {
 
     this['data'] = data;
   };

@@ -62,7 +62,7 @@
     describe('exportRequest', function() {
       it('should call exportRequest successfully', function(done) {
         //uncomment below and update the code to test exportRequest
-        //instance.exportRequest(pet, function(error) {
+        //instance.exportRequest(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -72,7 +72,7 @@
     describe('getExportHistory', function() {
       it('should call getExportHistory successfully', function(done) {
         //uncomment below and update the code to test getExportHistory
-        //instance.getExportHistory(pet, function(error) {
+        //instance.getExportHistory(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -82,7 +82,7 @@
     describe('getExportResult', function() {
       it('should call getExportResult successfully', function(done) {
         //uncomment below and update the code to test getExportResult
-        //instance.getExportResult(pet, function(error) {
+        //instance.getExportResult(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -92,7 +92,7 @@
     describe('getExportStatus', function() {
       it('should call getExportStatus successfully', function(done) {
         //uncomment below and update the code to test getExportStatus
-        //instance.getExportStatus(pet, function(error) {
+        //instance.getExportStatus(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
