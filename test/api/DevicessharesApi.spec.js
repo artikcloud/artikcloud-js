@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new ArtikCloud.DevicessharesApi();
+    instance = new ArtikCloud.DevicesSharesApi();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,7 +47,7 @@
       object[property] = value;
   }
 
-  describe('DevicessharesApi', function() {
+  describe('DevicesSharesApi', function() {
     describe('createShareForDevice', function() {
       it('should call createShareForDevice successfully', function(done) {
         //uncomment below and update the code to test createShareForDevice

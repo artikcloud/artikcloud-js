@@ -28,7 +28,7 @@
    * @class
    * @param data(DeviceType)
    */
-  var exports = function(data(DeviceType)) {
+  var exports = function(data) {
 
     this['data'] = data;
   };

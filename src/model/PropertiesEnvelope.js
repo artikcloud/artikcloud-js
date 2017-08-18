@@ -28,7 +28,7 @@
    * @class
    * @param data(AppProperties)
    */
-  var exports = function(data(AppProperties)) {
+  var exports = function(data) {
 
     this['data'] = data;
   };

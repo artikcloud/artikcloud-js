@@ -28,7 +28,7 @@
    * @class
    * @param startDate(Number)
    */
-  var exports = function(startDate(Number)) {
+  var exports = function(startDate) {
 
     this['startDate'] = startDate;
   };

@@ -51,7 +51,7 @@
     describe('createTasks', function() {
       it('should call createTasks successfully', function(done) {
         //uncomment below and update the code to test createTasks
-        //instance.createTasks(pet, function(error) {
+        //instance.createTasks(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -61,7 +61,7 @@
     describe('deleteServerProperties', function() {
       it('should call deleteServerProperties successfully', function(done) {
         //uncomment below and update the code to test deleteServerProperties
-        //instance.deleteServerProperties(pet, function(error) {
+        //instance.deleteServerProperties(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -71,7 +71,7 @@
     describe('getAllByDid', function() {
       it('should call getAllByDid successfully', function(done) {
         //uncomment below and update the code to test getAllByDid
-        //instance.getAllByDid(pet, function(error) {
+        //instance.getAllByDid(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -81,7 +81,7 @@
     describe('getDeviceTypesInfo', function() {
       it('should call getDeviceTypesInfo successfully', function(done) {
         //uncomment below and update the code to test getDeviceTypesInfo
-        //instance.getDeviceTypesInfo(pet, function(error) {
+        //instance.getDeviceTypesInfo(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -91,7 +91,7 @@
     describe('getManifestProperties', function() {
       it('should call getManifestProperties successfully', function(done) {
         //uncomment below and update the code to test getManifestProperties
-        //instance.getManifestProperties(pet, function(error) {
+        //instance.getManifestProperties(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -101,7 +101,7 @@
     describe('getProperties', function() {
       it('should call getProperties successfully', function(done) {
         //uncomment below and update the code to test getProperties
-        //instance.getProperties(pet, function(error) {
+        //instance.getProperties(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -111,7 +111,7 @@
     describe('getStatuses', function() {
       it('should call getStatuses successfully', function(done) {
         //uncomment below and update the code to test getStatuses
-        //instance.getStatuses(pet, function(error) {
+        //instance.getStatuses(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -121,7 +121,7 @@
     describe('getStatusesHistory', function() {
       it('should call getStatusesHistory successfully', function(done) {
         //uncomment below and update the code to test getStatusesHistory
-        //instance.getStatusesHistory(pet, function(error) {
+        //instance.getStatusesHistory(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -131,7 +131,7 @@
     describe('getTaskByID', function() {
       it('should call getTaskByID successfully', function(done) {
         //uncomment below and update the code to test getTaskByID
-        //instance.getTaskByID(pet, function(error) {
+        //instance.getTaskByID(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -141,7 +141,7 @@
     describe('getTasks', function() {
       it('should call getTasks successfully', function(done) {
         //uncomment below and update the code to test getTasks
-        //instance.getTasks(pet, function(error) {
+        //instance.getTasks(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -151,7 +151,7 @@
     describe('queryProperties', function() {
       it('should call queryProperties successfully', function(done) {
         //uncomment below and update the code to test queryProperties
-        //instance.queryProperties(pet, function(error) {
+        //instance.queryProperties(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -161,7 +161,7 @@
     describe('updateDeviceTypesInfo', function() {
       it('should call updateDeviceTypesInfo successfully', function(done) {
         //uncomment below and update the code to test updateDeviceTypesInfo
-        //instance.updateDeviceTypesInfo(pet, function(error) {
+        //instance.updateDeviceTypesInfo(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -171,7 +171,7 @@
     describe('updateServerProperties', function() {
       it('should call updateServerProperties successfully', function(done) {
         //uncomment below and update the code to test updateServerProperties
-        //instance.updateServerProperties(pet, function(error) {
+        //instance.updateServerProperties(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -181,7 +181,7 @@
     describe('updateTask', function() {
       it('should call updateTask successfully', function(done) {
         //uncomment below and update the code to test updateTask
-        //instance.updateTask(pet, function(error) {
+        //instance.updateTask(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -191,7 +191,7 @@
     describe('updateTaskForDevice', function() {
       it('should call updateTaskForDevice successfully', function(done) {
         //uncomment below and update the code to test updateTaskForDevice
-        //instance.updateTaskForDevice(pet, function(error) {
+        //instance.updateTaskForDevice(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

@@ -1,13 +1,13 @@
-# ArtikCloud.DevicessharesApi
+# ArtikCloud.DevicesSharesApi
 
 All URIs are relative to *https://api.artik.cloud/v1.1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createShareForDevice**](DevicessharesApi.md#createShareForDevice) | **POST** in/api/devices/{deviceId}/shares | Share a device 
-[**deleteSharingForDevice**](DevicessharesApi.md#deleteSharingForDevice) | **DELETE** in/api/devices/{deviceId}/shares/{shareId} | Delete specific share of the given device id
-[**getAllSharesForDevice**](DevicessharesApi.md#getAllSharesForDevice) | **GET** in/api/devices/{deviceId}/shares | List all shares for the given device id
-[**getSharingForDevice**](DevicessharesApi.md#getSharingForDevice) | **GET** in/api/devices/{deviceId}/shares/{shareId} | Get specific share of the given device id
+[**createShareForDevice**](DevicesSharesApi.md#createShareForDevice) | **POST** /devices/{deviceId}/shares | Share a device 
+[**deleteSharingForDevice**](DevicesSharesApi.md#deleteSharingForDevice) | **DELETE** /devices/{deviceId}/shares/{shareId} | Delete specific share of the given device id
+[**getAllSharesForDevice**](DevicesSharesApi.md#getAllSharesForDevice) | **GET** /devices/{deviceId}/shares | List all shares for the given device id
+[**getSharingForDevice**](DevicesSharesApi.md#getSharingForDevice) | **GET** /devices/{deviceId}/shares/{shareId} | Get specific share of the given device id
 
 
 <a name="createShareForDevice"></a>
@@ -27,7 +27,7 @@ var defaultClient = ArtikCloud.ApiClient.default;
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloud.DevicessharesApi()
+var apiInstance = new ArtikCloud.DevicesSharesApi()
 
 var deviceId = "deviceId_example"; // {String} Device ID.
 
@@ -81,7 +81,7 @@ var defaultClient = ArtikCloud.ApiClient.default;
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloud.DevicessharesApi()
+var apiInstance = new ArtikCloud.DevicesSharesApi()
 
 var deviceId = "deviceId_example"; // {String} Device ID.
 
@@ -135,7 +135,7 @@ var defaultClient = ArtikCloud.ApiClient.default;
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloud.DevicessharesApi()
+var apiInstance = new ArtikCloud.DevicesSharesApi()
 
 var deviceId = "deviceId_example"; // {String} Device ID.
 
@@ -192,7 +192,7 @@ var defaultClient = ArtikCloud.ApiClient.default;
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
 artikcloud_oauth.accessToken = "YOUR ACCESS TOKEN"
 
-var apiInstance = new ArtikCloud.DevicessharesApi()
+var apiInstance = new ArtikCloud.DevicesSharesApi()
 
 var deviceId = "deviceId_example"; // {String} Device ID.
 

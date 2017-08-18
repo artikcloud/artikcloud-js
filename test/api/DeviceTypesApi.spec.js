@@ -62,7 +62,7 @@
     describe('getAvailableManifestVersions', function() {
       it('should call getAvailableManifestVersions successfully', function(done) {
         //uncomment below and update the code to test getAvailableManifestVersions
-        //instance.getAvailableManifestVersions(pet, function(error) {
+        //instance.getAvailableManifestVersions(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -72,7 +72,7 @@
     describe('getDeviceType', function() {
       it('should call getDeviceType successfully', function(done) {
         //uncomment below and update the code to test getDeviceType
-        //instance.getDeviceType(pet, function(error) {
+        //instance.getDeviceType(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -82,7 +82,17 @@
     describe('getDeviceTypes', function() {
       it('should call getDeviceTypes successfully', function(done) {
         //uncomment below and update the code to test getDeviceTypes
-        //instance.getDeviceTypes(pet, function(error) {
+        //instance.getDeviceTypes(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('getDeviceTypesByApplication', function() {
+      it('should call getDeviceTypesByApplication successfully', function(done) {
+        //uncomment below and update the code to test getDeviceTypesByApplication
+        //instance.getDeviceTypesByApplication(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -92,7 +102,7 @@
     describe('getLatestManifestProperties', function() {
       it('should call getLatestManifestProperties successfully', function(done) {
         //uncomment below and update the code to test getLatestManifestProperties
-        //instance.getLatestManifestProperties(pet, function(error) {
+        //instance.getLatestManifestProperties(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -102,7 +112,7 @@
     describe('getManifestProperties', function() {
       it('should call getManifestProperties successfully', function(done) {
         //uncomment below and update the code to test getManifestProperties
-        //instance.getManifestProperties(pet, function(error) {
+        //instance.getManifestProperties(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

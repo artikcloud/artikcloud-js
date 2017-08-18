@@ -62,7 +62,7 @@
     describe('confirmUser', function() {
       it('should call confirmUser successfully', function(done) {
         //uncomment below and update the code to test confirmUser
-        //instance.confirmUser(pet, function(error) {
+        //instance.confirmUser(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -72,7 +72,7 @@
     describe('getRequestStatusForUser', function() {
       it('should call getRequestStatusForUser successfully', function(done) {
         //uncomment below and update the code to test getRequestStatusForUser
-        //instance.getRequestStatusForUser(pet, function(error) {
+        //instance.getRequestStatusForUser(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -82,7 +82,7 @@
     describe('unregisterDevice', function() {
       it('should call unregisterDevice successfully', function(done) {
         //uncomment below and update the code to test unregisterDevice
-        //instance.unregisterDevice(pet, function(error) {
+        //instance.unregisterDevice(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

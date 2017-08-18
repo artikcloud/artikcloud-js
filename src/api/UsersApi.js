@@ -355,6 +355,7 @@
      * @param Boolean opts.excludeDisabled Exclude disabled rules in the result.
      * @param Number opts.count Desired count of items in the result set.
      * @param Number opts.offset Offset for pagination.
+     * @param module:model/String opts.owner Rule owner
      * @param {module:api/UsersApi~getUserRulesCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: module:model/RulesEnvelope
      */
@@ -374,7 +375,8 @@
       var queryParams = {
         'excludeDisabled': opts['excludeDisabled'],
         'count': opts['count'],
-        'offset': opts['offset']
+        'offset': opts['offset'],
+        'owner': opts['owner']
       };
       var headerParams = {
       };
@@ -446,7 +448,7 @@
       var returnType = DeviceSharingEnvelope;
 
       return this.apiClient.callApi(
-        'in/api/users/{userId}/shares', 'GET',
+        '/users/{userId}/shares', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

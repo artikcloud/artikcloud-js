@@ -33,7 +33,7 @@
    * @param createdOn(Number)
    * @param modifiedOn(Number)
    */
-  var exports = function(id(String), name(String), email(String), fullName(String), createdOn(Number), modifiedOn(Number)) {
+  var exports = function(id, name, email, fullName, createdOn, modifiedOn) {
 
     this['id'] = id;
     this['name'] = name;

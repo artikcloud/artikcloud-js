@@ -34,7 +34,7 @@
    * @param size(Number)
    * @param data([FieldPresence])
    */
-  var exports = function(sdid(String), fieldPresence(String), startDate(Number), endDate(Number), interval(String), size(Number), data([FieldPresence])) {
+  var exports = function(sdid, fieldPresence, startDate, endDate, interval, size, data) {
 
     this['sdid'] = sdid;
     this['fieldPresence'] = fieldPresence;
