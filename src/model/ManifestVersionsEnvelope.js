@@ -28,7 +28,7 @@
    * @class
    * @param data(ManifestVersions)
    */
-  var exports = function(data(ManifestVersions)) {
+  var exports = function(data) {
 
     this['data'] = data;
   };

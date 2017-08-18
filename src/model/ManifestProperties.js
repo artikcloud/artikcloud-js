@@ -28,7 +28,7 @@
    * @class
    * @param properties(FieldsActions)
    */
-  var exports = function(properties(FieldsActions)) {
+  var exports = function(properties) {
 
     this['properties'] = properties;
   };

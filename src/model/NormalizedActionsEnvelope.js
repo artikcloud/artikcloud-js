@@ -30,7 +30,7 @@
    * @param size(Number)
    * @param data([NormalizedAction])
    */
-  var exports = function(count(Number), size(Number), data([NormalizedAction])) {
+  var exports = function(count, size, data) {
 
 
 

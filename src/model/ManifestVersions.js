@@ -28,7 +28,7 @@
    * @class
    * @param versions([String])
    */
-  var exports = function(versions([String])) {
+  var exports = function(versions) {
 
     this['versions'] = versions;
   };
