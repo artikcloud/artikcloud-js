@@ -37,17 +37,8 @@
   'use strict';
 
   var instance;
-  var properties = propertiesReader('./test/artik.properties');
-
-  var api;
 
   beforeEach(function() {
-    var newClient = new ArtikCloud.ApiClient();
-
-    // Configure OAuth2 access token for authorization: artikcloud_oauth
-    var artikcloud_oauth = newClient.authentications['artikcloud_oauth'];
-    artikcloud_oauth.accessToken = properties.get("user1.token");
-
     instance = new ArtikCloud.TokensApi();
   });
 
