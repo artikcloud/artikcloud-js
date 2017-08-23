@@ -3,7 +3,7 @@
     <groupId>cloud.artik</groupId>
     <artifactId>artikcloud-js</artifactId>
     <packaging>pom</packaging>
-    <version>2.1.1</version>
+    <version>4.0.0</version>
     <name>Artik Cloud JavaScript Client</name>
     <build>
         <plugins>

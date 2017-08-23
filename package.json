@@ -1,6 +1,6 @@
 {
   "name": "artikcloud-js",
-  "version": "2.1.1",
+  "version": "4.0.0",
   "description": "JS, Node.js client for ARTIK Cloud",
   "license": "MIT",
   "main": "src/index.js",
