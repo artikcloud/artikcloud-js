@@ -18,7 +18,7 @@
   /**
    * The NotifMessage model module.
    * @module model/NotifMessage
-   * @version 2.0.6
+   * @version 2.2.2
    */
 
   /**

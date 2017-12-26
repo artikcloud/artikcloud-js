@@ -1,12 +1,12 @@
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['./ApiClient', './model/AckEnvelope', './model/Acknowledgement', './model/Action', './model/ActionArray', './model/ActionDetails', './model/ActionDetailsArray', './model/ActionIn', './model/ActionOut', './model/Actions', './model/AggregateData', './model/AggregatesHistogramData', './model/AggregatesHistogramResponse', './model/AggregatesResponse', './model/AppProperties', './model/CheckTokenMessage', './model/CheckTokenResponse', './model/Device', './model/DeviceArray', './model/DeviceEnvelope', './model/DeviceRegCompleteRequest', './model/DeviceRegConfirmUserRequest', './model/DeviceRegConfirmUserResponse', './model/DeviceRegConfirmUserResponseEnvelope', './model/DeviceRegStatusResponse', './model/DeviceRegStatusResponseEnvelope', './model/DeviceShareInfo', './model/DeviceSharing', './model/DeviceSharingArray', './model/DeviceSharingEnvelope', './model/DeviceSharingId', './model/DeviceStatus', './model/DeviceStatusBatch', './model/DeviceStatusData', './model/DeviceStatusPut', './model/DeviceStatusPutData', './model/DeviceTask', './model/DeviceTaskUpdateRequest', './model/DeviceTaskUpdateResponse', './model/DeviceToken', './model/DeviceTokenEnvelope', './model/DeviceType', './model/DeviceTypeArray', './model/DeviceTypeEnvelope', './model/DeviceTypeInfo', './model/DeviceTypeInfoEnvelope', './model/DeviceTypesEnvelope', './model/DeviceTypesInfo', './model/DeviceTypesInfoEnvelope', './model/DevicesEnvelope', './model/ErrorEnvelope', './model/EventFeedData', './model/ExportData', './model/ExportDataArray', './model/ExportHistoryResponse', './model/ExportNormalizedMessagesResponse', './model/ExportRequest', './model/ExportRequestData', './model/ExportRequestInfo', './model/ExportRequestResponse', './model/ExportResponse', './model/ExportStatusResponse', './model/FieldPath', './model/FieldPresence', './model/FieldPresenceEnvelope', './model/FieldsActions', './model/ManifestProperties', './model/ManifestPropertiesEnvelope', './model/ManifestVersions', './model/ManifestVersionsEnvelope', './model/Message', './model/MessageAction', './model/MessageID', './model/MessageIDEnvelope', './model/MessageIn', './model/MessageOut', './model/MetadataEnvelope', './model/MetadataPropertiesEnvelope', './model/MetadataQueryEnvelope', './model/NonEmptyString', './model/NormalizedAction', './model/NormalizedActionsEnvelope', './model/NormalizedMessage', './model/NormalizedMessagesEnvelope', './model/NotifMessage', './model/NotifMessageArray', './model/NotifMessagesResponse', './model/OutputRule', './model/PresenceEnvelope', './model/PresenceModel', './model/PropertiesEnvelope', './model/RefreshTokenResponse', './model/RegisterMessage', './model/RuleArray', './model/RuleCreationInfo', './model/RuleEnvelope', './model/RuleError', './model/RuleUpdateInfo', './model/RuleWarningOutput', './model/RulesEnvelope', './model/SnapshotResponse', './model/SnapshotResponses', './model/SnapshotsResponseEnvelope', './model/Subscription', './model/SubscriptionArray', './model/SubscriptionEnvelope', './model/SubscriptionInfo', './model/SubscriptionsEnvelope', './model/Tag', './model/TagArray', './model/TagsEnvelope', './model/Task', './model/TaskByDid', './model/TaskByDidList', './model/TaskByDidListEnvelope', './model/TaskEnvelope', './model/TaskHistory', './model/TaskHistoryList', './model/TaskList', './model/TaskListEnvelope', './model/TaskParameters', './model/TaskRequest', './model/TaskStatus', './model/TaskStatusCounts', './model/TaskStatuses', './model/TaskStatusesEnvelope', './model/TaskStatusesHistoryEnvelope', './model/TaskUpdateRequest', './model/TaskUpdateResponse', './model/TasksStatusCounts', './model/Token', './model/TokenInfo', './model/TokenInfoSuccessResponse', './model/TokenRequest', './model/TokenResponse', './model/UnregisterDeviceResponse', './model/UnregisterDeviceResponseEnvelope', './model/UpdateParameters', './model/User', './model/UserEnvelope', './model/ValidationCallbackInfo', './model/WebSocketError', './api/DeviceTypesApi', './api/DevicesApi', './api/DevicesManagementApi', './api/DevicesSharesApi', './api/DevicesStatusApi', './api/ExportApi', './api/MessagesApi', './api/RegistrationsApi', './api/RulesApi', './api/SubscriptionsApi', './api/TagsApi', './api/TokensApi', './api/UsersApi'], factory);
+    define(['./ApiClient', './model/AckEnvelope', './model/Acknowledgement', './model/Action', './model/ActionArray', './model/ActionDetails', './model/ActionDetailsArray', './model/ActionIn', './model/ActionOut', './model/Actions', './model/AggregateData', './model/AggregatesHistogramData', './model/AggregatesHistogramResponse', './model/AggregatesResponse', './model/AppProperties', './model/CertificateData', './model/CertificateEnvelope', './model/CertificateFields', './model/CertificateId', './model/CheckTokenMessage', './model/CheckTokenResponse', './model/ContactInfo', './model/Device', './model/DeviceArray', './model/DeviceEnvelope', './model/DevicePricingTier', './model/DevicePricingTierEnvelope', './model/DevicePricingTierRequest', './model/DevicePricingTiers', './model/DevicePricingTiersEnvelope', './model/DeviceRegCompleteRequest', './model/DeviceRegConfirmUserRequest', './model/DeviceRegConfirmUserResponse', './model/DeviceRegConfirmUserResponseEnvelope', './model/DeviceRegStatusResponse', './model/DeviceRegStatusResponseEnvelope', './model/DeviceShareInfo', './model/DeviceSharing', './model/DeviceSharingArray', './model/DeviceSharingEnvelope', './model/DeviceSharingId', './model/DeviceStatus', './model/DeviceStatusBatch', './model/DeviceStatusData', './model/DeviceStatusPut', './model/DeviceStatusPutData', './model/DeviceTask', './model/DeviceTaskUpdateRequest', './model/DeviceTaskUpdateResponse', './model/DeviceToken', './model/DeviceTokenEnvelope', './model/DeviceType', './model/DeviceTypeArray', './model/DeviceTypeEnvelope', './model/DeviceTypeInfo', './model/DeviceTypeInfoEnvelope', './model/DeviceTypePricingList', './model/DeviceTypePricingTier', './model/DeviceTypePricingTiersEnvelope', './model/DeviceTypeUpdateInput', './model/DeviceTypesEnvelope', './model/DeviceTypesInfo', './model/DeviceTypesInfoEnvelope', './model/DevicesEnvelope', './model/ErrorEnvelope', './model/EventFeedData', './model/ExportData', './model/ExportDataArray', './model/ExportHistoryResponse', './model/ExportNormalizedMessagesResponse', './model/ExportRequest', './model/ExportRequestData', './model/ExportRequestInfo', './model/ExportRequestResponse', './model/ExportResponse', './model/ExportStatusResponse', './model/FieldPath', './model/FieldPresence', './model/FieldPresenceEnvelope', './model/FieldsActions', './model/ManifestProperties', './model/ManifestPropertiesEnvelope', './model/ManifestVersions', './model/ManifestVersionsEnvelope', './model/Message', './model/MessageAction', './model/MessageID', './model/MessageIDEnvelope', './model/MessageIn', './model/MessageOut', './model/MetadataEnvelope', './model/MetadataPropertiesEnvelope', './model/MetadataQueryEnvelope', './model/NonEmptyString', './model/NormalizedAction', './model/NormalizedActionsEnvelope', './model/NormalizedMessage', './model/NormalizedMessagesEnvelope', './model/NotifMessage', './model/NotifMessageArray', './model/NotifMessagesResponse', './model/OutputRule', './model/PresenceEnvelope', './model/PresenceModel', './model/PropertiesEnvelope', './model/RefreshTokenResponse', './model/RegisterMessage', './model/RejectedCSVRow', './model/RejectedCSVRowsEnvelope', './model/RuleArray', './model/RuleCreationInfo', './model/RuleEnvelope', './model/RuleError', './model/RuleUpdateInfo', './model/RuleWarningOutput', './model/RulesEnvelope', './model/SnapshotResponse', './model/SnapshotResponses', './model/SnapshotsResponseEnvelope', './model/Subscription', './model/SubscriptionArray', './model/SubscriptionEnvelope', './model/SubscriptionInfo', './model/SubscriptionsEnvelope', './model/Tag', './model/TagArray', './model/TagsEnvelope', './model/Task', './model/TaskByDid', './model/TaskByDidList', './model/TaskByDidListEnvelope', './model/TaskEnvelope', './model/TaskHistory', './model/TaskHistoryList', './model/TaskList', './model/TaskListEnvelope', './model/TaskParameters', './model/TaskRequest', './model/TaskStatus', './model/TaskStatusCounts', './model/TaskStatuses', './model/TaskStatusesEnvelope', './model/TaskStatusesHistoryEnvelope', './model/TaskUpdateRequest', './model/TaskUpdateResponse', './model/TasksStatusCounts', './model/Tier', './model/Token', './model/TokenInfo', './model/TokenInfoSuccessResponse', './model/TokenRequest', './model/TokenResponse', './model/UnregisterDeviceResponse', './model/UnregisterDeviceResponseEnvelope', './model/UpdateParameters', './model/UpgradePath', './model/UpgradePathEnvelope', './model/UpgradePathUserToken', './model/UpgradePathUserTokenEnvelope', './model/UploadIdEnvelope', './model/UploadStatusEnvelope', './model/User', './model/UserEnvelope', './model/ValidationCallbackInfo', './model/ValidityPeriod', './model/WebSocketError', './model/Whitelist', './model/WhitelistEnvelope', './model/WhitelistResultEnvelope', './api/DeviceTypesApi', './api/DevicesApi', './api/DevicesManagementApi', './api/DevicesSharesApi', './api/DevicesStatusApi', './api/ExportApi', './api/MessagesApi', './api/MonetizationApi', './api/RegistrationsApi', './api/RulesApi', './api/SubscriptionsApi', './api/TagsApi', './api/TokensApi', './api/UsersApi', './api/WhitelistingApi'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./ApiClient'), require('./model/AckEnvelope'), require('./model/Acknowledgement'), require('./model/Action'), require('./model/ActionArray'), require('./model/ActionDetails'), require('./model/ActionDetailsArray'), require('./model/ActionIn'), require('./model/ActionOut'), require('./model/Actions'), require('./model/AggregateData'), require('./model/AggregatesHistogramData'), require('./model/AggregatesHistogramResponse'), require('./model/AggregatesResponse'), require('./model/AppProperties'), require('./model/CheckTokenMessage'), require('./model/CheckTokenResponse'), require('./model/Device'), require('./model/DeviceArray'), require('./model/DeviceEnvelope'), require('./model/DeviceRegCompleteRequest'), require('./model/DeviceRegConfirmUserRequest'), require('./model/DeviceRegConfirmUserResponse'), require('./model/DeviceRegConfirmUserResponseEnvelope'), require('./model/DeviceRegStatusResponse'), require('./model/DeviceRegStatusResponseEnvelope'), require('./model/DeviceShareInfo'), require('./model/DeviceSharing'), require('./model/DeviceSharingArray'), require('./model/DeviceSharingEnvelope'), require('./model/DeviceSharingId'), require('./model/DeviceStatus'), require('./model/DeviceStatusBatch'), require('./model/DeviceStatusData'), require('./model/DeviceStatusPut'), require('./model/DeviceStatusPutData'), require('./model/DeviceTask'), require('./model/DeviceTaskUpdateRequest'), require('./model/DeviceTaskUpdateResponse'), require('./model/DeviceToken'), require('./model/DeviceTokenEnvelope'), require('./model/DeviceType'), require('./model/DeviceTypeArray'), require('./model/DeviceTypeEnvelope'), require('./model/DeviceTypeInfo'), require('./model/DeviceTypeInfoEnvelope'), require('./model/DeviceTypesEnvelope'), require('./model/DeviceTypesInfo'), require('./model/DeviceTypesInfoEnvelope'), require('./model/DevicesEnvelope'), require('./model/ErrorEnvelope'), require('./model/EventFeedData'), require('./model/ExportData'), require('./model/ExportDataArray'), require('./model/ExportHistoryResponse'), require('./model/ExportNormalizedMessagesResponse'), require('./model/ExportRequest'), require('./model/ExportRequestData'), require('./model/ExportRequestInfo'), require('./model/ExportRequestResponse'), require('./model/ExportResponse'), require('./model/ExportStatusResponse'), require('./model/FieldPath'), require('./model/FieldPresence'), require('./model/FieldPresenceEnvelope'), require('./model/FieldsActions'), require('./model/ManifestProperties'), require('./model/ManifestPropertiesEnvelope'), require('./model/ManifestVersions'), require('./model/ManifestVersionsEnvelope'), require('./model/Message'), require('./model/MessageAction'), require('./model/MessageID'), require('./model/MessageIDEnvelope'), require('./model/MessageIn'), require('./model/MessageOut'), require('./model/MetadataEnvelope'), require('./model/MetadataPropertiesEnvelope'), require('./model/MetadataQueryEnvelope'), require('./model/NonEmptyString'), require('./model/NormalizedAction'), require('./model/NormalizedActionsEnvelope'), require('./model/NormalizedMessage'), require('./model/NormalizedMessagesEnvelope'), require('./model/NotifMessage'), require('./model/NotifMessageArray'), require('./model/NotifMessagesResponse'), require('./model/OutputRule'), require('./model/PresenceEnvelope'), require('./model/PresenceModel'), require('./model/PropertiesEnvelope'), require('./model/RefreshTokenResponse'), require('./model/RegisterMessage'), require('./model/RuleArray'), require('./model/RuleCreationInfo'), require('./model/RuleEnvelope'), require('./model/RuleError'), require('./model/RuleUpdateInfo'), require('./model/RuleWarningOutput'), require('./model/RulesEnvelope'), require('./model/SnapshotResponse'), require('./model/SnapshotResponses'), require('./model/SnapshotsResponseEnvelope'), require('./model/Subscription'), require('./model/SubscriptionArray'), require('./model/SubscriptionEnvelope'), require('./model/SubscriptionInfo'), require('./model/SubscriptionsEnvelope'), require('./model/Tag'), require('./model/TagArray'), require('./model/TagsEnvelope'), require('./model/Task'), require('./model/TaskByDid'), require('./model/TaskByDidList'), require('./model/TaskByDidListEnvelope'), require('./model/TaskEnvelope'), require('./model/TaskHistory'), require('./model/TaskHistoryList'), require('./model/TaskList'), require('./model/TaskListEnvelope'), require('./model/TaskParameters'), require('./model/TaskRequest'), require('./model/TaskStatus'), require('./model/TaskStatusCounts'), require('./model/TaskStatuses'), require('./model/TaskStatusesEnvelope'), require('./model/TaskStatusesHistoryEnvelope'), require('./model/TaskUpdateRequest'), require('./model/TaskUpdateResponse'), require('./model/TasksStatusCounts'), require('./model/Token'), require('./model/TokenInfo'), require('./model/TokenInfoSuccessResponse'), require('./model/TokenRequest'), require('./model/TokenResponse'), require('./model/UnregisterDeviceResponse'), require('./model/UnregisterDeviceResponseEnvelope'), require('./model/UpdateParameters'), require('./model/User'), require('./model/UserEnvelope'), require('./model/ValidationCallbackInfo'), require('./model/WebSocketError'), require('./api/DeviceTypesApi'), require('./api/DevicesApi'), require('./api/DevicesManagementApi'), require('./api/DevicesSharesApi'), require('./api/DevicesStatusApi'), require('./api/ExportApi'), require('./api/MessagesApi'), require('./api/RegistrationsApi'), require('./api/RulesApi'), require('./api/SubscriptionsApi'), require('./api/TagsApi'), require('./api/TokensApi'), require('./api/UsersApi'));
+    module.exports = factory(require('./ApiClient'), require('./model/AckEnvelope'), require('./model/Acknowledgement'), require('./model/Action'), require('./model/ActionArray'), require('./model/ActionDetails'), require('./model/ActionDetailsArray'), require('./model/ActionIn'), require('./model/ActionOut'), require('./model/Actions'), require('./model/AggregateData'), require('./model/AggregatesHistogramData'), require('./model/AggregatesHistogramResponse'), require('./model/AggregatesResponse'), require('./model/AppProperties'), require('./model/CertificateData'), require('./model/CertificateEnvelope'), require('./model/CertificateFields'), require('./model/CertificateId'), require('./model/CheckTokenMessage'), require('./model/CheckTokenResponse'), require('./model/ContactInfo'), require('./model/Device'), require('./model/DeviceArray'), require('./model/DeviceEnvelope'), require('./model/DevicePricingTier'), require('./model/DevicePricingTierEnvelope'), require('./model/DevicePricingTierRequest'), require('./model/DevicePricingTiers'), require('./model/DevicePricingTiersEnvelope'), require('./model/DeviceRegCompleteRequest'), require('./model/DeviceRegConfirmUserRequest'), require('./model/DeviceRegConfirmUserResponse'), require('./model/DeviceRegConfirmUserResponseEnvelope'), require('./model/DeviceRegStatusResponse'), require('./model/DeviceRegStatusResponseEnvelope'), require('./model/DeviceShareInfo'), require('./model/DeviceSharing'), require('./model/DeviceSharingArray'), require('./model/DeviceSharingEnvelope'), require('./model/DeviceSharingId'), require('./model/DeviceStatus'), require('./model/DeviceStatusBatch'), require('./model/DeviceStatusData'), require('./model/DeviceStatusPut'), require('./model/DeviceStatusPutData'), require('./model/DeviceTask'), require('./model/DeviceTaskUpdateRequest'), require('./model/DeviceTaskUpdateResponse'), require('./model/DeviceToken'), require('./model/DeviceTokenEnvelope'), require('./model/DeviceType'), require('./model/DeviceTypeArray'), require('./model/DeviceTypeEnvelope'), require('./model/DeviceTypeInfo'), require('./model/DeviceTypeInfoEnvelope'), require('./model/DeviceTypePricingList'), require('./model/DeviceTypePricingTier'), require('./model/DeviceTypePricingTiersEnvelope'), require('./model/DeviceTypeUpdateInput'), require('./model/DeviceTypesEnvelope'), require('./model/DeviceTypesInfo'), require('./model/DeviceTypesInfoEnvelope'), require('./model/DevicesEnvelope'), require('./model/ErrorEnvelope'), require('./model/EventFeedData'), require('./model/ExportData'), require('./model/ExportDataArray'), require('./model/ExportHistoryResponse'), require('./model/ExportNormalizedMessagesResponse'), require('./model/ExportRequest'), require('./model/ExportRequestData'), require('./model/ExportRequestInfo'), require('./model/ExportRequestResponse'), require('./model/ExportResponse'), require('./model/ExportStatusResponse'), require('./model/FieldPath'), require('./model/FieldPresence'), require('./model/FieldPresenceEnvelope'), require('./model/FieldsActions'), require('./model/ManifestProperties'), require('./model/ManifestPropertiesEnvelope'), require('./model/ManifestVersions'), require('./model/ManifestVersionsEnvelope'), require('./model/Message'), require('./model/MessageAction'), require('./model/MessageID'), require('./model/MessageIDEnvelope'), require('./model/MessageIn'), require('./model/MessageOut'), require('./model/MetadataEnvelope'), require('./model/MetadataPropertiesEnvelope'), require('./model/MetadataQueryEnvelope'), require('./model/NonEmptyString'), require('./model/NormalizedAction'), require('./model/NormalizedActionsEnvelope'), require('./model/NormalizedMessage'), require('./model/NormalizedMessagesEnvelope'), require('./model/NotifMessage'), require('./model/NotifMessageArray'), require('./model/NotifMessagesResponse'), require('./model/OutputRule'), require('./model/PresenceEnvelope'), require('./model/PresenceModel'), require('./model/PropertiesEnvelope'), require('./model/RefreshTokenResponse'), require('./model/RegisterMessage'), require('./model/RejectedCSVRow'), require('./model/RejectedCSVRowsEnvelope'), require('./model/RuleArray'), require('./model/RuleCreationInfo'), require('./model/RuleEnvelope'), require('./model/RuleError'), require('./model/RuleUpdateInfo'), require('./model/RuleWarningOutput'), require('./model/RulesEnvelope'), require('./model/SnapshotResponse'), require('./model/SnapshotResponses'), require('./model/SnapshotsResponseEnvelope'), require('./model/Subscription'), require('./model/SubscriptionArray'), require('./model/SubscriptionEnvelope'), require('./model/SubscriptionInfo'), require('./model/SubscriptionsEnvelope'), require('./model/Tag'), require('./model/TagArray'), require('./model/TagsEnvelope'), require('./model/Task'), require('./model/TaskByDid'), require('./model/TaskByDidList'), require('./model/TaskByDidListEnvelope'), require('./model/TaskEnvelope'), require('./model/TaskHistory'), require('./model/TaskHistoryList'), require('./model/TaskList'), require('./model/TaskListEnvelope'), require('./model/TaskParameters'), require('./model/TaskRequest'), require('./model/TaskStatus'), require('./model/TaskStatusCounts'), require('./model/TaskStatuses'), require('./model/TaskStatusesEnvelope'), require('./model/TaskStatusesHistoryEnvelope'), require('./model/TaskUpdateRequest'), require('./model/TaskUpdateResponse'), require('./model/TasksStatusCounts'), require('./model/Tier'), require('./model/Token'), require('./model/TokenInfo'), require('./model/TokenInfoSuccessResponse'), require('./model/TokenRequest'), require('./model/TokenResponse'), require('./model/UnregisterDeviceResponse'), require('./model/UnregisterDeviceResponseEnvelope'), require('./model/UpdateParameters'), require('./model/UpgradePath'), require('./model/UpgradePathEnvelope'), require('./model/UpgradePathUserToken'), require('./model/UpgradePathUserTokenEnvelope'), require('./model/UploadIdEnvelope'), require('./model/UploadStatusEnvelope'), require('./model/User'), require('./model/UserEnvelope'), require('./model/ValidationCallbackInfo'), require('./model/ValidityPeriod'), require('./model/WebSocketError'), require('./model/Whitelist'), require('./model/WhitelistEnvelope'), require('./model/WhitelistResultEnvelope'), require('./api/DeviceTypesApi'), require('./api/DevicesApi'), require('./api/DevicesManagementApi'), require('./api/DevicesSharesApi'), require('./api/DevicesStatusApi'), require('./api/ExportApi'), require('./api/MessagesApi'), require('./api/MonetizationApi'), require('./api/RegistrationsApi'), require('./api/RulesApi'), require('./api/SubscriptionsApi'), require('./api/TagsApi'), require('./api/TokensApi'), require('./api/UsersApi'), require('./api/WhitelistingApi'));
   }
-}(function(ApiClient, AckEnvelope, Acknowledgement, Action, ActionArray, ActionDetails, ActionDetailsArray, ActionIn, ActionOut, Actions, AggregateData, AggregatesHistogramData, AggregatesHistogramResponse, AggregatesResponse, AppProperties, CheckTokenMessage, CheckTokenResponse, Device, DeviceArray, DeviceEnvelope, DeviceRegCompleteRequest, DeviceRegConfirmUserRequest, DeviceRegConfirmUserResponse, DeviceRegConfirmUserResponseEnvelope, DeviceRegStatusResponse, DeviceRegStatusResponseEnvelope, DeviceShareInfo, DeviceSharing, DeviceSharingArray, DeviceSharingEnvelope, DeviceSharingId, DeviceStatus, DeviceStatusBatch, DeviceStatusData, DeviceStatusPut, DeviceStatusPutData, DeviceTask, DeviceTaskUpdateRequest, DeviceTaskUpdateResponse, DeviceToken, DeviceTokenEnvelope, DeviceType, DeviceTypeArray, DeviceTypeEnvelope, DeviceTypeInfo, DeviceTypeInfoEnvelope, DeviceTypesEnvelope, DeviceTypesInfo, DeviceTypesInfoEnvelope, DevicesEnvelope, ErrorEnvelope, EventFeedData, ExportData, ExportDataArray, ExportHistoryResponse, ExportNormalizedMessagesResponse, ExportRequest, ExportRequestData, ExportRequestInfo, ExportRequestResponse, ExportResponse, ExportStatusResponse, FieldPath, FieldPresence, FieldPresenceEnvelope, FieldsActions, ManifestProperties, ManifestPropertiesEnvelope, ManifestVersions, ManifestVersionsEnvelope, Message, MessageAction, MessageID, MessageIDEnvelope, MessageIn, MessageOut, MetadataEnvelope, MetadataPropertiesEnvelope, MetadataQueryEnvelope, NonEmptyString, NormalizedAction, NormalizedActionsEnvelope, NormalizedMessage, NormalizedMessagesEnvelope, NotifMessage, NotifMessageArray, NotifMessagesResponse, OutputRule, PresenceEnvelope, PresenceModel, PropertiesEnvelope, RefreshTokenResponse, RegisterMessage, RuleArray, RuleCreationInfo, RuleEnvelope, RuleError, RuleUpdateInfo, RuleWarningOutput, RulesEnvelope, SnapshotResponse, SnapshotResponses, SnapshotsResponseEnvelope, Subscription, SubscriptionArray, SubscriptionEnvelope, SubscriptionInfo, SubscriptionsEnvelope, Tag, TagArray, TagsEnvelope, Task, TaskByDid, TaskByDidList, TaskByDidListEnvelope, TaskEnvelope, TaskHistory, TaskHistoryList, TaskList, TaskListEnvelope, TaskParameters, TaskRequest, TaskStatus, TaskStatusCounts, TaskStatuses, TaskStatusesEnvelope, TaskStatusesHistoryEnvelope, TaskUpdateRequest, TaskUpdateResponse, TasksStatusCounts, Token, TokenInfo, TokenInfoSuccessResponse, TokenRequest, TokenResponse, UnregisterDeviceResponse, UnregisterDeviceResponseEnvelope, UpdateParameters, User, UserEnvelope, ValidationCallbackInfo, WebSocketError, DeviceTypesApi, DevicesApi, DevicesManagementApi, DevicesSharesApi, DevicesStatusApi, ExportApi, MessagesApi, RegistrationsApi, RulesApi, SubscriptionsApi, TagsApi, TokensApi, UsersApi) {
+}(function(ApiClient, AckEnvelope, Acknowledgement, Action, ActionArray, ActionDetails, ActionDetailsArray, ActionIn, ActionOut, Actions, AggregateData, AggregatesHistogramData, AggregatesHistogramResponse, AggregatesResponse, AppProperties, CertificateData, CertificateEnvelope, CertificateFields, CertificateId, CheckTokenMessage, CheckTokenResponse, ContactInfo, Device, DeviceArray, DeviceEnvelope, DevicePricingTier, DevicePricingTierEnvelope, DevicePricingTierRequest, DevicePricingTiers, DevicePricingTiersEnvelope, DeviceRegCompleteRequest, DeviceRegConfirmUserRequest, DeviceRegConfirmUserResponse, DeviceRegConfirmUserResponseEnvelope, DeviceRegStatusResponse, DeviceRegStatusResponseEnvelope, DeviceShareInfo, DeviceSharing, DeviceSharingArray, DeviceSharingEnvelope, DeviceSharingId, DeviceStatus, DeviceStatusBatch, DeviceStatusData, DeviceStatusPut, DeviceStatusPutData, DeviceTask, DeviceTaskUpdateRequest, DeviceTaskUpdateResponse, DeviceToken, DeviceTokenEnvelope, DeviceType, DeviceTypeArray, DeviceTypeEnvelope, DeviceTypeInfo, DeviceTypeInfoEnvelope, DeviceTypePricingList, DeviceTypePricingTier, DeviceTypePricingTiersEnvelope, DeviceTypeUpdateInput, DeviceTypesEnvelope, DeviceTypesInfo, DeviceTypesInfoEnvelope, DevicesEnvelope, ErrorEnvelope, EventFeedData, ExportData, ExportDataArray, ExportHistoryResponse, ExportNormalizedMessagesResponse, ExportRequest, ExportRequestData, ExportRequestInfo, ExportRequestResponse, ExportResponse, ExportStatusResponse, FieldPath, FieldPresence, FieldPresenceEnvelope, FieldsActions, ManifestProperties, ManifestPropertiesEnvelope, ManifestVersions, ManifestVersionsEnvelope, Message, MessageAction, MessageID, MessageIDEnvelope, MessageIn, MessageOut, MetadataEnvelope, MetadataPropertiesEnvelope, MetadataQueryEnvelope, NonEmptyString, NormalizedAction, NormalizedActionsEnvelope, NormalizedMessage, NormalizedMessagesEnvelope, NotifMessage, NotifMessageArray, NotifMessagesResponse, OutputRule, PresenceEnvelope, PresenceModel, PropertiesEnvelope, RefreshTokenResponse, RegisterMessage, RejectedCSVRow, RejectedCSVRowsEnvelope, RuleArray, RuleCreationInfo, RuleEnvelope, RuleError, RuleUpdateInfo, RuleWarningOutput, RulesEnvelope, SnapshotResponse, SnapshotResponses, SnapshotsResponseEnvelope, Subscription, SubscriptionArray, SubscriptionEnvelope, SubscriptionInfo, SubscriptionsEnvelope, Tag, TagArray, TagsEnvelope, Task, TaskByDid, TaskByDidList, TaskByDidListEnvelope, TaskEnvelope, TaskHistory, TaskHistoryList, TaskList, TaskListEnvelope, TaskParameters, TaskRequest, TaskStatus, TaskStatusCounts, TaskStatuses, TaskStatusesEnvelope, TaskStatusesHistoryEnvelope, TaskUpdateRequest, TaskUpdateResponse, TasksStatusCounts, Tier, Token, TokenInfo, TokenInfoSuccessResponse, TokenRequest, TokenResponse, UnregisterDeviceResponse, UnregisterDeviceResponseEnvelope, UpdateParameters, UpgradePath, UpgradePathEnvelope, UpgradePathUserToken, UpgradePathUserTokenEnvelope, UploadIdEnvelope, UploadStatusEnvelope, User, UserEnvelope, ValidationCallbackInfo, ValidityPeriod, WebSocketError, Whitelist, WhitelistEnvelope, WhitelistResultEnvelope, DeviceTypesApi, DevicesApi, DevicesManagementApi, DevicesSharesApi, DevicesStatusApi, ExportApi, MessagesApi, MonetizationApi, RegistrationsApi, RulesApi, SubscriptionsApi, TagsApi, TokensApi, UsersApi, WhitelistingApi) {
   'use strict';
 
   /**
@@ -38,7 +38,7 @@
    * </pre>
    * </p>
    * @module index
-   * @version 2.0.6
+   * @version 2.2.2
    */
   var exports = {
     /**
@@ -117,6 +117,26 @@
      */
     AppProperties: AppProperties,
     /**
+     * The CertificateData model constructor.
+     * @property {module:model/CertificateData}
+     */
+    CertificateData: CertificateData,
+    /**
+     * The CertificateEnvelope model constructor.
+     * @property {module:model/CertificateEnvelope}
+     */
+    CertificateEnvelope: CertificateEnvelope,
+    /**
+     * The CertificateFields model constructor.
+     * @property {module:model/CertificateFields}
+     */
+    CertificateFields: CertificateFields,
+    /**
+     * The CertificateId model constructor.
+     * @property {module:model/CertificateId}
+     */
+    CertificateId: CertificateId,
+    /**
      * The CheckTokenMessage model constructor.
      * @property {module:model/CheckTokenMessage}
      */
@@ -126,6 +146,11 @@
      * @property {module:model/CheckTokenResponse}
      */
     CheckTokenResponse: CheckTokenResponse,
+    /**
+     * The ContactInfo model constructor.
+     * @property {module:model/ContactInfo}
+     */
+    ContactInfo: ContactInfo,
     /**
      * The Device model constructor.
      * @property {module:model/Device}
@@ -141,6 +166,31 @@
      * @property {module:model/DeviceEnvelope}
      */
     DeviceEnvelope: DeviceEnvelope,
+    /**
+     * The DevicePricingTier model constructor.
+     * @property {module:model/DevicePricingTier}
+     */
+    DevicePricingTier: DevicePricingTier,
+    /**
+     * The DevicePricingTierEnvelope model constructor.
+     * @property {module:model/DevicePricingTierEnvelope}
+     */
+    DevicePricingTierEnvelope: DevicePricingTierEnvelope,
+    /**
+     * The DevicePricingTierRequest model constructor.
+     * @property {module:model/DevicePricingTierRequest}
+     */
+    DevicePricingTierRequest: DevicePricingTierRequest,
+    /**
+     * The DevicePricingTiers model constructor.
+     * @property {module:model/DevicePricingTiers}
+     */
+    DevicePricingTiers: DevicePricingTiers,
+    /**
+     * The DevicePricingTiersEnvelope model constructor.
+     * @property {module:model/DevicePricingTiersEnvelope}
+     */
+    DevicePricingTiersEnvelope: DevicePricingTiersEnvelope,
     /**
      * The DeviceRegCompleteRequest model constructor.
      * @property {module:model/DeviceRegCompleteRequest}
@@ -271,6 +321,26 @@
      * @property {module:model/DeviceTypeInfoEnvelope}
      */
     DeviceTypeInfoEnvelope: DeviceTypeInfoEnvelope,
+    /**
+     * The DeviceTypePricingList model constructor.
+     * @property {module:model/DeviceTypePricingList}
+     */
+    DeviceTypePricingList: DeviceTypePricingList,
+    /**
+     * The DeviceTypePricingTier model constructor.
+     * @property {module:model/DeviceTypePricingTier}
+     */
+    DeviceTypePricingTier: DeviceTypePricingTier,
+    /**
+     * The DeviceTypePricingTiersEnvelope model constructor.
+     * @property {module:model/DeviceTypePricingTiersEnvelope}
+     */
+    DeviceTypePricingTiersEnvelope: DeviceTypePricingTiersEnvelope,
+    /**
+     * The DeviceTypeUpdateInput model constructor.
+     * @property {module:model/DeviceTypeUpdateInput}
+     */
+    DeviceTypeUpdateInput: DeviceTypeUpdateInput,
     /**
      * The DeviceTypesEnvelope model constructor.
      * @property {module:model/DeviceTypesEnvelope}
@@ -507,6 +577,16 @@
      */
     RegisterMessage: RegisterMessage,
     /**
+     * The RejectedCSVRow model constructor.
+     * @property {module:model/RejectedCSVRow}
+     */
+    RejectedCSVRow: RejectedCSVRow,
+    /**
+     * The RejectedCSVRowsEnvelope model constructor.
+     * @property {module:model/RejectedCSVRowsEnvelope}
+     */
+    RejectedCSVRowsEnvelope: RejectedCSVRowsEnvelope,
+    /**
      * The RuleArray model constructor.
      * @property {module:model/RuleArray}
      */
@@ -692,6 +772,11 @@
      */
     TasksStatusCounts: TasksStatusCounts,
     /**
+     * The Tier model constructor.
+     * @property {module:model/Tier}
+     */
+    Tier: Tier,
+    /**
      * The Token model constructor.
      * @property {module:model/Token}
      */
@@ -732,6 +817,36 @@
      */
     UpdateParameters: UpdateParameters,
     /**
+     * The UpgradePath model constructor.
+     * @property {module:model/UpgradePath}
+     */
+    UpgradePath: UpgradePath,
+    /**
+     * The UpgradePathEnvelope model constructor.
+     * @property {module:model/UpgradePathEnvelope}
+     */
+    UpgradePathEnvelope: UpgradePathEnvelope,
+    /**
+     * The UpgradePathUserToken model constructor.
+     * @property {module:model/UpgradePathUserToken}
+     */
+    UpgradePathUserToken: UpgradePathUserToken,
+    /**
+     * The UpgradePathUserTokenEnvelope model constructor.
+     * @property {module:model/UpgradePathUserTokenEnvelope}
+     */
+    UpgradePathUserTokenEnvelope: UpgradePathUserTokenEnvelope,
+    /**
+     * The UploadIdEnvelope model constructor.
+     * @property {module:model/UploadIdEnvelope}
+     */
+    UploadIdEnvelope: UploadIdEnvelope,
+    /**
+     * The UploadStatusEnvelope model constructor.
+     * @property {module:model/UploadStatusEnvelope}
+     */
+    UploadStatusEnvelope: UploadStatusEnvelope,
+    /**
      * The User model constructor.
      * @property {module:model/User}
      */
@@ -747,10 +862,30 @@
      */
     ValidationCallbackInfo: ValidationCallbackInfo,
     /**
+     * The ValidityPeriod model constructor.
+     * @property {module:model/ValidityPeriod}
+     */
+    ValidityPeriod: ValidityPeriod,
+    /**
      * The WebSocketError model constructor.
      * @property {module:model/WebSocketError}
      */
     WebSocketError: WebSocketError,
+    /**
+     * The Whitelist model constructor.
+     * @property {module:model/Whitelist}
+     */
+    Whitelist: Whitelist,
+    /**
+     * The WhitelistEnvelope model constructor.
+     * @property {module:model/WhitelistEnvelope}
+     */
+    WhitelistEnvelope: WhitelistEnvelope,
+    /**
+     * The WhitelistResultEnvelope model constructor.
+     * @property {module:model/WhitelistResultEnvelope}
+     */
+    WhitelistResultEnvelope: WhitelistResultEnvelope,
     /**
      * The DeviceTypesApi service constructor.
      * @property {module:api/DeviceTypesApi}
@@ -787,6 +922,11 @@
      */
     MessagesApi: MessagesApi,
     /**
+     * The MonetizationApi service constructor.
+     * @property {module:api/MonetizationApi}
+     */
+    MonetizationApi: MonetizationApi,
+    /**
      * The RegistrationsApi service constructor.
      * @property {module:api/RegistrationsApi}
      */
@@ -815,7 +955,12 @@
      * The UsersApi service constructor.
      * @property {module:api/UsersApi}
      */
-    UsersApi: UsersApi
+    UsersApi: UsersApi,
+    /**
+     * The WhitelistingApi service constructor.
+     * @property {module:api/WhitelistingApi}
+     */
+    WhitelistingApi: WhitelistingApi
   };
 
   return exports;

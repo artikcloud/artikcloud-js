@@ -18,7 +18,7 @@
   /**
    * The User model module.
    * @module model/User
-   * @version 2.0.6
+   * @version 2.2.2
    */
 
   /**
@@ -33,7 +33,7 @@
    * @param createdOn(Number)
    * @param modifiedOn(Number)
    */
-  var exports = function(id, name, email, fullName, createdOn, modifiedOn) {
+  var exports = function(id(String), name(String), email(String), fullName(String), createdOn(Number), modifiedOn(Number)) {
 
     this['id'] = id;
     this['name'] = name;

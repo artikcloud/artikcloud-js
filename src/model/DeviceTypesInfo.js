@@ -18,7 +18,7 @@
   /**
    * The DeviceTypesInfo model module.
    * @module model/DeviceTypesInfo
-   * @version 2.0.6
+   * @version 2.2.2
    */
 
   /**

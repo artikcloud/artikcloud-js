@@ -18,7 +18,7 @@
   /**
    * The DeviceTokenEnvelope model module.
    * @module model/DeviceTokenEnvelope
-   * @version 2.0.6
+   * @version 2.2.2
    */
 
   /**
@@ -28,7 +28,7 @@
    * @class
    * @param data(DeviceToken)
    */
-  var exports = function(data) {
+  var exports = function(data(DeviceToken)) {
 
     this['data'] = data;
   };

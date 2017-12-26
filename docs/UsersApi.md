@@ -258,7 +258,8 @@ var opts = {
   'count': 56, // {Number} Desired count of items in the result set
   'includeProperties': true, // {Boolean} Optional. Boolean (true/false) - If false, only return the user's device types. If true, also return device types shared by other users.
   'owner': "owner_example", // {String} Return owned and/or shared devices. Default to ALL.
-  'includeShareInfo': true // {Boolean} Include share info
+  'includeShareInfo': true, // {Boolean} Include share info
+  'dtid': "dtid_example" // {String} Return only devices of this device type. If empty, assumes all device types allowed by the authorization.
 };
 
 var callback = function(error, data, response) {
@@ -281,6 +282,7 @@ Name | Type | Description  | Notes
  **includeProperties** | **Boolean**| Optional. Boolean (true/false) - If false, only return the user&#39;s device types. If true, also return device types shared by other users. | [optional] 
  **owner** | **String**| Return owned and/or shared devices. Default to ALL. | [optional] 
  **includeShareInfo** | **Boolean**| Include share info | [optional] 
+ **dtid** | **String**| Return only devices of this device type. If empty, assumes all device types allowed by the authorization. | [optional] 
 
 ### Return type
 
@@ -374,7 +376,8 @@ var userId = "userId_example"; // {String} User ID.
 var opts = { 
   'excludeDisabled': true, // {Boolean} Exclude disabled rules in the result.
   'count': 56, // {Number} Desired count of items in the result set.
-  'offset': 56 // {Number} Offset for pagination.
+  'offset': 56, // {Number} Offset for pagination.
+  'owner': "owner_example" // {String} Rule owner
 };
 
 var callback = function(error, data, response) {
@@ -395,6 +398,7 @@ Name | Type | Description  | Notes
  **excludeDisabled** | **Boolean**| Exclude disabled rules in the result. | [optional] 
  **count** | **Number**| Desired count of items in the result set. | [optional] 
  **offset** | **Number**| Offset for pagination. | [optional] 
+ **owner** | **String**| Rule owner | [optional] 
 
 ### Return type
 

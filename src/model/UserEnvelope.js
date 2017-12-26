@@ -18,7 +18,7 @@
   /**
    * The UserEnvelope model module.
    * @module model/UserEnvelope
-   * @version 2.0.6
+   * @version 2.2.2
    */
 
   /**
@@ -28,7 +28,7 @@
    * @class
    * @param data(User)
    */
-  var exports = function(data) {
+  var exports = function(data(User)) {
 
     this['data'] = data;
   };

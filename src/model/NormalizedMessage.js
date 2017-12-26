@@ -18,7 +18,7 @@
   /**
    * The NormalizedMessage model module.
    * @module model/NormalizedMessage
-   * @version 2.0.6
+   * @version 2.2.2
    */
 
   /**
@@ -35,7 +35,7 @@
    * @param mv(Number)
    * @param data({String: Object})
    */
-  var exports = function(cts, ts, mid, sdid, sdtid, uid, mv, data) {
+  var exports = function(cts(Number), ts(Number), mid(String), sdid(String), sdtid(String), uid(String), mv(Number), data({String: Object})) {
 
     this['cts'] = cts;
     this['ts'] = ts;

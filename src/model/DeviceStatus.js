@@ -18,7 +18,7 @@
   /**
    * The DeviceStatus model module.
    * @module model/DeviceStatus
-   * @version 2.0.6
+   * @version 2.2.2
    */
 
   /**

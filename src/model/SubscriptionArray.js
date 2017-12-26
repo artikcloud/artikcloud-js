@@ -18,7 +18,7 @@
   /**
    * The SubscriptionArray model module.
    * @module model/SubscriptionArray
-   * @version 2.0.6
+   * @version 2.2.2
    */
 
   /**

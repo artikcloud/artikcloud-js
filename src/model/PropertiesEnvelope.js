@@ -18,7 +18,7 @@
   /**
    * The PropertiesEnvelope model module.
    * @module model/PropertiesEnvelope
-   * @version 2.0.6
+   * @version 2.2.2
    */
 
   /**
@@ -28,7 +28,7 @@
    * @class
    * @param data(AppProperties)
    */
-  var exports = function(data) {
+  var exports = function(data(AppProperties)) {
 
     this['data'] = data;
   };

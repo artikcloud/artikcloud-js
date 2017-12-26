@@ -18,7 +18,7 @@
   /**
    * The DeviceArray model module.
    * @module model/DeviceArray
-   * @version 2.0.6
+   * @version 2.2.2
    */
 
   /**

@@ -18,7 +18,7 @@
   /**
    * The OutputRule model module.
    * @module model/OutputRule
-   * @version 2.0.6
+   * @version 2.2.2
    */
 
   /**
@@ -28,6 +28,7 @@
    * @class
    */
   var exports = function() {
+
 
 
 
@@ -97,6 +98,9 @@
       }
       if (data.hasOwnProperty('warning')) {
         obj['warning'] = RuleWarningOutput.constructFromObject(data['warning']);
+      }
+      if (data.hasOwnProperty('owner')) {
+        obj['owner'] = ApiClient.convertToType(data['owner'], 'String');
       }
     }
     return obj;
@@ -173,8 +177,30 @@
    */
   exports.prototype['warning'] = undefined;
 
+  /**
+   * @member module:model/OutputRule.OwnerEnum owner
+   */
+  exports.prototype['owner'] = undefined;
 
 
+  /**
+   * Allowed values for the <code>owner</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.OwnerEnum = { 
+    /**
+     * value: &quot;user&quot;
+     * @const
+     */
+    user: "&quot;user&quot;",
+    
+    /**
+     * value: &quot;application&quot;
+     * @const
+     */
+    application: "&quot;application&quot;"
+  };
 
   return exports;
 }));

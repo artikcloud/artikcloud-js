@@ -18,7 +18,7 @@
   /**
    * The DevicesEnvelope model module.
    * @module model/DevicesEnvelope
-   * @version 2.0.6
+   * @version 2.2.2
    */
 
   /**
@@ -30,7 +30,7 @@
    * @param count(Number)
    * @param offset(Number)
    */
-  var exports = function(total, count, offset) {
+  var exports = function(total(Number), count(Number), offset(Number)) {
 
     this['total'] = total;
     this['count'] = count;

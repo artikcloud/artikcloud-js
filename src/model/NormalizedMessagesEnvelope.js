@@ -18,7 +18,7 @@
   /**
    * The NormalizedMessagesEnvelope model module.
    * @module model/NormalizedMessagesEnvelope
-   * @version 2.0.5
+   * @version 2.2.2
    */
 
   /**
@@ -30,7 +30,7 @@
    * @param size(Number)
    * @param data([NormalizedMessage])
    */
-  var exports = function(count, size, data) {
+  var exports = function(count(Number), size(Number), data([NormalizedMessage])) {
 
 
 

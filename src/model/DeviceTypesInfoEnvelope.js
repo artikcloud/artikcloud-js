@@ -18,7 +18,7 @@
   /**
    * The DeviceTypesInfoEnvelope model module.
    * @module model/DeviceTypesInfoEnvelope
-   * @version 2.0.6
+   * @version 2.2.2
    */
 
   /**

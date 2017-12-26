@@ -126,6 +126,11 @@ Class | Method | HTTP request | Description
 *ArtikCloud.MessagesApi* | [**getNormalizedMessages**](docs/MessagesApi.md#getNormalizedMessages) | **GET** /messages | Get Normalized Messages
 *ArtikCloud.MessagesApi* | [**sendActions**](docs/MessagesApi.md#sendActions) | **POST** /actions | Send Actions
 *ArtikCloud.MessagesApi* | [**sendMessage**](docs/MessagesApi.md#sendMessage) | **POST** /messages | Send Message
+*ArtikCloud.MonetizationApi* | [**createPricingTiers**](docs/MonetizationApi.md#createPricingTiers) | **POST** /pricing/devicetypes/{dtid}/pricingtiers | Define devicetype&#39;s pricing tiers.
+*ArtikCloud.MonetizationApi* | [**getPricingTiers**](docs/MonetizationApi.md#getPricingTiers) | **GET** /pricing/devices/{did}/pricingtiers | Get a device&#39;s pricing tiers
+*ArtikCloud.MonetizationApi* | [**getThePricingTiers**](docs/MonetizationApi.md#getThePricingTiers) | **GET** /pricing/devicetypes/{dtid}/pricingtiers | Get devicetype&#39;s pricing tiers.
+*ArtikCloud.MonetizationApi* | [**getUpgradePath**](docs/MonetizationApi.md#getUpgradePath) | **GET** /pricing/devices/{did}/revenueshare/upgradepath | Get upgrade path
+*ArtikCloud.MonetizationApi* | [**setPricingTier**](docs/MonetizationApi.md#setPricingTier) | **PUT** /pricing/devices/{did}/pricingtiers | Set a device&#39;s pricing tier
 *ArtikCloud.RegistrationsApi* | [**confirmUser**](docs/RegistrationsApi.md#confirmUser) | **PUT** /devices/registrations/pin | Confirm User
 *ArtikCloud.RegistrationsApi* | [**getRequestStatusForUser**](docs/RegistrationsApi.md#getRequestStatusForUser) | **GET** /devices/registrations/{requestId}/status | Get Request Status For User
 *ArtikCloud.RegistrationsApi* | [**unregisterDevice**](docs/RegistrationsApi.md#unregisterDevice) | **DELETE** /devices/{deviceId}/registrations | Unregister Device
@@ -154,6 +159,15 @@ Class | Method | HTTP request | Description
 *ArtikCloud.UsersApi* | [**getUserRules**](docs/UsersApi.md#getUserRules) | **GET** /users/{userId}/rules | Get User Rules
 *ArtikCloud.UsersApi* | [**listAllSharesForUser**](docs/UsersApi.md#listAllSharesForUser) | **GET** /users/{userId}/shares | Get User shares
 *ArtikCloud.UsersApi* | [**updateUserProperties**](docs/UsersApi.md#updateUserProperties) | **PUT** /users/{userId}/properties | Update User Application Properties
+*ArtikCloud.WhitelistingApi* | [**deleteVdid**](docs/WhitelistingApi.md#deleteVdid) | **DELETE** /devicetypes/{dtid}/whitelist/{vdid} | Delete a vdid from the devicetype whitelist.
+*ArtikCloud.WhitelistingApi* | [**deleteWhitelistCertificate**](docs/WhitelistingApi.md#deleteWhitelistCertificate) | **DELETE** /devicetypes/{dtid}/whitelist/certificates/{cid} | Delete a whitelist certificate associated with a devicetype.
+*ArtikCloud.WhitelistingApi* | [**enableWhitelist**](docs/WhitelistingApi.md#enableWhitelist) | **PUT** /devicetypes/:dtid/whitelist/enable | Enable or disble whitelist feature of a device type
+*ArtikCloud.WhitelistingApi* | [**getRejectedRowList**](docs/WhitelistingApi.md#getRejectedRowList) | **GET** /devicetypes/{dtid}/whitelist/{uploadId}/rejectedRows | Get the list of rejected rows for an uploaded CSV file.
+*ArtikCloud.WhitelistingApi* | [**getUploadStatus**](docs/WhitelistingApi.md#getUploadStatus) | **GET** /devicetypes/{dtid}/whitelist/{uploadId}/status | Get the status of a uploaded CSV file.
+*ArtikCloud.WhitelistingApi* | [**getWhitelist**](docs/WhitelistingApi.md#getWhitelist) | **GET** /devicetypes/{dtid}/whitelist | Get whitelisted vdids of a device type.
+*ArtikCloud.WhitelistingApi* | [**getWhitelistCertificate**](docs/WhitelistingApi.md#getWhitelistCertificate) | **GET** /devicetypes/{dtid}/whitelist/certificates | Get whitelist certificate of device type.
+*ArtikCloud.WhitelistingApi* | [**getWhitelistStatus**](docs/WhitelistingApi.md#getWhitelistStatus) | **GET** /devicetypes/{dtid}/whitelist/status | Get the status of whitelist feature (enabled/disabled) of a device type.
+*ArtikCloud.WhitelistingApi* | [**uploadCSV**](docs/WhitelistingApi.md#uploadCSV) | **POST** /devicetypes/{dtid}/whitelist | Upload a CSV file related to the Device Type.
 
 
 ## Documentation for Models
@@ -172,11 +186,21 @@ Class | Method | HTTP request | Description
  - [ArtikCloud.AggregatesHistogramResponse](docs/AggregatesHistogramResponse.md)
  - [ArtikCloud.AggregatesResponse](docs/AggregatesResponse.md)
  - [ArtikCloud.AppProperties](docs/AppProperties.md)
+ - [ArtikCloud.CertificateData](docs/CertificateData.md)
+ - [ArtikCloud.CertificateEnvelope](docs/CertificateEnvelope.md)
+ - [ArtikCloud.CertificateFields](docs/CertificateFields.md)
+ - [ArtikCloud.CertificateId](docs/CertificateId.md)
  - [ArtikCloud.CheckTokenMessage](docs/CheckTokenMessage.md)
  - [ArtikCloud.CheckTokenResponse](docs/CheckTokenResponse.md)
+ - [ArtikCloud.ContactInfo](docs/ContactInfo.md)
  - [ArtikCloud.Device](docs/Device.md)
  - [ArtikCloud.DeviceArray](docs/DeviceArray.md)
  - [ArtikCloud.DeviceEnvelope](docs/DeviceEnvelope.md)
+ - [ArtikCloud.DevicePricingTier](docs/DevicePricingTier.md)
+ - [ArtikCloud.DevicePricingTierEnvelope](docs/DevicePricingTierEnvelope.md)
+ - [ArtikCloud.DevicePricingTierRequest](docs/DevicePricingTierRequest.md)
+ - [ArtikCloud.DevicePricingTiers](docs/DevicePricingTiers.md)
+ - [ArtikCloud.DevicePricingTiersEnvelope](docs/DevicePricingTiersEnvelope.md)
  - [ArtikCloud.DeviceRegCompleteRequest](docs/DeviceRegCompleteRequest.md)
  - [ArtikCloud.DeviceRegConfirmUserRequest](docs/DeviceRegConfirmUserRequest.md)
  - [ArtikCloud.DeviceRegConfirmUserResponse](docs/DeviceRegConfirmUserResponse.md)
@@ -203,6 +227,10 @@ Class | Method | HTTP request | Description
  - [ArtikCloud.DeviceTypeEnvelope](docs/DeviceTypeEnvelope.md)
  - [ArtikCloud.DeviceTypeInfo](docs/DeviceTypeInfo.md)
  - [ArtikCloud.DeviceTypeInfoEnvelope](docs/DeviceTypeInfoEnvelope.md)
+ - [ArtikCloud.DeviceTypePricingList](docs/DeviceTypePricingList.md)
+ - [ArtikCloud.DeviceTypePricingTier](docs/DeviceTypePricingTier.md)
+ - [ArtikCloud.DeviceTypePricingTiersEnvelope](docs/DeviceTypePricingTiersEnvelope.md)
+ - [ArtikCloud.DeviceTypeUpdateInput](docs/DeviceTypeUpdateInput.md)
  - [ArtikCloud.DeviceTypesEnvelope](docs/DeviceTypesEnvelope.md)
  - [ArtikCloud.DeviceTypesInfo](docs/DeviceTypesInfo.md)
  - [ArtikCloud.DeviceTypesInfoEnvelope](docs/DeviceTypesInfoEnvelope.md)
@@ -250,6 +278,8 @@ Class | Method | HTTP request | Description
  - [ArtikCloud.PropertiesEnvelope](docs/PropertiesEnvelope.md)
  - [ArtikCloud.RefreshTokenResponse](docs/RefreshTokenResponse.md)
  - [ArtikCloud.RegisterMessage](docs/RegisterMessage.md)
+ - [ArtikCloud.RejectedCSVRow](docs/RejectedCSVRow.md)
+ - [ArtikCloud.RejectedCSVRowsEnvelope](docs/RejectedCSVRowsEnvelope.md)
  - [ArtikCloud.RuleArray](docs/RuleArray.md)
  - [ArtikCloud.RuleCreationInfo](docs/RuleCreationInfo.md)
  - [ArtikCloud.RuleEnvelope](docs/RuleEnvelope.md)
@@ -287,6 +317,7 @@ Class | Method | HTTP request | Description
  - [ArtikCloud.TaskUpdateRequest](docs/TaskUpdateRequest.md)
  - [ArtikCloud.TaskUpdateResponse](docs/TaskUpdateResponse.md)
  - [ArtikCloud.TasksStatusCounts](docs/TasksStatusCounts.md)
+ - [ArtikCloud.Tier](docs/Tier.md)
  - [ArtikCloud.Token](docs/Token.md)
  - [ArtikCloud.TokenInfo](docs/TokenInfo.md)
  - [ArtikCloud.TokenInfoSuccessResponse](docs/TokenInfoSuccessResponse.md)
@@ -295,10 +326,20 @@ Class | Method | HTTP request | Description
  - [ArtikCloud.UnregisterDeviceResponse](docs/UnregisterDeviceResponse.md)
  - [ArtikCloud.UnregisterDeviceResponseEnvelope](docs/UnregisterDeviceResponseEnvelope.md)
  - [ArtikCloud.UpdateParameters](docs/UpdateParameters.md)
+ - [ArtikCloud.UpgradePath](docs/UpgradePath.md)
+ - [ArtikCloud.UpgradePathEnvelope](docs/UpgradePathEnvelope.md)
+ - [ArtikCloud.UpgradePathUserToken](docs/UpgradePathUserToken.md)
+ - [ArtikCloud.UpgradePathUserTokenEnvelope](docs/UpgradePathUserTokenEnvelope.md)
+ - [ArtikCloud.UploadIdEnvelope](docs/UploadIdEnvelope.md)
+ - [ArtikCloud.UploadStatusEnvelope](docs/UploadStatusEnvelope.md)
  - [ArtikCloud.User](docs/User.md)
  - [ArtikCloud.UserEnvelope](docs/UserEnvelope.md)
  - [ArtikCloud.ValidationCallbackInfo](docs/ValidationCallbackInfo.md)
+ - [ArtikCloud.ValidityPeriod](docs/ValidityPeriod.md)
  - [ArtikCloud.WebSocketError](docs/WebSocketError.md)
+ - [ArtikCloud.Whitelist](docs/Whitelist.md)
+ - [ArtikCloud.WhitelistEnvelope](docs/WhitelistEnvelope.md)
+ - [ArtikCloud.WhitelistResultEnvelope](docs/WhitelistResultEnvelope.md)
 
 
 ## Documentation for Authorization

@@ -18,7 +18,7 @@
   /**
    * The ExportRequestResponse model module.
    * @module model/ExportRequestResponse
-   * @version 2.0.6
+   * @version 2.2.2
    */
 
   /**

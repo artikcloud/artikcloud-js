@@ -18,7 +18,7 @@
   /**
    * The CheckTokenMessage model module.
    * @module model/CheckTokenMessage
-   * @version 2.0.6
+   * @version 2.2.2
    */
 
   /**

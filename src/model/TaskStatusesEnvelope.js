@@ -18,7 +18,7 @@
   /**
    * The TaskStatusesEnvelope model module.
    * @module model/TaskStatusesEnvelope
-   * @version 2.0.6
+   * @version 2.2.2
    */
 
   /**

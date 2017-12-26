@@ -18,7 +18,7 @@
   /**
    * The MetadataEnvelope model module.
    * @module model/MetadataEnvelope
-   * @version 2.0.6
+   * @version 2.2.2
    */
 
   /**

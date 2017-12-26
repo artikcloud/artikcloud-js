@@ -18,7 +18,7 @@
   /**
    * The TaskEnvelope model module.
    * @module model/TaskEnvelope
-   * @version 2.0.6
+   * @version 2.2.2
    */
 
   /**

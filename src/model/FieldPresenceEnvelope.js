@@ -18,7 +18,7 @@
   /**
    * The FieldPresenceEnvelope model module.
    * @module model/FieldPresenceEnvelope
-   * @version 2.0.6
+   * @version 2.2.2
    */
 
   /**
@@ -34,7 +34,7 @@
    * @param size(Number)
    * @param data([FieldPresence])
    */
-  var exports = function(sdid, fieldPresence, startDate, endDate, interval, size, data) {
+  var exports = function(sdid(String), fieldPresence(String), startDate(Number), endDate(Number), interval(String), size(Number), data([FieldPresence])) {
 
     this['sdid'] = sdid;
     this['fieldPresence'] = fieldPresence;

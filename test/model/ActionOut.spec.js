@@ -54,6 +54,42 @@
       //expect(instance).to.be.a(ArtikCloud.ActionOut);
     });
 
+    it('should have the property data (base name: "data")', function() {
+      // uncomment below and update the code to test the property data
+      //var instane = new ArtikCloud.ActionOut();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property cid (base name: "cid")', function() {
+      // uncomment below and update the code to test the property cid
+      //var instane = new ArtikCloud.ActionOut();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property ddid (base name: "ddid")', function() {
+      // uncomment below and update the code to test the property ddid
+      //var instane = new ArtikCloud.ActionOut();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property sdid (base name: "sdid")', function() {
+      // uncomment below and update the code to test the property sdid
+      //var instane = new ArtikCloud.ActionOut();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property ts (base name: "ts")', function() {
+      // uncomment below and update the code to test the property ts
+      //var instane = new ArtikCloud.ActionOut();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property type (base name: "type")', function() {
+      // uncomment below and update the code to test the property type
+      //var instane = new ArtikCloud.ActionOut();
+      //expect(instance).to.be();
+    });
+
     it('should have the property mid (base name: "mid")', function() {
       // uncomment below and update the code to test the property mid
       //var instane = new ArtikCloud.ActionOut();

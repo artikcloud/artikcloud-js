@@ -18,7 +18,7 @@
   /**
    * The CheckTokenResponse model module.
    * @module model/CheckTokenResponse
-   * @version 2.0.6
+   * @version 2.2.2
    */
 
   /**

@@ -18,7 +18,7 @@
   /**
    * The NormalizedAction model module.
    * @module model/NormalizedAction
-   * @version 2.0.6
+   * @version 2.2.2
    */
 
   /**
@@ -35,7 +35,7 @@
    * @param mv(Number)
    * @param data(ActionArray)
    */
-  var exports = function(cts, ts, mid, ddid, ddtid, uid, mv, data) {
+  var exports = function(cts(Number), ts(Number), mid(String), ddid(String), ddtid(String), uid(String), mv(Number), data(ActionArray)) {
 
     this['cts'] = cts;
     this['ts'] = ts;

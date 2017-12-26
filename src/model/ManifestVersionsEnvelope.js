@@ -18,7 +18,7 @@
   /**
    * The ManifestVersionsEnvelope model module.
    * @module model/ManifestVersionsEnvelope
-   * @version 2.0.6
+   * @version 2.2.2
    */
 
   /**
@@ -28,7 +28,7 @@
    * @class
    * @param data(ManifestVersions)
    */
-  var exports = function(data) {
+  var exports = function(data(ManifestVersions)) {
 
     this['data'] = data;
   };
