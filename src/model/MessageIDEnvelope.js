@@ -18,7 +18,7 @@
   /**
    * The MessageIDEnvelope model module.
    * @module model/MessageIDEnvelope
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

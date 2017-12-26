@@ -18,7 +18,7 @@
   /**
    * The TagArray model module.
    * @module model/TagArray
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

@@ -18,7 +18,7 @@
   /**
    * Users service.
    * @module api/UsersApi
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**
@@ -249,7 +249,6 @@
      * @param Boolean opts.includeProperties Optional. Boolean (true/false) - If false, only return the user&#39;s device types. If true, also return device types shared by other users.
      * @param String opts.owner Return owned and/or shared devices. Default to ALL.
      * @param Boolean opts.includeShareInfo Include share info
-     * @param String opts.dtid Return only devices of this device type. If empty, assumes all device types allowed by the authorization.
      * @param {module:api/UsersApi~getUserDevicesCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: module:model/DevicesEnvelope
      */
@@ -271,8 +270,7 @@
         'count': opts['count'],
         'includeProperties': opts['includeProperties'],
         'owner': opts['owner'],
-        'includeShareInfo': opts['includeShareInfo'],
-        'dtid': opts['dtid']
+        'includeShareInfo': opts['includeShareInfo']
       };
       var headerParams = {
       };

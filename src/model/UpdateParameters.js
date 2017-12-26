@@ -18,7 +18,7 @@
   /**
    * The UpdateParameters model module.
    * @module model/UpdateParameters
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

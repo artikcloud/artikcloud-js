@@ -18,7 +18,7 @@
   /**
    * Subscriptions service.
    * @module api/SubscriptionsApi
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

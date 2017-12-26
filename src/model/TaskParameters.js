@@ -18,7 +18,7 @@
   /**
    * The TaskParameters model module.
    * @module model/TaskParameters
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

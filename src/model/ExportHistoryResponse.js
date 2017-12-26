@@ -18,7 +18,7 @@
   /**
    * The ExportHistoryResponse model module.
    * @module model/ExportHistoryResponse
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

@@ -18,7 +18,7 @@
   /**
    * The DeviceSharingEnvelope model module.
    * @module model/DeviceSharingEnvelope
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

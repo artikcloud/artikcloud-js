@@ -18,7 +18,7 @@
   /**
    * The FieldsActions model module.
    * @module model/FieldsActions
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

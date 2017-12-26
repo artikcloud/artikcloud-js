@@ -18,7 +18,7 @@
   /**
    * The DeviceTypeEnvelope model module.
    * @module model/DeviceTypeEnvelope
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**
@@ -28,7 +28,7 @@
    * @class
    * @param data(DeviceType)
    */
-  var exports = function(data(DeviceType)) {
+  var exports = function(data) {
 
     this['data'] = data;
   };

@@ -18,7 +18,7 @@
   /**
    * The DeviceSharing model module.
    * @module model/DeviceSharing
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

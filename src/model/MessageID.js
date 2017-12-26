@@ -18,7 +18,7 @@
   /**
    * The MessageID model module.
    * @module model/MessageID
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

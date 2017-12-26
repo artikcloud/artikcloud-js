@@ -18,7 +18,7 @@
   /**
    * The TaskStatuses model module.
    * @module model/TaskStatuses
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

@@ -18,7 +18,7 @@
   /**
    * The DeviceStatusPutData model module.
    * @module model/DeviceStatusPutData
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

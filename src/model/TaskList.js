@@ -18,7 +18,7 @@
   /**
    * The TaskList model module.
    * @module model/TaskList
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

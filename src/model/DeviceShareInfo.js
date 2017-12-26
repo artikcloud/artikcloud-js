@@ -18,7 +18,7 @@
   /**
    * The DeviceShareInfo model module.
    * @module model/DeviceShareInfo
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**
@@ -43,8 +43,8 @@
     if (data) { 
       obj = obj || new exports();
 
-      if (data.hasOwnProperty('uid')) {
-        obj['uid'] = ApiClient.convertToType(data['uid'], 'String');
+      if (data.hasOwnProperty('email')) {
+        obj['email'] = ApiClient.convertToType(data['email'], 'String');
       }
     }
     return obj;
@@ -53,9 +53,9 @@
 
   /**
    * User email
-   * @member String uid
+   * @member String email
    */
-  exports.prototype['uid'] = undefined;
+  exports.prototype['email'] = undefined;
 
 
 

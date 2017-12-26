@@ -18,7 +18,7 @@
   /**
    * The ActionIn model module.
    * @module model/ActionIn
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

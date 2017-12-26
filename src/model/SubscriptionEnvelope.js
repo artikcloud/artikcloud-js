@@ -18,7 +18,7 @@
   /**
    * The SubscriptionEnvelope model module.
    * @module model/SubscriptionEnvelope
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

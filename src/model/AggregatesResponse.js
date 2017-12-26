@@ -18,7 +18,7 @@
   /**
    * The AggregatesResponse model module.
    * @module model/AggregatesResponse
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

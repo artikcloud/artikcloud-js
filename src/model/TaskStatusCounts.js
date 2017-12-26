@@ -18,7 +18,7 @@
   /**
    * The TaskStatusCounts model module.
    * @module model/TaskStatusCounts
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

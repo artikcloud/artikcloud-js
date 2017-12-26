@@ -18,7 +18,7 @@
   /**
    * The ValidationCallbackInfo model module.
    * @module model/ValidationCallbackInfo
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

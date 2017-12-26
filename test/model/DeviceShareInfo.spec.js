@@ -54,8 +54,8 @@
       //expect(instance).to.be.a(ArtikCloud.DeviceShareInfo);
     });
 
-    it('should have the property uid (base name: "uid")', function() {
-      // uncomment below and update the code to test the property uid
+    it('should have the property email (base name: "email")', function() {
+      // uncomment below and update the code to test the property email
       //var instane = new ArtikCloud.DeviceShareInfo();
       //expect(instance).to.be();
     });

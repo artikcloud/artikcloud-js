@@ -18,7 +18,7 @@
   /**
    * The TaskStatusesHistoryEnvelope model module.
    * @module model/TaskStatusesHistoryEnvelope
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

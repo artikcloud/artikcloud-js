@@ -18,7 +18,7 @@
   /**
    * The AckEnvelope model module.
    * @module model/AckEnvelope
-   * @version 2.2.2
+   * @version 4.2.0
    */
 
   /**

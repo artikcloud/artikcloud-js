@@ -138,12 +138,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property owner (base name: "owner")', function() {
-      // uncomment below and update the code to test the property owner
-      //var instane = new ArtikCloud.OutputRule();
-      //expect(instance).to.be();
-    });
-
   });
 
 }));

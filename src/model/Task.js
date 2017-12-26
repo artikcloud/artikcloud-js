@@ -18,7 +18,7 @@
   /**
    * The Task model module.
    * @module model/Task
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

@@ -18,7 +18,7 @@
   /**
    * The DeviceSharingArray model module.
    * @module model/DeviceSharingArray
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

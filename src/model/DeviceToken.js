@@ -18,7 +18,7 @@
   /**
    * The DeviceToken model module.
    * @module model/DeviceToken
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**
@@ -31,7 +31,7 @@
    * @param did(String)
    * @param cid(String)
    */
-  var exports = function(accessToken(String), uid(String), did(String), cid(String)) {
+  var exports = function(accessToken, uid, did, cid) {
 
     this['accessToken'] = accessToken;
     this['uid'] = uid;

@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new ArtikCloud.DevicesStatusApi();
+    instance = new ArtikCloud.DevicesSharesApi();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,31 +47,41 @@
       object[property] = value;
   }
 
-  describe('DevicesStatusApi', function() {
-    describe('getDeviceStatus', function() {
-      it('should call getDeviceStatus successfully', function(done) {
-        //uncomment below and update the code to test getDeviceStatus
-        //instance.getDeviceStatus(function(error) {
+  describe('DevicesSharesApi', function() {
+    describe('createShareForDevice', function() {
+      it('should call createShareForDevice successfully', function(done) {
+        //uncomment below and update the code to test createShareForDevice
+        //instance.createShareForDevice(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('getDevicesStatus', function() {
-      it('should call getDevicesStatus successfully', function(done) {
-        //uncomment below and update the code to test getDevicesStatus
-        //instance.getDevicesStatus(function(error) {
+    describe('deleteSharingForDevice', function() {
+      it('should call deleteSharingForDevice successfully', function(done) {
+        //uncomment below and update the code to test deleteSharingForDevice
+        //instance.deleteSharingForDevice(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('putDeviceStatus', function() {
-      it('should call putDeviceStatus successfully', function(done) {
-        //uncomment below and update the code to test putDeviceStatus
-        //instance.putDeviceStatus(function(error) {
+    describe('getAllSharesForDevice', function() {
+      it('should call getAllSharesForDevice successfully', function(done) {
+        //uncomment below and update the code to test getAllSharesForDevice
+        //instance.getAllSharesForDevice(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('getSharingForDevice', function() {
+      it('should call getSharingForDevice successfully', function(done) {
+        //uncomment below and update the code to test getSharingForDevice
+        //instance.getSharingForDevice(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

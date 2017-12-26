@@ -18,7 +18,7 @@
   /**
    * The ManifestPropertiesEnvelope model module.
    * @module model/ManifestPropertiesEnvelope
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**
@@ -28,7 +28,7 @@
    * @class
    * @param data(ManifestProperties)
    */
-  var exports = function(data(ManifestProperties)) {
+  var exports = function(data) {
 
     this['data'] = data;
   };

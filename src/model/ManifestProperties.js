@@ -18,7 +18,7 @@
   /**
    * The ManifestProperties model module.
    * @module model/ManifestProperties
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**
@@ -28,7 +28,7 @@
    * @class
    * @param properties(FieldsActions)
    */
-  var exports = function(properties(FieldsActions)) {
+  var exports = function(properties) {
 
     this['properties'] = properties;
   };

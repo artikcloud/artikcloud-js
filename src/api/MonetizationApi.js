@@ -18,7 +18,7 @@
   /**
    * Monetization service.
    * @module api/MonetizationApi
-   * @version 2.2.2
+   * @version 4.2.0
    */
 
   /**

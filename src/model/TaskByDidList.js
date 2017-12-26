@@ -18,7 +18,7 @@
   /**
    * The TaskByDidList model module.
    * @module model/TaskByDidList
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

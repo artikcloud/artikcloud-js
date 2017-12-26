@@ -18,7 +18,7 @@
   /**
    * The ManifestVersions model module.
    * @module model/ManifestVersions
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**
@@ -28,7 +28,7 @@
    * @class
    * @param versions([String])
    */
-  var exports = function(versions([String])) {
+  var exports = function(versions) {
 
     this['versions'] = versions;
   };

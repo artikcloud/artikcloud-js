@@ -18,7 +18,7 @@
   /**
    * Tokens service.
    * @module api/TokensApi
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

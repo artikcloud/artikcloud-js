@@ -18,7 +18,7 @@
   /**
    * The TaskHistory model module.
    * @module model/TaskHistory
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

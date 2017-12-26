@@ -18,7 +18,7 @@
   /**
    * The AppProperties model module.
    * @module model/AppProperties
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**
@@ -28,7 +28,7 @@
    * @class
    * @param properties(String)
    */
-  var exports = function(properties(String)) {
+  var exports = function(properties) {
 
 
 

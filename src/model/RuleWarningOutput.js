@@ -18,7 +18,7 @@
   /**
    * The RuleWarningOutput model module.
    * @module model/RuleWarningOutput
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

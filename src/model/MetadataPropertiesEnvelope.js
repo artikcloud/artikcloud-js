@@ -18,7 +18,7 @@
   /**
    * The MetadataPropertiesEnvelope model module.
    * @module model/MetadataPropertiesEnvelope
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

@@ -18,7 +18,7 @@
   /**
    * The AggregatesHistogramData model module.
    * @module model/AggregatesHistogramData
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

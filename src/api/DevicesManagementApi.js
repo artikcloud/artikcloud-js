@@ -18,7 +18,7 @@
   /**
    * DevicesManagement service.
    * @module api/DevicesManagementApi
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

@@ -18,7 +18,7 @@
   /**
    * The RuleError model module.
    * @module model/RuleError
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

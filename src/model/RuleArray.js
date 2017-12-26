@@ -18,7 +18,7 @@
   /**
    * The RuleArray model module.
    * @module model/RuleArray
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**

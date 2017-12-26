@@ -18,7 +18,7 @@
   /**
    * The FieldPresence model module.
    * @module model/FieldPresence
-   * @version 2.2.2
+   * @version 2.0.6
    */
 
   /**
@@ -28,7 +28,7 @@
    * @class
    * @param startDate(Number)
    */
-  var exports = function(startDate(Number)) {
+  var exports = function(startDate) {
 
     this['startDate'] = startDate;
   };

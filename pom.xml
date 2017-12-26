@@ -1,9 +1,9 @@
 <project>
-    <modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.2.0</modelVersion>
     <groupId>cloud.artik</groupId>
     <artifactId>artikcloud-js</artifactId>
     <packaging>pom</packaging>
-    <version>4.1.0</version>
+    <version>4.2.0</version>
     <name>Artik Cloud JavaScript Client</name>
     <build>
         <plugins>
