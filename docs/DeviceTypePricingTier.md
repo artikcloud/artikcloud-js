@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**revenueSharePercent** | [**ModelObject**](ModelObject.md) | revenue share percentage | [optional] 
+**revenueSharePercent** | **Object** | revenue share percentage | [optional] 
 **tiers** | [**[Tier]**](Tier.md) | tiers | [optional] 
 **modifiedOn** | **Number** | modified on | [optional] 
 **comments** | **String** | comments | [optional] 

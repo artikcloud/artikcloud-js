@@ -1,24 +1,24 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['../ApiClient', './ContactInfo', './ModelObject', './Tier'], factory);
+    define(['../ApiClient', './ContactInfo', './Tier'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./ContactInfo'), require('./ModelObject'), require('./Tier'));
+    module.exports = factory(require('../ApiClient'), require('./ContactInfo'), require('./Tier'));
   } else {
     // Browser globals (root is window)
     if (!root.ArtikCloud) {
       root.ArtikCloud = {};
     }
-    root.ArtikCloud.DeviceTypePricingTier = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.ContactInfo, root.ArtikCloud.ModelObject, root.ArtikCloud.Tier);
+    root.ArtikCloud.DeviceTypePricingTier = factory(root.ArtikCloud.ApiClient, root.ArtikCloud.ContactInfo, root.ArtikCloud.Tier);
   }
-}(this, function(ApiClient, ContactInfo, ModelObject, Tier) {
+}(this, function(ApiClient, ContactInfo, Tier) {
   'use strict';
 
   /**
    * The DeviceTypePricingTier model module.
    * @module model/DeviceTypePricingTier
-   * @version 2.2.2
+   * @version 4.2.1
    */
 
   /**
@@ -53,7 +53,7 @@
       obj = obj || new exports();
 
       if (data.hasOwnProperty('revenueSharePercent')) {
-        obj['revenueSharePercent'] = ModelObject.constructFromObject(data['revenueSharePercent']);
+        obj['revenueSharePercent'] = ApiClient.convertToType(data['revenueSharePercent'], Object);
       }
       if (data.hasOwnProperty('tiers')) {
         obj['tiers'] = ApiClient.convertToType(data['tiers'], [Tier]);
@@ -89,7 +89,7 @@
 
   /**
    * revenue share percentage
-   * @member module:model/ModelObject revenueSharePercent
+   * @member Object revenueSharePercent
    */
   exports.prototype['revenueSharePercent'] = undefined;
 
